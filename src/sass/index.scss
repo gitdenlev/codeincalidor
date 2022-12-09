@@ -4,6 +4,10 @@
 @import './utils/visually-hidden';
 // Mixin
 @import './utils/mixin';
+// Reset
+@import './base/reset';
+// Commons
+@import './base/commons';
 // Homepage
 @import './homepage/homepage-contacts';
 @import './homepage/homepage-hero';
