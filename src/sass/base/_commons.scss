@@ -1,11 +1,35 @@
 @import '~node-modules/modern-normalize/modern-normalize.css';
 body {
-    color: $text-color;
-    background-color: $white-color;
-    font-family: $main-font;
-    font-size: 14px;
-    letter-spacing: 0.03em;
+  color: $text-color;
+  background-color: $white-color;
+  font-family: $main-font;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
-.container{
-    
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
 }
