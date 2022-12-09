@@ -1,0 +1,144 @@
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.footer {
+    background-color: #0E0C07;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 414px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 1024px;
+        width: 100%;
+    }
+}
+
+.footer__logo {
+    font-family: "Film P3";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1;
+    text-decoration: none;
+    letter-spacing: 0.3em;
+    color: #F3C653;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__logo {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1.1;
+        letter-spacing: 0.3em;
+    }
+}
+
+.footer__position {
+    display: flex;
+    margin-left: auto;
+    gap: 129px;
+}
+
+@media screen and (max-width: 1023px) {
+    .footer__position {
+        margin-left: auto;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer__position {
+        margin-left: auto;
+        gap: 199px;
+    }
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    text-align: center;
+}
+
+.footer__list-link {
+    display: flex;
+    gap: 20px;
+    padding-left: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__list-link {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+.footer__link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    padding: 5px 10px;
+    color: #F3C653;
+    text-decoration: none;
+    margin: 0;
+}
+
+.footer__link--border {
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 1023px) {
+    .footer__link--border {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .footer__hidden {
+        display: none;
+    }
+}
+
+.footer__icon {
+    width: 24px;
+    height: 24px;
+    fill: #F3C653;
+    content: "";
+}
+
+.footer__item {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/*# sourceMappingURL=index.css.map */
