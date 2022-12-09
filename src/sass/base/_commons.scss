@@ -1,8 +1,7 @@
-@import '~node-modules/modern-normalize/modern-normalize.css';
 body {
-  color: $text-color;
-  background-color: $white-color;
-  font-family: $main-font;
+  color: $main-text-color;
+  // background-color: $white-color;
+  // font-family: $main-font;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
