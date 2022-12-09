@@ -1,0 +1,53 @@
+@import '~node-modules/modern-normalize/modern-normalize.css';
+body {
+  color: $text-color;
+  background-color: $white-color;
+  font-family: $main-font;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  @include mobile {
+    max-width: 414px;
+  }
+
+  @include tablet {
+    max-width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+  @include desktop {
+    max-width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}

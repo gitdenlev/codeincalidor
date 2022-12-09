@@ -1,0 +1,34 @@
+// Fonts mixin
+@mixin font($size, $weight, $height, $spacing) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+// Breaking point
+@mixin mobile {
+  @media screen and (min-width: 414px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+// Background
+@mixin ratio {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
