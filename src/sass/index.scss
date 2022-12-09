@@ -1,0 +1,35 @@
+// Variables
+@import './utils/vars';
+// Visually hidden
+@import './utils/visually-hidden';
+// Mixin
+@import './utils/mixin';
+// Homepage
+@import './homepage/homepage-contacts';
+@import './homepage/homepage-hero';
+@import './homepage/homepage-meal';
+@import './homepage/homepage-reserve-rooms';
+@import './homepage/homepage-restaurant';
+@import './homepage/homepage-rooms';
+// Hotel
+@import './hotel/hotel-double-room-lux';
+@import './hotel/hotel-double-room';
+@import './hotel/hotel-hero';
+@import './hotel/hotel-triple-room';
+// Header and footer
+@import './site_pages/header';
+@import './site_pages/footer';
+// Double room lux
+@import './double-room-lux/double-room-lux-amenities';
+@import './double-room-lux/double-room-lux-hero';
+// Modal
+@import './components/modal-book-room';
+@import './components/modal-book-table';
+@import './components/modal-room-price';
+// Slider
+@import './components/slider-mini';
+@import './components/slider-mob';
+// Restaurant
+@import './restaurant/restaurant-hero';
+@import './restaurant/restaurant-menu';
+@import './restaurant/restaurant-about-kitchen';
