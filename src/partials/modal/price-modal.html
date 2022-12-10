@@ -10,11 +10,11 @@
     <form class="modal-price-form">
         <div class="modal-price-wrap-tablet">
             <div class="modal-price-wrap">
-                <input type="number" name="rooms-calc" class="modal-price-input" required id="rooms-calc" placeholder="1" title="Кількість ночей">
+                <input type="number" name="rooms-calc" class="modal-price-input" required id="rooms-calc" placeholder="1" title="Кількість ночей" min="1">
                 <label class="modal-price-label" for="rooms-calc">Кількість ночей</label>
             </div>
             <div class="modal-price-wrap">
-                <input type="number" name="rooms-price" class="modal-price-input" required id="rooms-price" placeholder="1000" title="грн">
+                <input type="number" name="rooms-price" class="modal-price-input" required id="rooms-price" placeholder="1000" title="грн" min="1000" step="500">
                 <label class="modal-price-label" for="rooms-price">грн</label>
             </div>
         </div>

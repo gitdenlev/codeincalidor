@@ -99,7 +99,7 @@
     box-sizing: border-box;
     width: 100%;
     height: 54px;
-    border: 1px solid #C79002;
+    border: 1px solid $brown-text-color;
     padding-left: 15px;
     background-color: $background-light-lemon;
     font-family: $times-font;
@@ -109,10 +109,12 @@
     letter-spacing: 0.05em;
     color:#808080;
     margin-bottom: 8px;
+    outline: transparent;
     transition: border-color $main-transition-duration $main-transtition-timing-function;
-    &:hover {
-        border: 1px solid green;
+    &:hover, &:focus {
+        border-color: $brown-text-color;
     }
+    
     
     
     &::placeholder {
