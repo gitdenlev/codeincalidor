@@ -56,6 +56,7 @@
     @include tablet {
         font-size: 40px;
         line-height: calc(48 / 40);
+        margin-bottom: 36px;
 
     }
 
@@ -168,36 +169,24 @@
     }
     @include tablet {
         height: 64px;
+        width: 288px;
                 
     }
 }
-// .modal-room-select::after {
-//     content: " ";
-//     display: block;
-//     width: 100px;
-//     height: 100px;
-//     color: red;
-//     background-color: red;
 
-// }
-
-
-.room-select {
-    @include mobile {
-        
-        fill: transparent;
-    }
-    @include tablet {
-        width: 24px;
-        height: 24px;
-        fill: $brown-text-color;
-    }
-    
-}
 // Стилізування tablet та desktop
 .modal-room-wrap-tablet {
     @include tablet {
         display: flex;
+        gap: 16px;
+    }
+    
+}
+.direction-right {
+    @include tablet {
+        display: flex;
+        justify-content: flex-end;
+                
     }
     
 }
@@ -221,5 +210,6 @@
     }
     @include tablet {
         margin-top: 0;
+        
 }
 }
