@@ -1,78 +1,63 @@
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url(../fonts/Montserrat-Regular.woff), url(../fonts/Montserrat-Regular.ttf);
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url(../fonts/Montserrat-Light.woff), url(../fonts/Montserrat-Light.ttf);
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url(../fonts/Montserrat-Medium.woff), url(../fonts/Montserrat-Medium.ttf);
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url(../fonts/Montserrat-SemiBold.woff), url(../fonts/Montserrat-SemiBold.ttf);
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url(../fonts/Montserrat-Bold.woff), url(../fonts/Montserrat-Bold.ttf);
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'FilmP3';
+  font-family: "FilmP3";
   src: url(../fonts/FilmP3Bold.woff), url(../fonts/FilmP3Bold.ttf);
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'TimesNewRoman';
+  font-family: "TimesNewRoman";
   src: url(../fonts/TimesNewRomanPSMT.woff), url(../fonts/TimesNewRomanPSMT.ttf);
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'TimesNewRoman';
+  font-family: "TimesNewRoman";
   src: url(../fonts/TimesNewRomanPS-BoldMT.woff), url(../fonts/TimesNewRomanPS-BoldMT.ttf);
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
-
 .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 181px 15px 20px;
   height: 740px;
   background-color: black;
@@ -82,7 +67,7 @@
   margin-top: 181px;
   margin-bottom: 24px;
   text-align: center;
-  font-family: 'FilmP3', 'sans-serif';
+  font-family: "FilmP3", "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
@@ -93,7 +78,7 @@
 
 .hero__subtitle {
   margin-bottom: 40px;
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -103,7 +88,7 @@
 }
 
 .hero__description {
-  font-family: 'TimesNewRoman', 'sans-serif';
+  font-family: "TimesNewRoman", "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -123,7 +108,7 @@
 }
 
 .hero__location-link {
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -139,7 +124,7 @@
   background: rgba(0, 0, 0, 0.4);
   border: 2px solid #FFFFFF;
   border-radius: 25px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -147,7 +132,6 @@
   letter-spacing: 0.02em;
   color: #F3C653;
 }
-
 .button:hover, .button:focus {
   background: #FFFFFF;
   border: 2px solid #FFFFFF;
@@ -225,13 +209,11 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 414px) {
   .container {
     max-width: 414px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 1024px;
@@ -239,7 +221,6 @@ img {
     padding-right: 47px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
@@ -249,16 +230,9 @@ img {
 }
 
 .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 181px 15px 20px;
   height: 740px;
   background-color: black;
@@ -268,7 +242,7 @@ img {
   margin-top: 181px;
   margin-bottom: 24px;
   text-align: center;
-  font-family: 'FilmP3', 'sans-serif';
+  font-family: "FilmP3", "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
@@ -279,7 +253,7 @@ img {
 
 .hero__subtitle {
   margin-bottom: 40px;
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -289,7 +263,7 @@ img {
 }
 
 .hero__description {
-  font-family: 'TimesNewRoman', 'sans-serif';
+  font-family: "TimesNewRoman", "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -309,7 +283,7 @@ img {
 }
 
 .hero__location-link {
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -325,7 +299,7 @@ img {
   background: rgba(0, 0, 0, 0.4);
   border: 2px solid #FFFFFF;
   border-radius: 25px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -333,83 +307,49 @@ img {
   letter-spacing: 0.02em;
   color: #F3C653;
 }
-
 .button:hover, .button:focus {
   background: #FFFFFF;
   border: 2px solid #FFFFFF;
   border-radius: 25px;
 }
 
-<<<<<<< HEAD
-=======
 .header {
   margin-left: auto;
   margin-right: auto;
   min-width: 414px;
   width: 100%;
   height: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   background-color: black;
 }
-
 @media screen and (min-width: 1024px) {
   .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .contact-number {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 @media screen and (min-width: 1024px) {
   .contact-number {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
     width: 264px;
     height: 40px;
     left: 102px;
@@ -420,30 +360,16 @@ img {
 }
 
 .contact-numb_rest {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 @media screen and (min-width: 1024px) {
   .contact-numb_rest {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
     width: 144px;
     height: 40px;
     left: 134px;
@@ -454,17 +380,16 @@ img {
 }
 
 .header-logo {
-  font-family: 'FilmP3', 'suns-serif';
+  font-family: "FilmP3", "suns-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1;
   text-decoration: none;
   letter-spacing: 0.3em;
-  color: #ffff;
+  color: white;
   width: 114px;
 }
-
 @media screen and (min-width: 1024px) {
   .header-logo {
     font-size: 40px;
@@ -473,25 +398,17 @@ img {
 }
 
 .contact-restoran {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .contact-hotel {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .contact {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -501,7 +418,7 @@ img {
 }
 
 .contact-list {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -510,26 +427,20 @@ img {
   color: #f3c653;
   margin-left: 52px;
   margin-right: 12px;
-  -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .contact-list:hover,
 .contact-list :focus {
-  color: #fafaf8;
+  color: rgb(250, 250, 248);
 }
-
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .contact-list {
     margin-left: 87px;
     margin-right: 32px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .contact-list {
     margin-left: 96px;
@@ -541,7 +452,6 @@ img {
   margin-left: 20px;
   margin-right: 12px;
 }
-
 @media screen and (min-width: 1024px) {
   .list-hotel {
     margin-left: 72px;
@@ -550,8 +460,6 @@ img {
 }
 
 .number-hotel {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -559,29 +467,24 @@ img {
   width: 20px;
   height: 20px;
   fill: #f3c653;
-  content: '';
+  content: "";
 }
 
 .contact-tell {
   display: none;
 }
-
 @media screen and (min-width: 1024px) {
   .contact-tell {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     letter-spacing: 0.02em;
     color: white;
-    margin-left: 8px;
+    margin-left: 16px;
   }
 }
 
@@ -589,40 +492,21 @@ img {
   width: 24px;
   height: 24px;
   fill: #f3c653;
-  content: '';
+  content: "";
 }
 
 .social-contact {
   display: none;
 }
-
 @media screen and (min-width: 1280px) {
   .social-contact {
     margin-left: 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 20px;
   }
 }
 
-.hover-icons:hover,
-.hover-icons:focus {
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: #fafaf8;
-}
-
-/* Footer */
->>>>>>> bc3b36930da1547f2a030428585b792d73d83566
 .footer {
   background-color: #0e0c07;
   margin-left: auto;
@@ -631,29 +515,28 @@ img {
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
-
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0E0C07;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 414px;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 @media screen and (min-width: 1024px) {
   .footer {
-
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-
+    justify-content: center;
+    align-items: center;
+    min-width: 1024px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
     min-width: 1024px;
     width: 100%;
   }
@@ -665,11 +548,7 @@ img {
 }
 
 .footer__logo {
-
-  font-family: 'Film P3';
-
-  font-family: "FilmP3", "sans-serif";
-
+  font-family: "Film P3";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -677,6 +556,17 @@ img {
   text-decoration: none;
   letter-spacing: 0.3em;
   color: #f3c653;
+  color: #f3c653;
+}
+@media screen and (min-width: 1024px) {
+  .footer__logo {
+    font-family: "FilmP3", "sans-serif";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.1;
+    letter-spacing: 0.3em;
+  }
 }
 @media screen and (min-width: 1024px) {
   .footer__logo {
@@ -688,11 +578,15 @@ img {
 }
 
 .footer__position {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   gap: 129px;
+}
+@media screen and (max-width: 1023px) {
+  .footer__position {
+    margin-left: auto;
+    gap: 32px;
+  }
 }
 @media screen and (max-width: 1023px) {
   .footer__position {
@@ -709,44 +603,43 @@ img {
 }
 
 .footer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 16px;
   padding: 0;
   text-align: center;
 }
 
 .footer__list-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
   padding-left: 8px;
 }
 @media screen and (min-width: 1024px) {
   .footer__list-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 12px;
   }
 }
 
 .footer__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  padding: 5px 10px;
+  color: #f3c653;
+  text-decoration: none;
+  margin: 0;
+}
 
-  font-family: 'Montserrat';
-
+.footer__link--border {
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
   font-family: "Montserrat", "sans-serif";
-
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -778,32 +671,16 @@ img {
   width: 24px;
   height: 24px;
   fill: #f3c653;
-
-  content: '';
-
   content: "";
-
+  width: 24px;
+  height: 24px;
+  fill: #f3c653;
+  content: "";
 }
 
 .footer__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
-
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
 }/*# sourceMappingURL=index.css.map */
-=======
-
-}
-/*# sourceMappingURL=index.css.map */
->>>>>>> bc3b36930da1547f2a030428585b792d73d83566
