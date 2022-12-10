@@ -313,6 +313,7 @@ img {
   border-radius: 25px;
 }
 
+/* Footer */
 .footer {
   background-color: #0E0C07;
   margin-left: auto;
@@ -321,30 +322,31 @@ img {
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
+
 @media screen and (min-width: 1024px) {
   .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-width: 1024px;
     width: 100%;
   }
 }
 
+.footer--baseline {
+  display: flex;
+  align-items: center;
+}
+
 .footer__logo {
-  font-family: "Film P3";
+  font-family: "FilmP3", "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 1;
   text-decoration: none;
   letter-spacing: 0.3em;
-  color: #F3C653;
+  color: #f3c653;
 }
+
 @media screen and (min-width: 1024px) {
   .footer__logo {
     font-weight: 700;
@@ -359,12 +361,15 @@ img {
   margin-left: auto;
   gap: 129px;
 }
+
 @media screen and (max-width: 1023px) {
   .footer__position {
     margin-left: auto;
+    flex-direction: column;
     gap: 32px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .footer__position {
     margin-left: auto;
@@ -385,6 +390,7 @@ img {
   gap: 20px;
   padding-left: 8px;
 }
+
 @media screen and (min-width: 1024px) {
   .footer__list-link {
     display: flex;
@@ -394,22 +400,23 @@ img {
 }
 
 .footer__link {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
   padding: 5px 10px;
-  color: #F3C653;
+  color: #f3c653;
   text-decoration: none;
   margin: 0;
 }
 
 .footer__link--border {
-  border: 0.5px solid #F3C653;
+  border: 0.5px solid #f3c653;
   border-radius: 2px;
 }
+
 @media screen and (max-width: 1023px) {
   .footer__link--border {
     border: none;
@@ -425,7 +432,7 @@ img {
 .footer__icon {
   width: 24px;
   height: 24px;
-  fill: #F3C653;
+  fill: #f3c653;
   content: "";
 }
 
@@ -434,4 +441,5 @@ img {
   text-align: center;
   justify-content: center;
   align-items: center;
-}/*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map */
