@@ -1,4 +1,5 @@
 .footer {
+
   background-color: #0e0c07;
   margin-left: auto;
   margin-right: auto;
@@ -17,9 +18,29 @@
     min-width: 1024px;
     width: 100%;
   }
+
+    background-color: #0E0C07;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 414px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width:1024px) {
+        min-width: 1024px;
+        width: 100%;
+    }
+
+}
+
+.footer--baseline {
+    display: flex;
+    align-items: center;
 }
 
 .footer__logo {
+
   font-family: 'Film P3';
   font-style: normal;
   font-weight: 700;
@@ -30,11 +51,26 @@
   color: #f3c653;
 
   @media screen and (min-width: 1024px) {
+
+    font-family: $film-font;
+    font-style: normal;
+
     font-weight: 700;
     font-size: 64px;
     line-height: 1.1;
     letter-spacing: 0.3em;
+
   }
+
+    color: $accent-color;
+
+    @media screen and (min-width:1024px) {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1.1;
+        letter-spacing: 0.3em;
+    }
+
 }
 
 .footer__position {
@@ -47,6 +83,13 @@
     // flex-direction: column;
     gap: 32px;
   }
+
+    @media screen and (max-width:1023px) {
+        margin-left: auto;
+        flex-direction: column;
+        gap: 32px;
+    }
+
 
   @media screen and (min-width: 1280px) {
     margin-left: auto;
@@ -75,6 +118,7 @@
 }
 
 .footer__link {
+
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -91,6 +135,23 @@
   border: 0.5px solid #f3c653;
   border-radius: 2px;
 
+    font-family: $montserrat-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    padding: 5px 10px;
+    color: $accent-color;
+    text-decoration: none;
+    margin: 0;
+}
+
+.footer__link--border {
+    border: 0.5px solid $accent-color;
+    border-radius: 2px;
+
+
   @media screen and (max-width: 1023px) {
     border: none;
   }
@@ -103,10 +164,17 @@
 }
 
 .footer__icon {
+
   width: 24px;
   height: 24px;
   fill: #f3c653;
   content: '';
+
+    width: 24px;
+    height: 24px;
+    fill: $accent-color;
+    content: "";
+
 }
 
 .footer__item {
