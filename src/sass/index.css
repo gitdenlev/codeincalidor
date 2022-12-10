@@ -20,29 +20,28 @@
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 @media screen and (min-width: 1024px) {
   .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-width: 1024px;
     width: 100%;
   }
 }
 
+.footer--baseline {
+  display: flex;
+  align-items: center;
+}
+
 .footer__logo {
-  font-family: "Film P3";
+  font-family: "FilmP3", "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 1;
   text-decoration: none;
   letter-spacing: 0.3em;
-  color: #F3C653;
+  color: #f3c653;
 }
 @media screen and (min-width: 1024px) {
   .footer__logo {
@@ -94,20 +93,20 @@
 }
 
 .footer__link {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
   padding: 5px 10px;
-  color: #F3C653;
+  color: #f3c653;
   text-decoration: none;
   margin: 0;
 }
 
 .footer__link--border {
-  border: 0.5px solid #F3C653;
+  border: 0.5px solid #f3c653;
   border-radius: 2px;
 }
 @media screen and (max-width: 1023px) {
@@ -125,7 +124,7 @@
 .footer__icon {
   width: 24px;
   height: 24px;
-  fill: #F3C653;
+  fill: #f3c653;
   content: "";
 }
 
