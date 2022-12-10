@@ -1,0 +1,144 @@
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 414px;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 1024px;
+    width: 100%;
+    height: 100px;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.contact-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 264px;
+  height: 40px;
+  left: 102px;
+  top: 0px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
+
+.contact-numb_rest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 144px;
+  height: 40px;
+  left: 134px;
+  top: 0px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
+
+.header-logo {
+  font-family: 'FilmP3', 'suns-serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+  text-decoration: none;
+  letter-spacing: 0.3em;
+  color: #ffff;
+  background-color: black;
+  @media screen and (min-width: 1024px) {
+    font-size: 40px;
+  }
+}
+
+.contact-restoran {
+  display: flex;
+  align-items: center;
+}
+
+.contact-hotel {
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+}
+
+.contact-list {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  margin-left: 96px;
+  margin-right: 32px;
+}
+
+.number-hotel {
+  display: flex;
+}
+
+.border-hotel {
+  box-sizing: border-box;
+  width: 144px;
+  height: 40px;
+  left: 134px;
+  top: 0px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
+
+.contact-list_icon {
+  width: 20px;
+  height: 20px;
+  fill: #f3c653;
+  content: '';
+}
+
+.contact-tell {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #4e4242;
+  margin-left: 8px;
+}
+
+.header-svg {
+  width: 24px;
+  height: 24px;
+  fill: #f3c653;
+  content: '';
+  margin-left: 20px;
+}
+
+.social-contact {
+  margin-left: 60px;
+  display: flex;
+}

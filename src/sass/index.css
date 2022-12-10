@@ -1,63 +1,78 @@
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url(../fonts/Montserrat-Regular.woff), url(../fonts/Montserrat-Regular.ttf);
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url(../fonts/Montserrat-Light.woff), url(../fonts/Montserrat-Light.ttf);
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url(../fonts/Montserrat-Medium.woff), url(../fonts/Montserrat-Medium.ttf);
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url(../fonts/Montserrat-SemiBold.woff), url(../fonts/Montserrat-SemiBold.ttf);
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url(../fonts/Montserrat-Bold.woff), url(../fonts/Montserrat-Bold.ttf);
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "FilmP3";
+  font-family: 'FilmP3';
   src: url(../fonts/FilmP3Bold.woff), url(../fonts/FilmP3Bold.ttf);
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "TimesNewRoman";
+  font-family: 'TimesNewRoman';
   src: url(../fonts/TimesNewRomanPSMT.woff), url(../fonts/TimesNewRomanPSMT.ttf);
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "TimesNewRoman";
+  font-family: 'TimesNewRoman';
   src: url(../fonts/TimesNewRomanPS-BoldMT.woff), url(../fonts/TimesNewRomanPS-BoldMT.ttf);
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
+
 .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 181px 15px 20px;
   height: 740px;
   background-color: black;
@@ -67,7 +82,7 @@
   margin-top: 181px;
   margin-bottom: 24px;
   text-align: center;
-  font-family: "FilmP3", "sans-serif";
+  font-family: 'FilmP3', 'sans-serif';
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
@@ -78,7 +93,7 @@
 
 .hero__subtitle {
   margin-bottom: 40px;
-  font-family: "Montserrat", "sans-serif";
+  font-family: 'Montserrat', 'sans-serif';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -88,7 +103,7 @@
 }
 
 .hero__description {
-  font-family: "TimesNewRoman", "sans-serif";
+  font-family: 'TimesNewRoman', 'sans-serif';
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -108,7 +123,7 @@
 }
 
 .hero__location-link {
-  font-family: "Montserrat", "sans-serif";
+  font-family: 'Montserrat', 'sans-serif';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -124,7 +139,7 @@
   background: rgba(0, 0, 0, 0.4);
   border: 2px solid #FFFFFF;
   border-radius: 25px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -132,6 +147,7 @@
   letter-spacing: 0.02em;
   color: #F3C653;
 }
+
 .button:hover, .button:focus {
   background: #FFFFFF;
   border: 2px solid #FFFFFF;
@@ -209,11 +225,13 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 }
+
 @media screen and (min-width: 414px) {
   .container {
     max-width: 414px;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 1024px;
@@ -221,6 +239,7 @@ img {
     padding-right: 47px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
@@ -230,9 +249,16 @@ img {
 }
 
 .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 181px 15px 20px;
   height: 740px;
   background-color: black;
@@ -242,7 +268,7 @@ img {
   margin-top: 181px;
   margin-bottom: 24px;
   text-align: center;
-  font-family: "FilmP3", "sans-serif";
+  font-family: 'FilmP3', 'sans-serif';
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
@@ -253,7 +279,7 @@ img {
 
 .hero__subtitle {
   margin-bottom: 40px;
-  font-family: "Montserrat", "sans-serif";
+  font-family: 'Montserrat', 'sans-serif';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -263,7 +289,7 @@ img {
 }
 
 .hero__description {
-  font-family: "TimesNewRoman", "sans-serif";
+  font-family: 'TimesNewRoman', 'sans-serif';
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -283,7 +309,7 @@ img {
 }
 
 .hero__location-link {
-  font-family: "Montserrat", "sans-serif";
+  font-family: 'Montserrat', 'sans-serif';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -299,7 +325,7 @@ img {
   background: rgba(0, 0, 0, 0.4);
   border: 2px solid #FFFFFF;
   border-radius: 25px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -307,10 +333,207 @@ img {
   letter-spacing: 0.02em;
   color: #F3C653;
 }
+
 .button:hover, .button:focus {
   background: #FFFFFF;
   border: 2px solid #FFFFFF;
   border-radius: 25px;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 414px;
+  width: 100%;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 1024px;
+    width: 100%;
+    height: 100px;
+  }
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 264px;
+  height: 40px;
+  left: 102px;
+  top: 0px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
+
+.contact-numb_rest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 144px;
+  height: 40px;
+  left: 134px;
+  top: 0px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
+
+.header-logo {
+  font-family: 'FilmP3', 'suns-serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+  text-decoration: none;
+  letter-spacing: 0.3em;
+  color: #ffff;
+  background-color: black;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-logo {
+    font-size: 40px;
+  }
+}
+
+.contact-restoran {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+}
+
+.contact-list {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  margin-left: 96px;
+  margin-right: 32px;
+}
+
+.number-hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.border-hotel {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 144px;
+  height: 40px;
+  left: 134px;
+  top: 0px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
+
+.contact-list_icon {
+  width: 20px;
+  height: 20px;
+  fill: #f3c653;
+  content: '';
+}
+
+.contact-tell {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.02em;
+  color: #4e4242;
+  margin-left: 8px;
+}
+
+.header-svg {
+  width: 24px;
+  height: 24px;
+  fill: #f3c653;
+  content: '';
+  margin-left: 20px;
+}
+
+.social-contact {
+  margin-left: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer {
@@ -321,22 +544,34 @@ img {
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 @media screen and (min-width: 1024px) {
   .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-width: 1024px;
     width: 100%;
   }
 }
 
 .footer__logo {
-  font-family: "Film P3";
+  font-family: 'Film P3';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -345,6 +580,7 @@ img {
   letter-spacing: 0.3em;
   color: #F3C653;
 }
+
 @media screen and (min-width: 1024px) {
   .footer__logo {
     font-weight: 700;
@@ -355,16 +591,20 @@ img {
 }
 
 .footer__position {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   gap: 129px;
 }
+
 @media screen and (max-width: 1023px) {
   .footer__position {
     margin-left: auto;
     gap: 32px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .footer__position {
     margin-left: auto;
@@ -373,28 +613,41 @@ img {
 }
 
 .footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 16px;
   padding: 0;
   text-align: center;
 }
 
 .footer__list-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
   padding-left: 8px;
 }
+
 @media screen and (min-width: 1024px) {
   .footer__list-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 12px;
   }
 }
 
 .footer__link {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -410,6 +663,7 @@ img {
   border: 0.5px solid #F3C653;
   border-radius: 2px;
 }
+
 @media screen and (max-width: 1023px) {
   .footer__link--border {
     border: none;
@@ -430,8 +684,15 @@ img {
 }
 
 .footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-}/*# sourceMappingURL=index.css.map */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=index.css.map */
