@@ -110,7 +110,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   :focus {
-    color: rgb(157, 160, 7);
+    color: rgb(250, 250, 248);
   }
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
     margin-left: 87px;
@@ -163,7 +163,6 @@
   height: 24px;
   fill: #f3c653;
   content: '';
-  margin-left: 20px;
 }
 
 .social-contact {
@@ -172,5 +171,7 @@
   @media screen and(min-width: 1280px) {
     margin-left: 60px;
     display: flex;
+    flex-direction: row;
+    gap: 20px;
   }
 }

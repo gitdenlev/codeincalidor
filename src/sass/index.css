@@ -518,7 +518,7 @@ img {
 
 .contact-list:hover,
 .contact-list :focus {
-  color: #9da007;
+  color: #fafaf8;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -588,7 +588,6 @@ img {
   height: 24px;
   fill: #f3c653;
   content: '';
-  margin-left: 20px;
 }
 
 .social-contact {
@@ -601,7 +600,23 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 20px;
   }
+}
+
+.hover-icons:hover,
+.hover-icons:focus {
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #fafaf8;
 }
 
 .footer {
