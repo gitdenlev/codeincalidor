@@ -354,6 +354,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: black;
 }
 
 @media screen and (min-width: 1024px) {
@@ -367,9 +368,9 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-width: 1024px;
     width: 100%;
-    height: 100px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -392,14 +393,28 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 264px;
-  height: 40px;
-  left: 102px;
-  top: 0px;
-  border: 1px solid rgba(243, 198, 83, 0.7);
-  border-radius: 2px;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 264px;
+    height: 40px;
+    left: 102px;
+    top: 0px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
 }
 
 .contact-numb_rest {
@@ -412,14 +427,28 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 144px;
-  height: 40px;
-  left: 134px;
-  top: 0px;
-  border: 1px solid rgba(243, 198, 83, 0.7);
-  border-radius: 2px;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-numb_rest {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 144px;
+    height: 40px;
+    left: 134px;
+    top: 0px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
 }
 
 .header-logo {
@@ -431,12 +460,13 @@ img {
   text-decoration: none;
   letter-spacing: 0.3em;
   color: #ffff;
-  background-color: black;
+  width: 114px;
 }
 
 @media screen and (min-width: 1024px) {
   .header-logo {
     font-size: 40px;
+    width: 127px;
   }
 }
 
@@ -473,28 +503,54 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.25;
   letter-spacing: 0.02em;
   color: #f3c653;
-  margin-left: 96px;
-  margin-right: 32px;
+  margin-left: 52px;
+  margin-right: 12px;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-list:hover,
+.contact-list :focus {
+  color: #9da007;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .contact-list {
+    margin-left: 87px;
+    margin-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contact-list {
+    margin-left: 96px;
+    margin-right: 32px;
+  }
+}
+
+.list-hotel {
+  margin-left: 20px;
+  margin-right: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+  .list-hotel {
+    margin-left: 72px;
+    margin-right: 32px;
+  }
 }
 
 .number-hotel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.border-hotel {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 144px;
-  height: 40px;
-  left: 134px;
-  top: 0px;
-  border: 1px solid rgba(243, 198, 83, 0.7);
-  border-radius: 2px;
 }
 
 .contact-list_icon {
@@ -505,20 +561,26 @@ img {
 }
 
 .contact-tell {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: 0.02em;
-  color: #4e4242;
-  margin-left: 8px;
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-tell {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: 0.02em;
+    color: white;
+    margin-left: 8px;
+  }
 }
 
 .header-svg {
@@ -530,14 +592,20 @@ img {
 }
 
 .social-contact {
-  margin-left: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .social-contact {
+    margin-left: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer {
-  background-color: #0E0C07;
+  background-color: #0e0c07;
   margin-left: auto;
   margin-right: auto;
   min-width: 414px;
@@ -578,7 +646,7 @@ img {
   line-height: 1;
   text-decoration: none;
   letter-spacing: 0.3em;
-  color: #F3C653;
+  color: #f3c653;
 }
 
 @media screen and (min-width: 1024px) {
@@ -654,13 +722,13 @@ img {
   line-height: 24px;
   letter-spacing: 0.02em;
   padding: 5px 10px;
-  color: #F3C653;
+  color: #f3c653;
   text-decoration: none;
   margin: 0;
 }
 
 .footer__link--border {
-  border: 0.5px solid #F3C653;
+  border: 0.5px solid #f3c653;
   border-radius: 2px;
 }
 
@@ -679,8 +747,8 @@ img {
 .footer__icon {
   width: 24px;
   height: 24px;
-  fill: #F3C653;
-  content: "";
+  fill: #f3c653;
+  content: '';
 }
 
 .footer__item {

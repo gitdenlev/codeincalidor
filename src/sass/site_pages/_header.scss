@@ -7,14 +7,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: black;
 
   @media screen and (min-width: 1024px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 1024px;
     width: 100%;
-    height: 100px;
+    justify-content: space-around;
   }
 }
 
@@ -27,26 +27,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  width: 264px;
-  height: 40px;
-  left: 102px;
-  top: 0px;
-  border: 1px solid rgba(243, 198, 83, 0.7);
-  border-radius: 2px;
+  @media screen and(min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 264px;
+    height: 40px;
+    left: 102px;
+    top: 0px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
 }
 
 .contact-numb_rest {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  width: 144px;
-  height: 40px;
-  left: 134px;
-  top: 0px;
-  border: 1px solid rgba(243, 198, 83, 0.7);
-  border-radius: 2px;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 144px;
+    height: 40px;
+    left: 134px;
+    top: 0px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
 }
 
 .header-logo {
@@ -58,9 +68,10 @@
   text-decoration: none;
   letter-spacing: 0.3em;
   color: #ffff;
-  background-color: black;
+  width: 114px;
   @media screen and (min-width: 1024px) {
     font-size: 40px;
+    width: 127px;
   }
 }
 
@@ -89,25 +100,39 @@
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.25;
   letter-spacing: 0.02em;
   color: #f3c653;
-  margin-left: 96px;
-  margin-right: 32px;
+  margin-left: 52px;
+  margin-right: 12px;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  :focus {
+    color: rgb(157, 160, 7);
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    margin-left: 87px;
+    margin-right: 32px;
+  }
+  @media screen and(min-width: 1280px) {
+    margin-left: 96px;
+    margin-right: 32px;
+  }
+}
+
+.list-hotel {
+  margin-left: 20px;
+  margin-right: 12px;
+  @media screen and(min-width: 1024px) {
+    margin-left: 72px;
+    margin-right: 32px;
+  }
 }
 
 .number-hotel {
   display: flex;
-}
-
-.border-hotel {
-  box-sizing: border-box;
-  width: 144px;
-  height: 40px;
-  left: 134px;
-  top: 0px;
-  border: 1px solid rgba(243, 198, 83, 0.7);
-  border-radius: 2px;
 }
 
 .contact-list_icon {
@@ -118,16 +143,19 @@
 }
 
 .contact-tell {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.2;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.02em;
-  color: #4e4242;
-  margin-left: 8px;
+  display: none;
+  @media screen and(min-width: 1024px) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: white;
+    margin-left: 8px;
+  }
 }
 
 .header-svg {
@@ -139,6 +167,10 @@
 }
 
 .social-contact {
-  margin-left: 60px;
-  display: flex;
+  display: none;
+
+  @media screen and(min-width: 1280px) {
+    margin-left: 60px;
+    display: flex;
+  }
 }
