@@ -1,11 +1,11 @@
 .backdrope-modal-price {
     width: 100%;
     height: 100%;
-    background-color:  #fffdee;
+    background-color:  #605B5B;
     position: fixed;
     top: 0;
 }
-.modal {
+.modal-price {
     box-sizing: border-box;
     width: 414px;
     min-height: 572px;
@@ -15,6 +15,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border: 1px solid red;
+    border-radius: 2px;
     background-color: $background-light-lemon;
     @include tablet {
         border: 1px solid blue;
@@ -242,211 +243,3 @@
 }
 
 
-
-
-// .backdrop {
-//     width: 100%;
-//     height: 100%;
-//     background-color: rgba(0, 0, 0, 0.20);
-//     position: fixed;
-//     top: 0;
-//     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     &.is-hidden {
-//         opacity: 0;
-//         visibility: hidden;
-//         pointer-events: none;
-//     }
-
-// }
-// .modal {
-//     // width: 528px;
-//     height: 581px;
-//     background-color: #FFFFFF;
-//     border-radius: 4px;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     padding: 40px;
-//     transform: translate(-50%, -50%) rotate(0) scale(1);
-
-//     transition: transform 1000ms linear, border-radius 1000ms linear, background-color 1000ms linear;
-//     @media screen and (min-width: 320px) {
-//         width: 450px;
-//     };
-//     @media screen and (min-width: 768px) {
-//         width: 528px;
-//     };
-//     @media screen and (min-width: 1200px) {
-//         width: 528px;
-//     }
-// }
-// .backdrop.is-hidden .modal {
-//     transform: translate(-50%, -50%) rotate(360deg) scale(1.5);
-//     border-radius: 50%;
-//     background-color: #AFB1B8;
-// }
-// .modal-close {
-//     width: 30px;
-//     height: 30px;
-//     border: 1px solid rgba(0, 0, 0, 0.10);
-//     border-radius: 50%;
-//     background-color: #FFFFFF;
-//     position: absolute;
-//     top: 8px;
-//     right: 8px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     cursor: pointer;
-//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     &:hover {
-//         fill: var(--accent-color);
-//     }
-// }
-// .modal-title {
-//     font-weight: 700;
-//     font-size: 20px;
-//     line-height: 1.15;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     color: #212121;
-//     margin-bottom: 12px;
-// }
-// .modal-field {
-//     margin-bottom: 10px;
-// }
-// .input-label {
-//     font-weight: 400;
-//     font-size: 12px;
-//     line-height: 1.16;
-//     letter-spacing: 0.01em;
-//     color: #757575;
-// }
-// .input-wrap {
-//     margin-top: 4px;
-//     position: relative;
-// }
-// .modal-input {
-//     width: 100%;
-//     height: 40px;
-//     border: 1px solid rgba(33, 33, 33, 0.2);
-//     border-radius: 4px;
-//     outline: transparent;
-//     padding-left: 30px;
-//     font-size: 12px;
-//     color: #2F303A;
-//     transition: fborder-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     &:focus {
-//         border-color: var(--accent-color);
-//     }
-// }
-// .modal-input-icon {
-//     position: absolute;
-//     left: 12px;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     .modal-input:focus + & {
-//         fill: var(--accent-color);
-//     }
-// }
-
-
-// .user-comment {
-//     display: block;
-//     font-weight: 400;
-//     font-size: 12px;
-//     line-height: 1.16;
-//     letter-spacing: 0.01em;
-//     color: #757575;
-//     margin-bottom: 4px;
-//     font-size: 12px;
-    
-// }
-
-// .user-text {
-//     width: 100%;
-//     height: 120px;
-//     border: 1px solid rgba(33, 33, 33, 0.2);
-//     border-radius: 4px;
-//     resize: none;
-//     outline: transparent;
-//     padding: 12px 16px;
-//     font-size: 12px;
-//     line-height: 1.16;
-//     letter-spacing: 0.01em;
-//     color: #757575;
-//     &::placeholder {
-//         font-weight: 400;
-//         font-size: 12px;
-//         line-height: 1.16;
-//         letter-spacing: 0.01em;
-//         color: rgba(117, 117, 117, 0.5);
-    
-//     }
-// }
-
-
-// .modal-btn {
-//     width: 200px;
-//     height: 50px;
-//     background: #2196F3;
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//     border-radius: 4px;
-//     border-color: transparent;
-//     padding: 10px 52px;
-//     color: #FFFFFF;
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 1.88;
-//     cursor: pointer;
-//     display: block;
-//     margin: 0 auto;
-    
-// }
-// .check {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     margin-bottom: 30px;
-// }
-// .check-text {
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 1.177;
-//     letter-spacing: 0.03em;
-//     color: #757575;
-//     display: flex;
-//     align-items: center;
-//     .icon-check-wrap {
-//         width: 16px;
-//         height: 15px;
-//         border: 2px solid #212121;
-//         border-radius: 4px;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         fill: transparent;
-//         margin-right: 7px;
-//         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-//     }
-// }
-
-// .contract {
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-//     text-decoration-line: underline;
-
-//     color: #2196F3;
-//     cursor: pointer;
-//     margin-left: 5px;
-        
-// }
-// .input-checK:checked + .check-text .icon-check-wrap {
-//     background-color: var(--accent-color);
-//     fill: #fff;
-//     border-color: transparent;
-// }
