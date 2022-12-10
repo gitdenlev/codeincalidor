@@ -3,12 +3,14 @@ body {
 }
 
 .double-lux {
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
   position: relative;
-  width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+}
+
+.container {
+  box-sizing: border-box;
 }
 
 .overlay {
@@ -24,8 +26,8 @@ body {
 
 .double-lux-tittle {
   position: absolute;
-  bottom: 193px;
-  font-family: 'Times New Roman';
+  left: 15px;
+  bottom: 200px;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -36,7 +38,11 @@ body {
 
 .double-lux-text {
   position: absolute;
-  bottom: 118px;
+  left: 15px;
+  bottom: 128px;
+  width: 325px;
+  height: 61px;
+  font-family: 'Montserrat', 'sans-serif';
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
