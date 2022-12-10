@@ -1,0 +1,225 @@
+.backdrope-modal-price {
+    width: 100%;
+    height: 100%;
+    background-color:  #fffdee;
+    position: fixed;
+    top: 0;
+}
+.modal-room {
+    box-sizing: border-box;
+    width: 414px;
+    min-height: 780px;
+    padding: 60px 15px 60px 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid red;
+    background-color: $background-light-lemon;
+    @include tablet {
+        border: 1px solid blue;
+        width: 712px;
+        min-height: 638px;
+        padding: 60px;
+
+    }
+    @include desktop {
+        border: 1px solid green;
+        
+
+    }
+}
+.modal-prise-close {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: transparent;
+    position: absolute;
+    right: 16px;
+    top: 16px;  
+}
+.modal-prise-close-icon {
+    fill: rgba(128, 128, 128, 1)
+}
+.modal-room-title {
+    font-family: $times-font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.05em;
+    color: $black;
+    text-align: center;
+    margin-bottom: 40px;
+    @include tablet {
+        font-size: 40px;
+        line-height: calc(48 / 40);
+
+    }
+
+}
+
+
+// Стилі фоорми
+
+
+.modal-room-contacts {
+    width: 384px;
+    display: block;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    @include tablet {
+        &:not(:last-child) {
+            margin-bottom: 0px;
+
+    }
+}
+}
+.modal-room-input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 54px;
+    border: 1px solid $brown-text-color;
+    padding-left: 12px;
+    background-color: $background-light-lemon;
+    font-family: $times-font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 /24);
+    letter-spacing: 0.05em;
+    color:#808080;
+    margin-bottom: 8px;
+    outline: transparent;
+    transition: border-color $main-transition-duration $main-transtition-timing-function;
+    &:hover, &:focus {
+        border-color: $brown-text-color;
+    }
+    
+    &::placeholder {
+        font-family: $times-font;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: calc(23 /20);
+        letter-spacing: 0.05em;
+        color:#808080;
+        @include tablet {
+            font-size: 24px;
+            line-height: calc(28 /24);
+        }
+        
+      }
+    @include tablet {
+        height: 64px;
+    }
+}
+      
+      
+
+.modal-price-input:not(:focus):not(:placeholder-shown):valid {
+    border-color: #C79002;
+}
+.modal-price-input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: rgb(217, 14, 45);
+}
+
+
+.modal-room-label {
+    display: block;
+    // margin-bottom: 20px;
+    font-family: $montserrat-font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: #C79002;
+    margin-left: 27px;
+    margin-bottom: 20px;
+    @include tablet {
+        margin-left: 12px;
+         
+        
+    }
+    
+}
+
+
+.modal-room-select {
+    box-sizing: border-box;
+    width: 100%;
+    height: 54px;
+    border: 1px solid $brown-text-color;
+    padding-left: 15px;
+    background-color: $background-light-lemon;
+    font-family: $times-font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 /24);
+    letter-spacing: 0.05em;
+    color:#808080;
+    margin-bottom: 8px;
+    outline: transparent;
+    // appearance: none;
+    transition: border-color $main-transition-duration $main-transtition-timing-function;
+    &:hover, &:focus {
+        border-color: $brown-text-color;
+    }
+    @include tablet {
+        height: 64px;
+                
+    }
+}
+// .modal-room-select::after {
+//     content: " ";
+//     display: block;
+//     width: 100px;
+//     height: 100px;
+//     color: red;
+//     background-color: red;
+
+// }
+
+
+.room-select {
+    @include mobile {
+        
+        fill: transparent;
+    }
+    @include tablet {
+        width: 24px;
+        height: 24px;
+        fill: $brown-text-color;
+    }
+    
+}
+// Стилізування tablet та desktop
+.modal-room-wrap-tablet {
+    @include tablet {
+        display: flex;
+    }
+    
+}
+
+.modal-price-btn {
+    width: 100%;
+    height: 64px;
+    background-color: $black;
+    border: 1px solid $accent-color;
+    border-radius: 2px;
+    font-family: $montserrat-font;
+    color: $white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    margin-top: 20px;
+    transition: background-color $main-transition-duration $main-transtition-timing-function, color $main-transition-duration $main-transtition-timing-function;
+    &:hover, &:focus {
+        background-color: $accent-color;
+        color: $black;
+    }
+    @include tablet {
+        margin-top: 0;
+}
+}
