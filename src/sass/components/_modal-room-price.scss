@@ -9,6 +9,18 @@
     transform: translate(-50%, -50%);
     border: 1px solid red;
     background-color: $background-light-lemon;
+    @include tablet {
+        border: 1px solid blue;
+        width: 712px;
+        min-height: 489px;
+        padding: 60px;
+
+    }
+    @include desktop {
+        border: 1px solid green;
+        
+
+    }
 }
 .modal-prise-close {
     width: 24px;
@@ -34,6 +46,11 @@
     color: $black;
     text-align: center;
     margin-bottom: 40px;
+    @include tablet {
+        font-size: 32px;
+        line-height: calc(37 / 32);
+
+    }
 
 }
 .modal-price-item {
@@ -43,7 +60,7 @@
     line-height: calc(28 / 24);
     letter-spacing: 0.05em;
     color: #808080;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
 }
 .modal-price-type {
     font-family: $montserrat-font;
@@ -51,31 +68,35 @@
     font-size: 16px;
     line-height: calc(20 / 16);
     letter-spacing: 0.02em;
-    color: #C79002;
+    color: $brown-text-color;
     margin-bottom: 20px;
 }
 // Стилі фоорми
-// .modal-price-form {
-//     width: 384px;
-// }
+.modal-price-wrap-tablet {
+    @include tablet {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 40px;
+
+    }
+
+}
+
 .modal-price-wrap {
-    margin-bottom: 8px;
     width: 384px;
     display: block;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    @include tablet {
+        &:not(:last-child) {
+            margin-bottom: 0px;
+
+    }
 }
-.modal-price-label {
-    display: block;
-    margin-bottom: 20px;
-    font-family: $montserrat-font;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.02em;
-    color: #C79002;
-    margin-left: 15px;
-    
 }
 .modal-price-input {
+    box-sizing: border-box;
     width: 100%;
     height: 54px;
     border: 1px solid #C79002;
@@ -88,6 +109,11 @@
     letter-spacing: 0.05em;
     color:#808080;
     margin-bottom: 8px;
+    transition: border-color $main-transition-duration $main-transtition-timing-function;
+    &:hover {
+        border: 1px solid green;
+    }
+    
     
     &::placeholder {
         font-family: $times-font;
@@ -98,6 +124,53 @@
         color:#808080;
         
       }
+    @include tablet {
+        height: 64px;
+    }
+}
+      
+      
+
+.modal-price-input:not(:focus):not(:placeholder-shown):valid {
+    border-color: #C79002;
+}
+.modal-price-input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: rgb(217, 14, 45);
+}
+
+
+.modal-price-label {
+    display: block;
+    // margin-bottom: 20px;
+    font-family: $montserrat-font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: #C79002;
+    margin-left: 15px;
+    
+}
+.modal-price-btn {
+    width: 100%;
+    height: 64px;
+    background-color: $black;
+    border: 1px solid $accent-color;
+    border-radius: 2px;
+    font-family: $montserrat-font;
+    color: $white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    margin-top: 20px;
+    transition: background-color $main-transition-duration $main-transtition-timing-function, color $main-transition-duration $main-transtition-timing-function;
+    &:hover, &:focus {
+        background-color: $accent-color;
+        color: $black;
+    }
+    @include tablet {
+        margin-top: 0;
+}
 }
 
 
