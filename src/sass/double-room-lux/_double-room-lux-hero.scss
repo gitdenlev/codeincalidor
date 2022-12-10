@@ -1,0 +1,81 @@
+body {
+  margin: 0 auto;
+}
+
+.double-lux {
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.overlay {
+  min-height: 740px;
+  background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_mob1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include ratio {
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_mob2x.jpg);
+  }
+}
+
+.double-lux-tittle {
+  position: absolute;
+  bottom: 193px;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.double-lux-text {
+  position: absolute;
+  bottom: 118px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.double-lux-list {
+  position: absolute;
+  bottom: 14px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.double-lux-icon {
+  fill: rgba(243, 198, 83, 0.7);
+}
+
+.double-lux-button {
+  position: absolute;
+  bottom: 40px;
+  right: 73px;
+  padding: 14px 35px;
+  min-width: 232px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #f3c653;
+  background: rgba(0, 0, 0, 0.4);
+  &:hover {
+    background: white;
+  }
+}
