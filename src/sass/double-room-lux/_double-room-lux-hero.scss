@@ -22,56 +22,140 @@ body {
   @include ratio {
     background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_mob2x.jpg);
   }
+  @include tablet {
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tub1x.jpg);
+  }
+  @include ratio {
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tub2x.jpg);
+  }
+  @include desktop {
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_desk1x.jpg);
+  }
+  @include ratio {
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_desk2x.jpg);
+  }
 }
 
 .double-lux-tittle {
   position: absolute;
-  left: 15px;
   bottom: 200px;
+  width: 300px;
+  height: 64px;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.14;
   letter-spacing: 0.05em;
   color: #ffffff;
+  @include mobile {
+    width: 325px;
+  }
+  @include tablet {
+    bottom: 211px;
+    width: 510px;
+    height: 41px;
+    font-size: 36px;
+    line-height: 1.14;
+  }
+  @include desktop {
+    bottom: 155px;
+  }
 }
 
 .double-lux-text {
   position: absolute;
-  left: 15px;
-  bottom: 128px;
-  width: 325px;
-  height: 61px;
+  bottom: 138px;
+  width: 300px;
+  height: 51px;
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #ffffff;
+  @include mobile {
+    bottom: 128px;
+    width: 325px;
+    height: 61px;
+  }
+  @include tablet {
+    bottom: 104px;
+    width: 400px;
+    height: 83px;
+    font-size: 16px;
+  }
+  @include desktop {
+    bottom: 48px;
+  }
 }
 
 .double-lux-list {
   position: absolute;
   bottom: 14px;
-  left: 15px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  @include tablet {
+    flex-direction: row;
+    right: 540px;
+    bottom: 38px;
+    gap: 20px;
+  }
+  @include desktop {
+    display: none;
+  }
 }
 
 .double-lux-icon {
   fill: rgba(243, 198, 83, 0.7);
 }
 
+.double-lux-adress {
+  display: none;
+  @include tablet {
+    display: block;
+    position: absolute;
+    bottom: 24px;
+    width: 285px;
+    height: 56px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.double-lux-adress-link {
+  position: absolute;
+  left: 44px;
+  top: 8px;
+  bottom: 8px;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+}
+
+.double-lux-adress-icon {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  bottom: 16px;
+  fill: #f3c653;
+}
+
 .double-lux-button {
   position: absolute;
   bottom: 40px;
-  right: 73px;
+  right: 23px;
   padding: 14px 35px;
   min-width: 232px;
-  height: 50px;
+  height: 48px;
   border: 2px solid #ffffff;
   border-radius: 25px;
+  font-family: 'Montserrat', 'sans-serif';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -83,5 +167,16 @@ body {
   background: rgba(0, 0, 0, 0.4);
   &:hover {
     background: white;
+  }
+  @include mobile {
+    right: 73px;
+  }
+  @include tablet {
+    bottom: 64px;
+    right: 47px;
+  }
+  @include desktop {
+    bottom: 66px;
+    right: 85px;
   }
 }
