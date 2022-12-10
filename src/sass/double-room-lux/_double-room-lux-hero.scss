@@ -4,7 +4,6 @@ body {
 
 .double-lux {
   display: block;
-  box-sizing: border-box;
   position: relative;
   margin: 0 auto;
 }
@@ -19,20 +18,67 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
   @include ratio {
     background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_mob2x.jpg);
   }
+
   @include tablet {
     background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tub1x.jpg);
   }
+
   @include ratio {
     background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tub2x.jpg);
   }
+
   @include desktop {
     background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_desk1x.jpg);
   }
+
   @include ratio {
     background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_desk2x.jpg);
+  }
+}
+
+.lux-slider-wrap-left,
+.lux-slider-wrap-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 350px;
+  background-color: rgba(0, 0, 0, 0.65);
+  @include tablet {
+    bottom: 340px;
+  }
+}
+
+.lux-slider-wrap-left {
+  left: 15px;
+  @include tablet {
+    left: 47px;
+  }
+  @include desktop {
+    left: 85px;
+  }
+}
+
+.lux-slider-wrap-right {
+  right: 15px;
+  @include tablet {
+    right: 47px;
+  }
+  @include desktop {
+    right: 85px;
+  }
+}
+
+.double-lux-slider-icon {
+  fill: #ffffff;
+  &:hover {
+    fill: #f3c653;
   }
 }
 
@@ -42,11 +88,12 @@ body {
   width: 300px;
   height: 64px;
   font-style: normal;
+  font-family: $times-font;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.14;
   letter-spacing: 0.05em;
-  color: #ffffff;
+  color: $white;
   @include mobile {
     width: 325px;
   }
@@ -67,12 +114,12 @@ body {
   bottom: 138px;
   width: 300px;
   height: 51px;
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: $montserrat-font;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: $white;
   @include mobile {
     bottom: 128px;
     width: 325px;
@@ -131,7 +178,7 @@ body {
   left: 44px;
   top: 8px;
   bottom: 8px;
-  font-family: 'Montserrat';
+  font-family: $montserrat-font;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.01em;
@@ -143,7 +190,7 @@ body {
   left: 10px;
   top: 16px;
   bottom: 16px;
-  fill: #f3c653;
+  fill: $accent-color;
 }
 
 .double-lux-button {
@@ -153,9 +200,9 @@ body {
   padding: 14px 35px;
   min-width: 232px;
   height: 48px;
-  border: 2px solid #ffffff;
+  border: 2px solid $white;
   border-radius: 25px;
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: $montserrat-font;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -163,10 +210,10 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #f3c653;
+  color: $accent-color;
   background: rgba(0, 0, 0, 0.4);
   &:hover {
-    background: white;
+    background: $white;
   }
   @include mobile {
     right: 73px;
