@@ -665,6 +665,278 @@ p {
   align-items: center;
 }
 
+body {
+  margin: 0 auto;
+}
+
+.double-lux {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.container {
+  box-sizing: border-box;
+}
+
+.overlay {
+  min-height: 740px;
+  background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_mob1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_mob2x.jpg);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .overlay {
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tub1x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tub2x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .overlay {
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_desk1x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_desk2x.jpg);
+  }
+}
+
+.lux-slider-wrap-left,
+.lux-slider-wrap-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 350px;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+@media screen and (min-width: 1024px) {
+  .lux-slider-wrap-left,
+.lux-slider-wrap-right {
+    bottom: 340px;
+  }
+}
+
+.lux-slider-wrap-left {
+  left: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .lux-slider-wrap-left {
+    left: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .lux-slider-wrap-left {
+    left: 85px;
+  }
+}
+
+.lux-slider-wrap-right {
+  right: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .lux-slider-wrap-right {
+    right: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .lux-slider-wrap-right {
+    right: 85px;
+  }
+}
+
+.double-lux-slider-icon {
+  fill: #ffffff;
+}
+.double-lux-slider-icon:hover {
+  fill: #f3c653;
+}
+
+.double-lux-tittle {
+  position: absolute;
+  bottom: 200px;
+  width: 300px;
+  height: 64px;
+  font-style: normal;
+  font-family: "TimesNewRoman", "sans-serif";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+@media screen and (min-width: 414px) {
+  .double-lux-tittle {
+    width: 325px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .double-lux-tittle {
+    bottom: 211px;
+    width: 510px;
+    height: 41px;
+    font-size: 36px;
+    line-height: 1.14;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .double-lux-tittle {
+    bottom: 155px;
+  }
+}
+
+.double-lux-text {
+  position: absolute;
+  bottom: 138px;
+  width: 300px;
+  height: 51px;
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+@media screen and (min-width: 414px) {
+  .double-lux-text {
+    bottom: 128px;
+    width: 325px;
+    height: 61px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .double-lux-text {
+    bottom: 104px;
+    width: 400px;
+    height: 83px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .double-lux-text {
+    bottom: 48px;
+  }
+}
+
+.double-lux-list {
+  position: absolute;
+  bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media screen and (min-width: 1024px) {
+  .double-lux-list {
+    flex-direction: row;
+    right: 540px;
+    bottom: 38px;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .double-lux-list {
+    display: none;
+  }
+}
+
+.double-lux-icon {
+  fill: rgba(243, 198, 83, 0.7);
+}
+
+.double-lux-adress {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .double-lux-adress {
+    display: block;
+    position: absolute;
+    bottom: 24px;
+    width: 285px;
+    height: 56px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .double-lux-adress {
+    display: none;
+  }
+}
+
+.double-lux-adress-link {
+  position: absolute;
+  left: 44px;
+  top: 8px;
+  bottom: 8px;
+  font-family: "Montserrat", "sans-serif";
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+}
+
+.double-lux-adress-icon {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  bottom: 16px;
+  fill: #f3c653;
+}
+
+.double-lux-button {
+  position: absolute;
+  bottom: 40px;
+  right: 23px;
+  padding: 14px 35px;
+  min-width: 232px;
+  height: 48px;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #f3c653;
+  background: rgba(0, 0, 0, 0.4);
+}
+.double-lux-button:hover {
+  background: #ffffff;
+}
+@media screen and (min-width: 414px) {
+  .double-lux-button {
+    right: 73px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .double-lux-button {
+    bottom: 64px;
+    right: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .double-lux-button {
+    bottom: 66px;
+    right: 85px;
+  }
+}
+
 .backdrope-modal-price {
   width: 100%;
   height: 100%;
