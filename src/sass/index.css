@@ -1630,4 +1630,79 @@ body {
   .line3 {
     margin-left: 942px;
   }
+}
+
+.button-reserv {
+  width: 434px;
+  height: 64px;
+  font-size: 24px;
+  line-height: 1.2;
+  border-radius: 25px;
+}
+
+.button-modal {
+  width: 592px;
+  height: 64px;
+  font-size: 24px;
+  line-height: 1.2;
+  border-radius: 2px;
+}
+
+.button-modal-mob-oval {
+  width: 384px;
+  height: 64px;
+  border-radius: 25px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.button-modal-mob-rectangle {
+  width: 384px;
+  height: 64px;
+  border-radius: 2px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.button-reserv, .button-modal, .button-modal-mob-oval, .button-modal-mob-rectangle {
+  background: #000000;
+  border: 1px solid #f3c653;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #ffffff;
+  transition: background-color 250ms linear, color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-reserv:hover, .button-reserv:focus, .button-modal:hover, .button-modal:focus, .button-modal-mob-oval:hover, .button-modal-mob-oval:focus, .button-modal-mob-rectangle:hover, .button-modal-mob-rectangle:focus {
+  background: #f3c653;
+  color: #000000;
+}
+
+.button-gray {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.button-black {
+  background: #000000;
+}
+
+.button-gray, .button-black {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 0.8;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  width: 236px;
+  height: 48px;
+  transition: background-color 250ms linear, color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-gray:hover, .button-gray:focus, .button-black:hover, .button-black:focus {
+  background: #ffffff;
+  border: 2px solid #ffffff;
 }/*# sourceMappingURL=index.css.map */
