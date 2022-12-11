@@ -1,34 +1,71 @@
-<section class="hero">
-    <h1 class="hero__title">MIMIHO</h1>
-    <h2 class="hero__subtitle">Ресторанно-готельний комплекс</h2>
-    <p class="hero__description">СМАК ЖИТТЯ 24/7</p>
-
-    <!-- Блок з адресою -->
-    <div calss="hero__location-bloc">
-        <a calss="hero__location-link" href="">
-            <svg class="hero__icon-location" width="24px" height="24px">
-                <use href="./svg/icons.svg#icon-map"></use>
-              </svg>
-              Україна, м. Полтава, </br>
-            вул. Маршала Бірюзова, 15</a>
-    </div>
-
-    <!-- Блок з кнопками -->
-    <ul class="hero__buttons-box">
-        <li>
-            <button type="button" class="button">Забронювати столик</button>
-        </li>
-        <li>
-            <button type="button" class="button">Забронювати номер</button>
-        </li>
-    </ul>
-
-        <!-- Блок соціальних мереж-->
-        <!-- <ul>
-            <li><a class="link__instagram"></a>
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mimino</title>
+    <link rel="stylesheet" href="/src/sass/index.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+   <section class="hero">
+      <h1 class="hero__title">МІМІНО</h1>
+      <h2 class="hero__subtitle">Ресторанно-готельний комплекс</h2>
+      <p class="hero__description">СМАК ЖИТТЯ 24/7</p>
+  
+      <!-- Блок з адресою -->
+      <div class="hero__location-bloc">
+         <a class="hero__location-link" href="">
+            <svg class="hero__location-icon" width="24px" height="24px">
+               <use href="./svg/icons.svg#icon-map"></use>
+            </svg>
+                Україна, м. Полтава,</br>
+              вул. Маршала Бірюзова, 15</a>
+      </div>
+  
+      <!-- Блок з кнопками -->
+      <div class="hero__button-box">
+         <ul class="hero__button-list">
+            <li class="hero__button-item">
+                <button type="button" class="button">Забронювати столик</button>
             </li>
-            <li></li>
-            <li></li>
-        </ul> -->
-
-</section>
+            <li class="hero__button-item">
+                <button type="button" class="button">Забронювати номер</button>
+            </li>
+        </ul>
+      </div>  
+          <!-- Блок соціальних мереж-->
+         <div class="hero__soc-box">
+            <ul class="hero__soc-list">
+               <li class="hero__soc-item">
+                  <a href="" class="hero__soc-link list">
+                     <svg class="hero__soc-icon" width="24" height="24">
+                        <use href="../../svg/icons.svg#">instagram</use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="hero__soc-item">
+                  <a href="" class="hero__soc-link list">
+                     <svg class="hero__soc-icon" width="24" height="24">
+                        <use href="../../svg/icons.svg#">facebook</use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="hero__soc-item">
+                  <a href="" class="hero__soc-link list">
+                     <svg class="hero__soc-icon" width="24" height="24">
+                        <use href="../../svg/icons.svg#">telegram</use>
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+         </div> 
+  </section>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <include src="./partials/homepage/homepage-hero.html"></include>
+    <!-- <include src="./partials/example.html"></include> -->
+    <include src="./partials/homepage/homepage-footer.html"></include>
+  </body>
+</html>
+  </body>
+</html>
