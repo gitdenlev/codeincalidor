@@ -2,6 +2,10 @@
     background-color: $background-light-lemon;
 }
 
+.discribe-room-wrap {
+    margin-bottom: 32px;
+}
+
 .pre-subtitle {
     font-family: $times-font;
     font-weight: 400;
@@ -10,6 +14,12 @@
     color: #B4B4B4;
     text-align: right;
     margin-bottom: 6px;
+
+    @include tablet {
+        font-size: 32px;
+        line-height: 1.16;
+        margin-bottom: 4px;
+    }
 }
 
 .subtitle {
@@ -19,9 +29,18 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 1.08;
-    // letter-spacing: 0.3em;
+    letter-spacing: 0.3em;
     color: #494848;
     margin-bottom: 16px;
+
+    @include tablet {
+        font-size: 64px;
+        margin-bottom: 24px;
+    }
+
+    @include desktop {
+        color: #828282;
+    }
 }
 
 .discribe-room-text {
@@ -35,6 +54,16 @@
     width: 242px;
     margin-bottom: 28px;
     margin-left: auto;
+
+    @include tablet {
+        font-size: 16px;
+        line-height: 1.33;
+        width: 419px;
+    }
+
+    @include desktop {
+        width: 488px;
+    }
 }
 
 .discribe-hotel-text {
@@ -45,13 +74,33 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $brown-text-color;
+    margin-right: 21px;
     width: 163px;
+
+    @include tablet {
+        font-size: 16px;
+        line-height: 1.33;
+        margin-right: 48px;
+        width: 312px;
+    }
+
+    @include desktop {
+        margin-right: 45px;
+        width: 311px;
+    }
 }
 
 .discribe-hotel-wrap {
     display: flex;
-    gap: 21px;
+    // gap: 21px;
     align-items: center;
+    justify-content: end;
+}
+
+.homepage-room-img,
+.homepage-hotel-img {
+    box-shadow: $picture-shadow;
+    border-radius: 2px;
 }
 
 .arrows-list {

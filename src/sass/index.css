@@ -296,6 +296,10 @@ p {
   background-color: #fffdee;
 }
 
+.discribe-room-wrap {
+  margin-bottom: 32px;
+}
+
 .pre-subtitle {
   font-family: "TimesNewRoman", "sans-serif";
   font-weight: 400;
@@ -305,6 +309,13 @@ p {
   text-align: right;
   margin-bottom: 6px;
 }
+@media screen and (min-width: 1024px) {
+  .pre-subtitle {
+    font-size: 32px;
+    line-height: 1.16;
+    margin-bottom: 4px;
+  }
+}
 
 .subtitle {
   font-family: "FilmP3", "sans-serif";
@@ -312,8 +323,20 @@ p {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.08;
+  letter-spacing: 0.3em;
   color: #494848;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .subtitle {
+    font-size: 64px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .subtitle {
+    color: #828282;
+  }
 }
 
 .discribe-room-text {
@@ -327,6 +350,18 @@ p {
   margin-bottom: 28px;
   margin-left: auto;
 }
+@media screen and (min-width: 1024px) {
+  .discribe-room-text {
+    font-size: 16px;
+    line-height: 1.33;
+    width: 419px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .discribe-room-text {
+    width: 488px;
+  }
+}
 
 .discribe-hotel-text {
   font-family: "Montserrat", "sans-serif";
@@ -335,13 +370,34 @@ p {
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #c79002;
+  margin-right: 21px;
   width: 163px;
+}
+@media screen and (min-width: 1024px) {
+  .discribe-hotel-text {
+    font-size: 16px;
+    line-height: 1.33;
+    margin-right: 48px;
+    width: 312px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .discribe-hotel-text {
+    margin-right: 45px;
+    width: 311px;
+  }
 }
 
 .discribe-hotel-wrap {
   display: flex;
-  gap: 21px;
   align-items: center;
+  justify-content: end;
+}
+
+.homepage-room-img,
+.homepage-hotel-img {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
 
 .arrows-list {
