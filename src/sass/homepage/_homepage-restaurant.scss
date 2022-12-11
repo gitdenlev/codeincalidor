@@ -1,5 +1,6 @@
 .container {
   box-sizing: border-box;
+  width: 100%;
 }
 
 .hp-restaurant__title {
@@ -118,12 +119,39 @@
 }
 
 .hp-rest-overlay {
-  min-height: 735px;
-  background-image: url(/src/images/homepage-images/homepage-mobile/wine-mob_1x.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(/src/images/homepage-images/homepage-mobile/hp-restaurant-bg-mob_1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @include ratio {
-    background-image: url(/src/images/homepage-images/homepage-mobile/wine-mob_2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/src/images/homepage-images/homepage-mobile/hp-restaurant-bg-mob_2x.jpg);
+  }
+
+  @include tablet {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/src/images/homepage-images/homepage-tablet/hp-restaurant-bg-tab_1x.jpg);
+
+    @include ratio {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(/src/images/homepage-images/homepage-tablet/hp-restaurant-bg-tab_2x.jpg);
+    }
+  }
+
+  @include desktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/src/images/homepage-images/homepage-desktop/hp-restaurant-bg-desk_1x.jpg);
+
+    @include ratio {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(/src/images/homepage-images/homepage-desktop/hp-restaurant-bg-desk_2x.jpg);
+    }
   }
 }
