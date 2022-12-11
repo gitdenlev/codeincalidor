@@ -77,7 +77,8 @@ body {
 
 .double-lux-slider-icon {
   fill: #ffffff;
-  &:hover {
+  &:hover,
+  &:focus {
     fill: #f3c653;
   }
 }
@@ -212,7 +213,8 @@ body {
   text-align: center;
   color: $accent-color;
   background: rgba(0, 0, 0, 0.4);
-  &:hover {
+  &:hover,
+  &:focus {
     background: $white;
   }
   @include mobile {
