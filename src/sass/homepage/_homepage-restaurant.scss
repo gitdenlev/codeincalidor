@@ -6,24 +6,40 @@
   font-family: 'FilmP3', sans-serif;
   font-style: normal;
   @include font(40px, 700, 0.93, 0.3em);
-  //   color: $white;
+  color: $white;
   text-transform: uppercase;
 
   margin-left: 140px;
-  text-align: center;
   margin-bottom: 12px;
   max-width: 127px;
+  @include tablet {
+    font-size: 64px;
+    max-width: 202px;
+    margin-bottom: 16px;
+    margin-left: 278px;
+  }
+  @include desktop {
+    font-size: 64px;
+    max-width: 202px;
+    margin-bottom: 16px;
+    margin-left: 278px;
+  }
 }
 
 .hp-restaurant__subtitle {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   @include font(20px, 700, 0.83, 0.02em);
-  //   color: $white;
+  color: $white;
 
   margin-left: 140px;
   margin-bottom: 20px;
   max-width: 127px;
+  @include tablet {
+    font-size: 24px;
+    margin-bottom: 8px;
+    margin-left: 278px;
+  }
 }
 
 .hp-restaurant__text {
@@ -35,10 +51,20 @@
   margin-left: 140px;
   margin-bottom: 48px;
   max-width: 259px;
+  @include tablet {
+    font-size: 16px;
+    max-width: 610px;
+    margin-left: 278px;
+    margin-bottom: 40px;
+  }
 }
 
 .hp-restaurant__btn-box {
   margin-top: 40px;
+  @include tablet {
+    margin-top: 0;
+    margin-left: 47px;
+  }
 }
 
 .hp-restaurant__item:not(:last-child) {
@@ -52,7 +78,6 @@
   font-style: normal;
   @include font(16px, 700, 0.8, 0.02em);
   color: $accent-color;
-  //   background-color: transparent;
 
   border: 2px solid #ffffff;
   border-radius: 25px;
@@ -66,9 +91,28 @@
     background: $white;
     border: 2px solid #ffffff;
   }
+
+  @include tablet {
+    margin: 0;
+  }
 }
 
 .hp-restaurant {
   padding-top: 24px;
   padding-bottom: 40px;
+  max-width: 414px;
+  height: 735px;
+  background: rgba(0, 0, 0, 0.7);
+  // background-image: url(./images/wine-mob_1x.jpg);
+
+  @include tablet {
+    max-width: 1024px;
+    height: 620px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+  }
+
+  @include desktop {
+    max-width: 1280px;
+  }
 }
