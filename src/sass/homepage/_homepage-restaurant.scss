@@ -106,16 +106,24 @@
   max-width: 414px;
   height: 735px;
   background: rgba(0, 0, 0, 0.7);
-  // background-image: url();
-
   @include tablet {
     max-width: 1024px;
     height: 620px;
     padding-top: 48px;
     padding-bottom: 47px;
   }
-
   @include desktop {
     max-width: 1280px;
+  }
+}
+
+.hp-rest-overlay {
+  min-height: 735px;
+  background-image: url(/src/images/homepage-images/homepage-mobile/wine-mob_1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include ratio {
+    background-image: url(/src/images/homepage-images/homepage-mobile/wine-mob_2x.jpg);
   }
 }
