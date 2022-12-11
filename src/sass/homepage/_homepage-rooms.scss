@@ -32,4 +32,27 @@ font-weight: 400;
         color: $main-text-color;
         width: 242px;
         margin-bottom: 28px;
+        margin-left: auto;
+}
+
+.discribe-hotel-text{
+    font-family: $montserrat-font;
+        // font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $brown-text-color;
+        width: 163px;
+}
+
+.discribe-hotel-wrap{
+    display: flex;
+    gap: 21px;
+    align-items: center;
+}
+
+.arrows-list{
+    display: flex;
+    gap: 32px;
 }
