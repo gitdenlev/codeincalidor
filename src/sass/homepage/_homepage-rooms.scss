@@ -3,13 +3,23 @@
 }
 
 .discribe-room-wrap {
+    position: relative;
     margin-bottom: 32px;
     padding-top: 18px;
 
     @include tablet {
         padding-top: 120px;
+        margin-bottom: 142px;
     }
 
+}
+
+.homepage-room-img {
+    @include tablet {
+        position: absolute;
+        left: 112px;
+        top: -24px;
+    }
 }
 
 .pre-subtitle {
@@ -113,4 +123,11 @@
     display: flex;
     gap: 32px;
     margin-top: 20px;
+}
+// .arrows-item{
+//     fill: $white;
+// }
+.arrows-item:hover,
+.arrows-item:hover{
+    fill: $accent-color;
 }
