@@ -4,6 +4,12 @@
 
 .discribe-room-wrap {
     margin-bottom: 32px;
+    padding-top: 18px;
+
+    @include tablet {
+        padding-top: 120px;
+    }
+
 }
 
 .pre-subtitle {
