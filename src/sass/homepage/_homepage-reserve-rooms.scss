@@ -1,0 +1,151 @@
+.container {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.hp-hotel__title {
+  font-family: 'FilmP3', sans-serif;
+  font-style: normal;
+  @include font(40px, 700, 0.93, 0.3em);
+  color: $white;
+  text-transform: uppercase;
+
+  margin-bottom: 12px;
+  max-width: 127px;
+  padding-left: 111px;
+  @include tablet {
+    font-size: 64px;
+    max-width: 202px;
+    margin-bottom: 16px;
+  }
+}
+
+.hp-hotel__subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  @include font(20px, 700, 0.83, 0.02em);
+  color: $white;
+
+  margin-bottom: 20px;
+  max-width: 127px;
+  @include tablet {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+}
+
+.hp-hotel__text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  @include font(12px, 600, 1.25, 0.02em);
+  color: $text-color-for-dark-bg;
+
+  margin-bottom: 48px;
+  max-width: 259px;
+  @include tablet {
+    font-size: 16px;
+    max-width: 610px;
+    margin-bottom: 40px;
+  }
+}
+
+.hp-hotel__wrap-info {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 243px;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  gap: 12px;
+  position: relative;
+}
+
+.hp-hotel__btn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+
+.hp-hotel__btn {
+  display: flex;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  @include font(16px, 700, 0.8, 0.02em);
+  color: $accent-color;
+
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.4);
+
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: center;
+  &:last-child {
+    padding: 14px 32px;
+  }
+
+  &:hover,
+  &:focus {
+    background: $white;
+    border: 2px solid #ffffff;
+  }
+}
+
+.hp-hotel {
+  padding-top: 24px;
+  padding-bottom: 40px;
+  max-width: 414px;
+  height: 735px;
+  background: rgba(0, 0, 0, 0.7);
+  @include tablet {
+    max-width: 1024px;
+    height: 620px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+  }
+  @include desktop {
+    max-width: 1280px;
+  }
+}
+
+// .hp-rest-overlay {
+//   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+//     url();
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   @include ratio {
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+//       url();
+//   }
+
+//   @include tablet {
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+//       url();
+
+//     @include ratio {
+//       background-image: linear-gradient(
+//           rgba(0, 0, 0, 0.65),
+//           rgba(0, 0, 0, 0.65)
+//         ),
+//         url();
+//     }
+//   }
+
+//   @include desktop {
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+//       url();
+
+//     @include ratio {
+//       background-image: linear-gradient(
+//           rgba(0, 0, 0, 0.65),
+//           rgba(0, 0, 0, 0.65)
+//         ),
+//         url();
+//     }
+//   }
+// }
