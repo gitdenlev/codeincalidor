@@ -486,6 +486,45 @@ p {
   }
 }
 
+.hp-restaurant__title {
+  font-family: "FilmP3", sans-serif;
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 0.93;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 12px;
+  max-width: 127px;
+}
+
+.hp-restaurant__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 0.83;
+  letter-spacing: 0.02em;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 127px;
+}
+
+.hp-restaurant__text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 0.8;
+  letter-spacing: 0.02em;
+  color: #bababa;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 259px;
+}
+
 .footer {
   background-color: #0e0c07;
   margin-left: auto;
