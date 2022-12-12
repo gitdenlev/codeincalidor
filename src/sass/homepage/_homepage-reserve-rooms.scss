@@ -17,6 +17,7 @@
     font-size: 64px;
     max-width: 202px;
     margin-bottom: 16px;
+    padding-left: 500px;
   }
 }
 
@@ -57,6 +58,9 @@
   align-items: center;
   margin: 0 auto;
   position: relative;
+  @include tablet {
+    max-width: 549px;
+  }
 }
 
 .hp-hotel__btn-wrap {
@@ -111,40 +115,41 @@
   }
 }
 
-// .hp-rest-overlay {
-//   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-//     url();
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-//   @include ratio {
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-//       url();
-//   }
+.hp-hotel-overlay {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(/src/images/homepage-images/homepage-mobile/hp-hotel-bg-mob_1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include ratio {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/src/images/homepage-images/homepage-mobile/hp-hotel-bg-mob_2x.jpg);
+  }
 
-//   @include tablet {
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-//       url();
+  @include tablet {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/src/images/homepage-images/homepage-tablet/hp-hotel-bg-tab_1x.jpg);
+    @include ratio {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(/src/images/homepage-images/homepage-tablet/hp-hotel-bg-tab_2x.jpg);
+    }
+  }
 
-//     @include ratio {
-//       background-image: linear-gradient(
-//           rgba(0, 0, 0, 0.65),
-//           rgba(0, 0, 0, 0.65)
-//         ),
-//         url();
-//     }
-//   }
+  @include desktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/src/images/homepage-images/homepage-desktop/hp-hotel-bg-desk_1x.jpg);
+  }
+  @include ratio {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/src/images/homepage-images/homepage-desktop/hp-hotel-bg-desk_2x.jpg);
+  }
+}
 
-//   @include desktop {
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-//       url();
-
-//     @include ratio {
-//       background-image: linear-gradient(
-//           rgba(0, 0, 0, 0.65),
-//           rgba(0, 0, 0, 0.65)
-//         ),
-//         url();
-//     }
-//   }
-// }
+// slider
+.hp-hotel-slider {
+  width: 400px;
+  height: 500px;
+}
