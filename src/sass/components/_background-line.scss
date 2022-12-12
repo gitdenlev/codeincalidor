@@ -1,0 +1,65 @@
+
+// Код для додавання у html між початком секціі та контейнером
+
+// <ul class="container">
+// <li class="line1"></li>
+// <li class="line2"></li> 
+// <li class="line3"></li> 
+// </ul>
+
+
+
+
+
+
+// Додавання ліній на задній фон
+.container > li{
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    top: 0px;
+    width: 0;
+    height: 100%;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+    
+  }
+  
+  .line1{
+    margin-left: 140px;
+  
+    @media screen and (min-width: 1024px){
+      margin-left: 278px;
+    }
+  
+    @media screen and (min-width: 1280px){
+      margin-left: 338px;
+    }
+  
+  }
+  
+  .line2{
+    margin-left: 274px;
+  
+    @media screen and (min-width: 1024px){
+      margin-left: 512px;
+    }
+  
+    @media screen and (min-width: 1280px){
+      margin-left: 640px;
+    }
+  }
+  
+  
+  .line3{
+    margin-left: -100px;
+  
+    @media screen and (min-width: 1024px){
+      margin-left: 746px;
+    }
+  
+    @media screen and (min-width: 1280px){
+      margin-left: 942px;
+    }
+  }
+  
