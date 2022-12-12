@@ -2,8 +2,39 @@ body {
   margin: 0 auto;
 }
 
+.line1 {
+  display: none;
+  @include desktop {
+    display: block;
+    @media screen and (min-width: 1280px) {
+      margin-left: 253px;
+    }
+  }
+}
+
+.line2 {
+  display: none;
+  @include desktop {
+    display: block;
+    @media screen and (min-width: 1280px) {
+      margin-left: 555px;
+    }
+  }
+}
+
+.line3 {
+  display: none;
+  @include desktop {
+    display: block;
+    @media screen and (min-width: 1280px) {
+      margin-left: 857px;
+    }
+  }
+}
+
 .container {
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .lux-amenities {
@@ -131,18 +162,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+
   @include tablet {
     margin-top: 32px;
     justify-content: flex-end;
-    gap: 16px;
   }
+
   @include desktop {
     margin-right: 113px;
   }
 }
 
 .lux-amenities-link {
+  display: flex;
+  gap: 12px;
   font-family: $montserrat-font;
   font-weight: 500;
   font-size: 16px;
@@ -154,13 +187,14 @@ body {
     color: $accent-color;
   }
   @include tablet {
+    gap: 16px;
     font-size: 20px;
     line-height: 1.2;
   }
 }
 
 .lux-amenities-icon {
-  fill: $brown-text-color;
+  fill: currentColor;
   &:hover,
   &:focus {
     fill: $accent-color;
