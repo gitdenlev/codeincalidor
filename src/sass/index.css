@@ -486,6 +486,45 @@ p {
   }
 }
 
+.hp-restaurant__title {
+  font-family: "FilmP3", sans-serif;
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 0.93;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 12px;
+  max-width: 127px;
+}
+
+.hp-restaurant__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 0.83;
+  letter-spacing: 0.02em;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 127px;
+}
+
+.hp-restaurant__text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 0.8;
+  letter-spacing: 0.02em;
+  color: #bababa;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 259px;
+}
+
 .footer {
   background-color: #0e0c07;
   margin-left: auto;
@@ -1189,6 +1228,396 @@ body {
   }
 }
 
+.menu {
+  background-color: #f0ecd6;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    padding-bottom: 40px;
+    padding-top: 58px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.menu__container {
+  margin: 0 auto;
+  position: relative;
+}
+
+.menu__header {
+  font-family: "TimesNewRoman", "sans-serif";
+  display: inline-block;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.15625;
+  color: #000000;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .menu__header {
+    margin-bottom: 40px;
+  }
+  .menu__header::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+    z-index: 1;
+    top: 0;
+    height: 616px;
+    right: 265px;
+    transform: translateY(-58px);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__header {
+    margin-bottom: 40px;
+  }
+  .menu__header::after {
+    right: 640px;
+  }
+  .menu__header::before {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+    z-index: 1;
+    top: 0;
+    height: 616px;
+    right: 338px;
+    transform: translateY(-58px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu__flex {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__flex::before {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+    z-index: 1;
+    top: 0;
+    height: 616px;
+    left: 338px;
+    transform: translateY(-58px);
+  }
+}
+
+.menu__first-flex {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .menu__first-flex {
+    width: 412px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__first-flex {
+    width: 485px;
+  }
+}
+
+.menu__second-flex {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .menu__second-flex {
+    width: 430px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__second-flex {
+    width: 485px;
+  }
+}
+
+.hot-meals__header,
+.appetizers__header,
+.salads__header,
+.desserts__header,
+.drinkables__header {
+  font-family: "TimesNewRoman", "sans-serif";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #000000;
+  padding-bottom: 16px;
+  display: inline-block;
+}
+@media screen and (min-width: 1024px) {
+  .hot-meals__header,
+.appetizers__header,
+.salads__header,
+.desserts__header,
+.drinkables__header {
+    padding-bottom: 20px;
+  }
+}
+
+.hot-meals__list,
+.appetizers__list,
+.salads__list,
+.desserts__list,
+.drinkables__list {
+  padding-bottom: 16px;
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .hot-meals__list,
+.appetizers__list,
+.salads__list,
+.desserts__list,
+.drinkables__list {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hot-meals__item,
+.appetizers__item {
+    width: 430px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hot-meals__item,
+.appetizers__item {
+    width: 485px;
+  }
+}
+
+.desserts__item,
+.drinkables__item {
+  height: 20px;
+}
+
+.drinkables__list {
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .drinkables__list {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .appetizers__list {
+    padding-bottom: 0;
+  }
+}
+
+.hot-meals__item,
+.appetizers__item,
+.salads__item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.hot-meals__item:nth-last-child(1),
+.appetizers__item:nth-last-child(1),
+.salads__item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 414px) {
+  .hot-meals__item,
+.appetizers__item,
+.salads__item {
+    width: 384px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hot-meals__item,
+.appetizers__item,
+.salads__item {
+    width: 410px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hot-meals__item,
+.appetizers__item,
+.salads__item {
+    width: 485px;
+  }
+}
+
+.hot-meals__box-name,
+.appetizers__box-name,
+.salads__box-name {
+  width: 200px;
+}
+@media screen and (min-width: 414px) {
+  .hot-meals__box-name,
+.appetizers__box-name,
+.salads__box-name {
+    width: 220px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hot-meals__box-name,
+.appetizers__box-name,
+.salads__box-name {
+    width: 257px;
+  }
+}
+
+.hot-meals__box-price-weight,
+.appetizers-box-price-weight,
+.salads-box-price-weight,
+.desserts__box,
+.drinkables__box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+@media screen and (min-width: 414px) {
+  .hot-meals__box-price-weight,
+.appetizers-box-price-weight,
+.salads-box-price-weight,
+.desserts__box,
+.drinkables__box {
+    gap: 32px;
+  }
+}
+
+.hot-meals__name,
+.appetizers__name,
+.salads__name,
+.desserts__name,
+.drinkables__name {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  padding-bottom: 4px;
+  width: 220px;
+}
+@media screen and (min-width: 1280px) {
+  .hot-meals__name,
+.appetizers__name,
+.salads__name,
+.desserts__name,
+.drinkables__name {
+    width: 290px;
+  }
+}
+
+.desserts__name,
+.drinkables__name {
+  padding-bottom: 0;
+}
+
+.hot-meals__ingridients,
+.appetizers__ingridients,
+.salads__ingridients {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 400;
+  font-size: 10px;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #000000;
+  width: 210px;
+}
+
+.hot-meals__weight,
+.appetizers__weight,
+.salads__weight,
+.desserts__weight,
+.drinkables__weight {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.hot-meals__price,
+.appetizers__price,
+.salads__price,
+.desserts__price,
+.drinkables__price {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.salads__item,
+.desserts__item,
+.drinkables__item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.salads__item:nth-last-child(1),
+.desserts__item:nth-last-child(1),
+.drinkables__item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 414px) {
+  .salads__item,
+.desserts__item,
+.drinkables__item {
+    width: 384px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .salads__item,
+.desserts__item,
+.drinkables__item {
+    width: 430px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .salads__item,
+.desserts__item,
+.drinkables__item {
+    width: 485px;
+  }
+}
+
+.button__menu {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  background-color: #000000;
+  border: 2px solid #fffdee;
+  border-radius: 25px;
+  padding: 13px 22px;
+  display: block;
+  margin: 0 auto;
+}
+.button__menu:hover, .button__menu:focus {
+  border-radius: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .button__menu {
+    margin-right: 0;
+  }
+}
+
 .container > li {
   position: absolute;
   z-index: -1;
@@ -1240,4 +1669,79 @@ body {
   .line3 {
     margin-left: 942px;
   }
+}
+
+.button-reserv {
+  width: 434px;
+  height: 64px;
+  font-size: 24px;
+  line-height: 1.2;
+  border-radius: 25px;
+}
+
+.button-modal {
+  width: 592px;
+  height: 64px;
+  font-size: 24px;
+  line-height: 1.2;
+  border-radius: 2px;
+}
+
+.button-modal-mob-oval {
+  width: 384px;
+  height: 64px;
+  border-radius: 25px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.button-modal-mob-rectangle {
+  width: 384px;
+  height: 64px;
+  border-radius: 2px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.button-reserv, .button-modal, .button-modal-mob-oval, .button-modal-mob-rectangle {
+  background: #000000;
+  border: 1px solid #f3c653;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #ffffff;
+  transition: background-color 250ms linear, color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-reserv:hover, .button-reserv:focus, .button-modal:hover, .button-modal:focus, .button-modal-mob-oval:hover, .button-modal-mob-oval:focus, .button-modal-mob-rectangle:hover, .button-modal-mob-rectangle:focus {
+  background: #f3c653;
+  color: #000000;
+}
+
+.button-gray {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.button-black {
+  background: #000000;
+}
+
+.button-gray, .button-black {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 0.8;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  width: 236px;
+  height: 48px;
+  transition: background-color 250ms linear, color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-gray:hover, .button-gray:focus, .button-black:hover, .button-black:focus {
+  background: #ffffff;
+  border: 2px solid #ffffff;
 }/*# sourceMappingURL=index.css.map */
