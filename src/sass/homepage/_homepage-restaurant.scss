@@ -63,20 +63,17 @@
   }
 }
 
-.hp-restaurant__btn-box {
-  margin-top: 40px;
-  @include tablet {
-    margin-top: 0;
-    margin-left: 0;
-  }
-}
-
-.hp-restaurant__item:not(:last-child) {
-  margin-bottom: 16px;
+.hp-restaurant__btn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
 }
 
 .hp-restaurant__btn {
-  display: block;
+  display: flex;
 
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -88,16 +85,16 @@
   background: rgba(0, 0, 0, 0.4);
 
   padding: 14px 24px;
-  min-width: 236px;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  &:last-child {
+    padding: 14px 32px;
+  }
+
   &:hover,
   &:focus {
     background: $white;
     border: 2px solid #ffffff;
-  }
-
-  @include tablet {
-    margin: 0;
   }
 }
 
