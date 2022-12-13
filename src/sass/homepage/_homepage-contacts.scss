@@ -13,6 +13,7 @@ p {
   margin: 0px auto;
   padding-top: 36px;
   padding-bottom: 32px;
+  position: relative;
 
   @include tablet {
     min-width: 1024px;
@@ -238,7 +239,6 @@ p {
   height: 550px;
   border: 1px solid rgba(186, 186, 186, 0.4);
   filter: blur(0.5px);
-  
 }
 
 .line-1 {
