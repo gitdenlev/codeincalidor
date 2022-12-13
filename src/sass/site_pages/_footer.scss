@@ -1,7 +1,7 @@
 .footer {
 
-
- 
+position: relative;
+z-index: 2;
   background-color: #0e0c07;
   margin-left: auto;
   margin-right: auto;
@@ -28,7 +28,39 @@
 
   
 }
+.footer__line > li{
+  position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    top: 0px;
+    width: 0;
+    height: 100%;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+}
+.line-one {
 
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 565px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 710px;
+  }
+}
+
+.line-two {
+
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 805px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 1020px;
+  }
+}
 
 .footer--baseline {
     display: flex;

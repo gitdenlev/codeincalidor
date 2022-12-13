@@ -827,6 +827,8 @@ p {
 }
 
 .footer {
+  position: relative;
+  z-index: 2;
   background-color: #0e0c07;
   margin-left: auto;
   margin-right: auto;
@@ -847,6 +849,39 @@ p {
     width: 100%;
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+}
+
+.footer__line > li {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  top: 0px;
+  width: 0;
+  height: 100%;
+  border: 1px solid rgba(186, 186, 186, 0.4);
+  filter: blur(0.5px);
+}
+
+@media screen and (min-width: 1024px) {
+  .line-one {
+    margin-left: 418px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .line-one {
+    margin-left: 470px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .line-two {
+    margin-left: 652px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .line-two {
+    margin-left: 772px;
   }
 }
 
