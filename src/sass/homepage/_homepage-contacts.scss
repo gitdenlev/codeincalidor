@@ -242,7 +242,10 @@ p {
 }
 
 .line-1 {
-  margin-left: 140px;
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+  // margin-left: 140px;
 
   @media screen and (min-width: 1024px) {
     margin-left: 278px;
