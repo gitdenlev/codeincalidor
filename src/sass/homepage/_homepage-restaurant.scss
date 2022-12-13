@@ -155,44 +155,267 @@
 
 // slick slider
 
-.hp-restaurant-slider__container .slick-track {
-  position: relative;
-  display: flex;
-  gap: 25px;
-  @include desktop {
-    gap: 85px;
-  }
+// .hp-restaurant-slider__container .slick-track {
+//   position: relative;
+//   display: flex;
+//   gap: 25px;
+//   @include desktop {
+//     gap: 85px;
+//   }
+// }
+
+// .hp-restaurant-slider {
+//   width: 200px;
+//   margin: 0 auto;
+// }
+
+// .hp-restaurant-slider__container {
+//   width: 365px;
+//   margin-bottom: 24px;
+//   @include tablet {
+//     width: 650px;
+//     margin-bottom: 32px;
+//   }
+//   @include desktop {
+//     width: 850px;
+//   }
+// }
+
+// .hp-restaurant-slider__item {
+//   @media screen and (min-width: 415px) {
+//     width: 162px;
+//     height: 270px;
+//   }
+//   @include desktop {
+//     width: 270px;
+//     height: 270px;
+//   }
+// }
+
+// .hp-restaurant-slider__image {
+//   @media screen and (min-width: 415px) {
+//     width: 162px;
+//     height: 270px;
+//     object-position: center;
+//     object-fit: cover;
+//   }
+//   &__image--small-tab {
+//     @media screen and (min-width: 415px) {
+//       width: 162px;
+//       height: 270px;
+//       object-position: center;
+//       object-fit: cover;
+//     }
+//   }
+//   &__image--big-desk {
+//     @include desktop {
+//       width: 270px;
+//       height: 270px;
+//       object-position: center;
+//       object-fit: cover;
+//     }
+//   }
+//   &__image--small-desk {
+//     @include desktop {
+//       width: 162px;
+//       height: 270px;
+//       object-position: center;
+//       object-fit: cover;
+//     }
+//   }
+// }
+
+// arrows
+
+// .hp-restaurant-slider__buttons {
+//   margin-bottom: 40px;
+//   position: relative;
+// }
+
+// .hp-restaurant-slider__arrow-left,
+// .hp-restaurant-slider__arrow-right {
+//   background: transparent;
+//   border: none;
+// }
+
+// .hp-restaurant-slider__arrow-left {
+//   margin-right: 34px;
+// }
+
+// .hp-restaurant-slider__icon {
+//   fill: $white;
+//   &:hover,
+//   &:focus {
+//     fill: $accent-color;
+//   }
+// }
+
+// .slick-next:before {
+//   width: 45px;
+//   height: 25px;
+//   cursor: pointer;
+//   // background-color: rgba(0, 0, 0, 0);
+//   background-color: red;
+//   border: none;
+//   font-size: 0;
+//   position: absolute;
+//   left: 55px;
+// }
+
+//  slider test
+// если слайдер внутри флекс ел или сам флекс ел - указ мин виз 0 иначе не будет работать
+// .slider {
+//   min-width: 0;
+// }
+// .flex__column{
+//   min-width: 0;
+// }
+
+// обмежуюча оболонка
+// .slick-list {
+//   overflow: hidden;
+// }
+// лента слайдів (если нужно включить адаптивную высоту - доб со 2 строки)
+// .slick-track {
+//   display: flex;
+//   align-items: flex-start;
+//   gap: 20px;
+// }
+
+// конкретный слайдер
+
+// .hp-restaurant-slider {
+//   position: relative;
+//   padding-left: 40px;
+// }
+
+// звертаюсь до стрілки всередині слайдера
+.hp-restaurant-slider .slick-arrow {
+  // position: absolute;
+  // top: 50%;
+  // z-index: 10;
+
+  // font-size: 0;
+  // width: 30px;
+  // height: 17px;
 }
 
-.hp-restaurant-slider__container {
-  width: 365px;
-  @include tablet {
-    width: 650px;
-  }
-  @include desktop {
-    width: 850px;
-  }
+.hp-restaurant-slider .slick-arrow.slick-prev {
+  // left: 0;
+  // background: url(/src/svg/icons.svg#icon-double-lux-arrow-left) 0 0 / 100%
+  //   no-repeat;
+
+  // position: absolute;
+  // background-color: transparent;
+  // font-size: 0;
+  // z-index: 10;
+  // width: 45px;
+  // height: 25px;
+  // border: none;
+  // cursor: pointer;
 }
 
-.hp-restaurant-slider__item {
-  @media screen and (min-width: 415px) {
-    width: 162px;
-    height: 270px;
-  }
-  @include desktop {
-    width: 270px;
-    height: 270px;
-  }
+.hp-restaurant-slider .slick-arrow.slick-next {
+  // right: 0;
+  // background: url(/src/svg/icons.svg#icon-double-lux-arrow-right) 0 0 / 100%
+  //   no-repeat;
+  // fill: $white;
+
+  // position: absolute;
+  // background-color: transparent;
+  // font-size: 0;
+  // width: 45px;
+  // height: 25px;
+  // left: 55px;
+  // border: none;
+  // cursor: pointer;
 }
 
-.hp-restaurant-slider__image {
-  @media screen and (min-width: 415px) {
-    width: 162px;
-    height: 270px;
-    object-position: center;
-    object-fit: cover;
+// .hp-restaurant-slider__item {
+//   text-align: center;
+// }
+
+// ще одна версія перенесення кнопок
+// .hp-restaurant-slider .slick-prev {
+//   position: absolute;
+//   background-color: transparent;
+//   font-size: 0;
+//   z-index: 10;
+//   width: 45px;
+//   height: 25px;
+//   border: none;
+//   cursor: pointer;
+//   &:hover,
+//   &:focus {
+//     .hp-restaurant-slider__icon {
+//       fill: $accent-color;
+//     }
+//   }
+// }
+
+// .hp-restaurant-slider .slick-next {
+//   position: absolute;
+//   background-color: transparent;
+//   font-size: 0;
+//   width: 45px;
+//   height: 25px;
+//   left: 55px;
+//   border: none;
+//   cursor: pointer;
+//   &:hover,
+//   &:focus {
+//     .hp-restaurant-slider__icon {
+//       fill: $accent-color;
+//     }
+//   }
+// }
+
+// NEW SLIDER TEST
+.restaurant-details-slider {
+  &__wrapper {
+    position: relative;
+    max-width: 250px;
+    // overflow: hidden;
+    left: 35px;
+    margin-bottom: 60px;
+    @media screen and (max-width: 414px) {
+      max-width: 365px;
+    }
+    @media screen and (min-width: 415px) {
+      width: 645px;
+    }
   }
-  &__image--small-tab {
+  &__container {
+    width: 365px;
+    @media screen and (min-width: 415px) {
+      width: 645px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 873px;
+    }
+  }
+  & .slick-track {
+    position: relative;
+    display: flex;
+    gap: 26px;
+    @media screen and (min-width: 415px) {
+      gap: 26px;
+    }
+    @media screen and (min-width: 1280px) {
+      gap: 87px;
+    }
+  }
+  & .slick-list {
+    overflow: hidden;
+  }
+
+  &__item--small-tablet {
+    @media screen and (min-width: 415px) {
+      width: 162px;
+      height: 270px;
+    }
+  }
+  &__image--small-tablet {
     @media screen and (min-width: 415px) {
       width: 162px;
       height: 270px;
@@ -200,20 +423,99 @@
       object-fit: cover;
     }
   }
-  &__image--big-desk {
-    @include desktop {
+  &__item--big-desktop {
+    @media screen and (min-width: 1280px) {
+      width: 270px;
+      height: 270px;
+    }
+  }
+  &__image--big-desktop {
+    @media screen and (min-width: 1280px) {
       width: 270px;
       height: 270px;
       object-position: center;
       object-fit: cover;
     }
   }
-  &__image--small-desk {
-    @include desktop {
+  &__item--small-desktop {
+    @media screen and (min-width: 1280px) {
+      width: 162px;
+      height: 270px;
+    }
+  }
+  &__image--small-desktop {
+    @media screen and (min-width: 1280px) {
       width: 162px;
       height: 270px;
       object-position: center;
       object-fit: cover;
+    }
+  }
+  &__wrapper .slick-prev {
+    position: absolute;
+    background-color: transparent;
+    font-size: 0;
+    z-index: 10;
+    width: 45px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      .restaurant-details-slider__arrow-left-svg {
+        fill: $accent-color;
+      }
+    }
+  }
+  &__wrapper .slick-next {
+    position: absolute;
+    background-color: transparent;
+    font-size: 0;
+    width: 45px;
+    height: 25px;
+    left: 55px;
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      .restaurant-details-slider__arrow-right-svg {
+        fill: $accent-color;
+      }
+    }
+  }
+  &__arrow-left {
+    padding: 0;
+    border: none;
+    margin-right: 30px;
+    background-color: transparent;
+  }
+  &__arrow-right {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  &__buttons {
+    position: absolute;
+    top: 290px;
+    width: 108px;
+  }
+  &__arrow-left-svg {
+    fill: $white;
+    translate: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
+  &__arrow-right-svg {
+    // position: relative;
+    // z-index: 10;
+    fill: $white;
+    translate: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: $accent-color;
     }
   }
 }
