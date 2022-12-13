@@ -14,3 +14,11 @@ $('.variable-width').slick({
   centerMode: true,
   variableWidth: true,
 });
+
+$('.hp-restaurant-slider').slick({
+  arrows: true,
+  slidesToShow: 2,
+  variableWidth: true,
+  appendArrows: $('.restaurant-details__slider-nav'),
+  speed: 300,
+});

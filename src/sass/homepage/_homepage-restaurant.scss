@@ -152,3 +152,68 @@
     }
   }
 }
+
+// slick slider
+
+.hp-restaurant-slider__container .slick-track {
+  position: relative;
+  display: flex;
+  gap: 25px;
+  @include desktop {
+    gap: 85px;
+  }
+}
+
+.hp-restaurant-slider__container {
+  width: 365px;
+  @include tablet {
+    width: 650px;
+  }
+  @include desktop {
+    width: 850px;
+  }
+}
+
+.hp-restaurant-slider__item {
+  @media screen and (min-width: 415px) {
+    width: 162px;
+    height: 270px;
+  }
+  @include desktop {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+.hp-restaurant-slider__image {
+  @media screen and (min-width: 415px) {
+    width: 162px;
+    height: 270px;
+    object-position: center;
+    object-fit: cover;
+  }
+  &__image--small-tab {
+    @media screen and (min-width: 415px) {
+      width: 162px;
+      height: 270px;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+  &__image--big-desk {
+    @include desktop {
+      width: 270px;
+      height: 270px;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+  &__image--small-desk {
+    @include desktop {
+      width: 162px;
+      height: 270px;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+}
