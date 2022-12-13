@@ -56,7 +56,7 @@ p {
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color:$contact-text-color;
+  color: $contact-text-color;
   margin-bottom: 12px;
   @include tablet {
     font-size: 64px;
@@ -74,7 +74,7 @@ p {
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
-  color:$main-text-color;
+  color: $main-text-color;
   margin-bottom: 16px;
   @include tablet {
     margin-bottom: 52px;
@@ -158,7 +158,7 @@ p {
 }
 
 .contacts-block-3 {
-  background-color:$white;
+  background-color: $white;
   width: 260px;
   height: 76px;
   margin-left: 0px;
@@ -205,7 +205,7 @@ p {
 
 .contacts-icon,
 .contacts-map-icon {
-  fill:$brown-text-color;
+  fill: $brown-text-color;
 }
 
 .contacts-map {
@@ -226,5 +226,53 @@ p {
     max-width: 634px;
     max-height: 412px;
     margin-top: 8px;
+  }
+}
+
+.line-container > li {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  top: 0px;
+  width: 0;
+  height: 550px;
+  border: 1px solid rgba(186, 186, 186, 0.4);
+  filter: blur(0.5px);
+  
+}
+
+.line-1 {
+  margin-left: 140px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 278px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 338px;
+  }
+}
+
+.line-2 {
+  margin-left: 140px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 512px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 640px;
+  }
+}
+
+.line-3 {
+  margin-left: 274px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 746px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 942px;
   }
 }
