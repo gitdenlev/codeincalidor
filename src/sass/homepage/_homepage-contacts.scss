@@ -279,3 +279,16 @@ p {
     margin-left: 942px;
   }
 }
+
+.contacts-adress-mob {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.contacts-adress-desk {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: contents;
+  }
+}
