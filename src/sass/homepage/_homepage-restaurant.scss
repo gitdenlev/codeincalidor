@@ -46,7 +46,7 @@
 .hp-restaurant__text {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  @include font(12px, 600, 0.8, 0.02em);
+  @include font(12px, 600, 1.25, 0.02em);
   color: $text-color-for-dark-bg;
 
   margin-left: 140px;
