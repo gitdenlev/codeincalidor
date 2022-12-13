@@ -865,23 +865,23 @@ p {
 
 @media screen and (min-width: 1024px) {
   .line-one {
-    margin-left: 418px;
+    margin-left: 565px;
   }
 }
 @media screen and (min-width: 1280px) {
   .line-one {
-    margin-left: 470px;
+    margin-left: 710px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .line-two {
-    margin-left: 652px;
+    margin-left: 805px;
   }
 }
 @media screen and (min-width: 1280px) {
   .line-two {
-    margin-left: 772px;
+    margin-left: 1020px;
   }
 }
 
