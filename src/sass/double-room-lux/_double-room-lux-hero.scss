@@ -77,7 +77,8 @@ body {
 
 .double-lux-slider-icon {
   fill: #ffffff;
-  &:hover {
+  &:hover,
+  &:focus {
     fill: #f3c653;
   }
 }
@@ -158,15 +159,18 @@ body {
 }
 
 .double-lux-adress {
-  display: none;
+  position: absolute;
+  bottom: 629px;
+  right: 15px;
+  width: 210px;
+  height: 47px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
   @include tablet {
-    display: block;
-    position: absolute;
+    left: 47px;
     bottom: 24px;
     width: 285px;
     height: 56px;
-    border: 1px solid rgba(243, 198, 83, 0.7);
-    border-radius: 2px;
   }
   @include desktop {
     display: none;
@@ -175,22 +179,31 @@ body {
 
 .double-lux-adress-link {
   position: absolute;
-  left: 44px;
+  left: 34px;
   top: 8px;
   bottom: 8px;
   font-family: $montserrat-font;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.01em;
   color: #e5e5e5;
+  @include tablet {
+    left: 44px;
+    font-size: 16px;
+  }
 }
 
 .double-lux-adress-icon {
   position: absolute;
-  left: 10px;
-  top: 16px;
-  bottom: 16px;
+  left: 6px;
+  top: 13px;
+  bottom: 14px;
   fill: $accent-color;
+  @include tablet {
+    left: 10px;
+    top: 16px;
+    bottom: 16px;
+  }
 }
 
 .double-lux-button {
@@ -212,7 +225,8 @@ body {
   text-align: center;
   color: $accent-color;
   background: rgba(0, 0, 0, 0.4);
-  &:hover {
+  &:hover,
+  &:focus {
     background: $white;
   }
   @include mobile {
