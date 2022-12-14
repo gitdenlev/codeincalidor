@@ -187,7 +187,7 @@
     top: 295px;
     left: 240px;
     &::before {
-    color: blue
+    color: blue;
     }
     @include tablet {
         top: 240px;
@@ -196,6 +196,22 @@
     @include desktop {
         top: 300px;
         left: 360px;
+    }
+}
+
+.slick-next {
+    top: 295px;
+    left: 275px;
+    &::before {
+    color: blue
+    }
+    @include tablet {
+        top: 240px;
+        left: 400px;
+    }
+    @include desktop {
+        top: 300px;
+        left: 400px;
     }
 }
 
@@ -241,23 +257,10 @@
     }
 }
 
-.slick-next {
-    top: 295px;
-    left: 275px;
-    &::before {
-    color: blue
-    }
-    @include tablet {
-        top: 240px;
-        left: 400px;
-    }
-    @include desktop {
-        top: 300px;
-        left: 400px;
-    }
-}
+
 
 .arrow-left-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .arrow-left:hover &,
     .arrow-left:focus & {
         fill: #f3c653;
@@ -265,9 +268,11 @@
 }
 
 .arrow-right-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .arrow-right:hover &,
     .arrow-right:focus & {
         fill: #f3c653;
     }
 }
+
 
