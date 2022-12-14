@@ -136,9 +136,34 @@
 }
 
 .slick {
-    padding-top: 21px;
-    padding-bottom: 72px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    display: block;
+    margin-left: auto;
+    width: 548px;
+    margin-bottom: 118px;
+}
+
+.one-time {
+    position: relative;
+}
+
+.slick-prev {
+    top: 300;
+    left: 450;
+    &::before {
+    color: blue
+    }
+}
+
+.slick-next {
+    top: 300;
+    right: 40;
+    &::before {
+    color: blue
+    }
+}
+
+.arrow-left-icon {
+    &:hover {
+        fill: yellow;
+    }
 }

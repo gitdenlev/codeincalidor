@@ -51,8 +51,8 @@
         </picture>
         <p class="second-hall-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
     </div>
-    <div>
-        <div class="slick">
+    <div class="slick">
+        <div class="one-time">
             <div>
                 <picture>
                     <source
@@ -99,7 +99,40 @@
                     />
                 </picture>
             </div>
+            <div>
+                <picture>
+                    <source
+                        srcset="/src/images/slyder-images/slyder-desktop/9-desk_1x.jpg 1x,
+                        /src/images/slyder-images/slyder-desktop/9-desk_2x.jpg 2x"
+                        media="(min-width: 1280px)"
+                    />
+                    <source
+                        srcset="/src/images/slyder-images/slyder-tablet/9-tab_1x.jpg 1x,
+                        /src/images/slyder-images/slyder-tablet/9-tab_2x.jpg 2x"
+                        media="(min-width: 1024px)"
+                    />
+                    <source
+                        srcset="/src/images/slyder-images/slyder-mobile/9-mob_1x.jpg 1x,
+                        /src/images/slyder-images/slyder-mobile/9-mob_2x.jpg 2x"
+                        media="(max-width: 1023px)"
+                    />
+                    <img class="" 
+                    src="/src/images/slyder-images/slyder-desktop/9-desk_1x.jpg" 
+                    alt=""
+                    />
+                </picture>
+            </div>
         </div>
+        <span class="arrow-left">
+            <svg class="arrow-left-icon" width="32" height="32">
+                <use href="/src/svg/icons.svg#icon-arrow-left"></use>
+            </svg>
+        </span>
+        <span class="arrow-right">
+            <svg class="arrow-right-icon" width="32" height="32">
+                <use href="/src/svg/icons.svg#icon-arrow-right"></use>
+            </svg>
+        </span>
     </div>
     </div>
 </section>
