@@ -1,7 +1,7 @@
-<!-- <div class="backdrope-modal-price">   
+<div class="backdrop-modal-room is-hidden" data-room-modal>   
     <div class="modal-room">
-        <button type="button" class="modal-prise-close">
-            <svg class="modal-prise-close-icon" width="24" height="24">
+        <button type="button" class="modal-room-close" data-room-modal-close>
+            <svg class="modal-room-close-icon" width="24" height="24">
                 <use href="./svg/icons.svg#icon-mobil-close"></use>
             </svg>
         </button>
@@ -17,7 +17,7 @@
                     id="name" 
                     placeholder="Ваше ім’я" 
                     title="Ваше ім’я">
-                    <label class="modal-room-label" for="name">На кого забронювати номер?</label>
+                    <label class="modal-room-label contscts-ml" for="name">На кого забронювати номер?</label>
                 </div>
                 <div class="modal-room-contacts">
                     <input type="tel" 
@@ -28,10 +28,24 @@
                     id="tel" 
                     placeholder="+38 (___) ___-__-__" 
                     title="+38 (___) ___-__-__">
-                    <label class="modal-room-label" for="tel">Номер телефону</label>
+                    <label class="modal-room-label contscts-ml" for="tel">Номер телефону</label>
                     
                 </div>
             </div>
+
+            
+            <div class="room-select">
+                
+                <label class="modal-room-label check-arrow" for="rooms-category">
+                    <select id="rooms-category" name="rooms-cal"  class="modal-room-select" autofocus>
+                        <option value="1">Двомісний номер</option>
+                        <option value="2"selected>Двомісний люкс</option>
+                        <option value="3">Трьохмісний люкс</option>
+                    </select>
+                    <span class="label-span">Категорія номеру</span> 
+                </label>
+                
+
             <div class="direction-right">
                 <div class="room-select">
                     <div class="modal-room-wrap">
@@ -43,9 +57,32 @@
                         <label class="modal-room-label" for="rooms-category">Категорія номеру</label>
                     </div> 
                 </div>
+
             </div>
+            
             <div class="modal-room-wrap-tablet">
                 <div class="check-in-select">
+
+                    <div clas="check-in-wrap">
+                        <label class="modal-room-label check-arrow" for="check-in">
+                            <select id="check-in" name="rooms-cal"  class="modal-room-select" autofocus>
+                                <option value="1"selected>Сьогодні</option>
+                                <option value="2">Завтра</option>
+                            </select>
+                            <span class="label-span">Дата заїзду</span> 
+                    </label>
+                    </div>
+                </div>
+                <div class="check-out-select">
+                    <div clas="check-out-wrap">
+                        <label class="modal-room-label check-arrow" for="check-in">
+                            <select id="check-out" name="rooms-cal"  class="modal-room-select" autofocus>
+                                <option value="1"selected>Сьогодні</option>
+                                <option value="2">Завтра</option>
+                            </select>
+                            <span class="label-span">Дата виїзду</span> 
+                    </label>
+
                     <div class="check-in-wrap">
                         <select id="check-in" name="rooms-cal"  class="modal-room-select" autofocus>
                             <option value="1"selected>Сьогодні</option>
@@ -61,10 +98,12 @@
                             <option value="2">Завтра</option>
                         </select>
                         <label class="modal-room-label" for="check-in">Дата виїзду</label>
+
                     </div>
                 </div>
             </div>
-            <button type="submit" class="modal-price-btn">ЗАБРОНЮВАТИ НОМЕР</button>
+            <button type="submit" class="modal-room-btn">ОФОРМИТИ БРОНЮВАННЯ</button>
         </form>
     </div>
-</div> -->
+</div>
+
