@@ -23,10 +23,3 @@ $('.slider').slick({
   // appendArrows: $('.arrows'),
   speed: 300,
 });
-
-// $(document).ready(function () {
-//   $('.slider').slick({
-//     arrows: false,
-//     dots: true,
-//   });
-// });
