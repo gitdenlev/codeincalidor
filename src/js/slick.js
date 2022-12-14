@@ -14,3 +14,4 @@ $('.variable-width').slick({
   centerMode: true,
   variableWidth: true,
 });
+
