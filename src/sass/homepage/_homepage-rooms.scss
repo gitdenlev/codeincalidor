@@ -148,7 +148,7 @@
 .homepage-room-img,
 .homepage-hotel-img,
 .homepage-slick-img {
-    // background: #DADADA;
+    background: #DADADA;
     box-shadow: $picture-shadow;
     border-radius: 2px;
 }
@@ -159,7 +159,7 @@
     outline: 1px solid blue;
 }
 
-.slick{
+.slick {
     position: relative;
     top: 0;
     // left: -165px;
@@ -179,12 +179,12 @@
     }
 }
 
-.slick-track{
+.slick-track {
     display: flex;
     gap: 20px;
-    @include tablet{
+
+    @include tablet {
         gap: 40px;
-        margin: 0;
     }
 }
 
