@@ -20,7 +20,7 @@ $('.slider').slick({
   arrows: true,
   slidesToShow: 2,
   variableWidth: true,
-  appendArrows: $('.arrows'),
+  // appendArrows: $('.arrows'),
   speed: 300,
 });
 
