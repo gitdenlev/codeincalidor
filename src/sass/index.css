@@ -167,6 +167,7 @@ p {
   margin: 0px auto;
   padding-top: 36px;
   padding-bottom: 32px;
+  position: relative;
 }
 @media screen and (min-width: 1024px) {
   .contacts {
@@ -403,6 +404,243 @@ p {
     max-height: 412px;
     margin-top: 8px;
   }
+}
+
+.line-container > li {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  top: 0px;
+  width: 0;
+  height: 550px;
+  border: 1px solid rgba(186, 186, 186, 0.4);
+  filter: blur(0.5px);
+}
+
+@media screen and (max-width: 1023px) {
+  .line-1 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .line-1 {
+    margin-left: 278px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .line-1 {
+    margin-left: 338px;
+  }
+}
+
+.line-2 {
+  margin-left: 140px;
+}
+@media screen and (min-width: 1024px) {
+  .line-2 {
+    margin-left: 512px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .line-2 {
+    margin-left: 640px;
+  }
+}
+
+.line-3 {
+  margin-left: 274px;
+}
+@media screen and (min-width: 1024px) {
+  .line-3 {
+    margin-left: 746px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .line-3 {
+    margin-left: 942px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contacts-adress-mob {
+    display: none;
+  }
+}
+
+.contacts-adress-desk {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .contacts-adress-desk {
+    display: contents;
+  }
+}
+
+.meal-first-hall {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .meal-first-hall {
+    padding-top: 120px;
+    padding-bottom: 142px;
+    position: relative;
+  }
+}
+
+.meal-pretitle-text {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #B4B4B4;
+  display: block;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 1024px) {
+  .meal-pretitle-text {
+    font-size: 32px;
+    line-height: 1.16;
+    margin-bottom: 4px;
+  }
+}
+
+.meal-title {
+  font-family: "FilmP3", "sans-serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: #494848;
+  display: block;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 1024px) {
+  .meal-title {
+    font-size: 64px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .meal-title {
+    color: #828282;
+  }
+}
+
+.meal-aftertitle-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #5f5f5f;
+  display: block;
+  width: 258px;
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 1024px) {
+  .meal-aftertitle-text {
+    font-size: 16px;
+    width: 439px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .meal-aftertitle-text {
+    width: 518px;
+  }
+}
+
+.first-hall-photo {
+  width: 244px;
+  margin-left: auto;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  background-color: #DADADA;
+}
+@media screen and (min-width: 1024px) {
+  .first-hall-photo {
+    position: absolute;
+    width: 400px;
+    top: -32px;
+    left: 465px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .first-hall-photo {
+    width: 460px;
+    top: -33px;
+    left: 555px;
+  }
+}
+
+.meal-second-hall {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .meal-second-hall {
+    padding-bottom: 133px;
+    padding-top: 155px;
+  }
+}
+
+.second-hall-photo {
+  width: 200px;
+}
+@media screen and (min-width: 1024px) {
+  .second-hall-photo {
+    position: absolute;
+    width: 350px;
+    top: -32px;
+    left: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .second-hall-photo {
+    width: 460px;
+    top: 0;
+  }
+}
+
+.second-hall-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #c79002;
+  display: block;
+  width: 163px;
+  margin-left: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .second-hall-text {
+    width: 312px;
+    font-size: 16px;
+    margin-left: 398px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .second-hall-text {
+    width: 312px;
+    margin-left: 492px;
+  }
+}
+
+.slick {
+  padding-top: 21px;
+  padding-bottom: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .container {
@@ -1900,8 +2138,8 @@ body {
 .drinkables__header {
   font-family: "TimesNewRoman", "sans-serif";
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  font-size: 24px;
+  line-height: 1.1666666667;
   color: #000000;
   padding-bottom: 16px;
   display: inline-block;
@@ -2014,11 +2252,11 @@ body {
     width: 220px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .hot-meals__box-name,
 .appetizers__box-name,
 .salads__box-name {
-    width: 257px;
+    width: 260px;
   }
 }
 
@@ -2052,7 +2290,7 @@ body {
   line-height: 1.25;
   letter-spacing: 0.02em;
   padding-bottom: 4px;
-  width: 220px;
+  width: 260px;
 }
 @media screen and (min-width: 1280px) {
   .hot-meals__name,
@@ -2060,7 +2298,7 @@ body {
 .salads__name,
 .desserts__name,
 .drinkables__name {
-    width: 290px;
+    width: 291px;
   }
 }
 
@@ -2079,7 +2317,14 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #000000;
-  width: 210px;
+  width: 225px;
+}
+@media screen and (min-width: 1280px) {
+  .hot-meals__ingridients,
+.appetizers__ingridients,
+.salads__ingridients {
+    width: 262px;
+  }
 }
 
 .hot-meals__weight,
@@ -2158,6 +2403,8 @@ body {
   margin: 0 auto;
 }
 .button__menu:hover, .button__menu:focus {
+  background: #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 25px;
 }
 @media screen and (min-width: 1024px) {
