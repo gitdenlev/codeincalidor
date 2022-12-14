@@ -1,3 +1,13 @@
+.homepage-meal {
+    overflow: hidden;
+    @include tablet {
+        overflow: visible;
+    }
+}
+
+.homepage-container {
+    position: relative;
+}
 // Перший контейнер, заголовок, текст і фото
 .meal-first-hall {
     padding-top: 16px;
@@ -101,6 +111,9 @@
 
 .second-hall-photo {
     width: 200px;
+    box-shadow: $picture-shadow;
+    border-radius: 2px;
+    background-color: #DADADA;
     @include tablet {
         position: absolute;
         width: 350px;
@@ -137,33 +150,102 @@
 
 .slick {
     display: block;
-    margin-left: auto;
     width: 548px;
-    margin-bottom: 118px;
+    padding-left: 84px;
+    margin-left: auto;
+    margin-bottom: 72px;
+    position: relative;
+    @include tablet {
+        padding-left: 0;
+        width: 428px;
+        margin-bottom: 96px;
+    }
+    @include desktop {
+        width: 540px;
+        margin-bottom: 118px;
+    }
+}
+
+.slick-photo {
+    width: 245px;
+    @include tablet {
+        width: 194px;
+    }
+    @include desktop {
+        width: 254px;
+    }
 }
 
 .one-time {
     position: relative;
+    box-shadow: $picture-shadow;
+    border-radius: 2px;
+    background-color: #DADADA;
 }
 
 .slick-prev {
-    top: 300;
-    left: 450;
+    top: 295px;
+    left: 240px;
     &::before {
     color: blue
+    }
+    @include tablet {
+        top: 240px;
+        left: 360px;
+    }
+    @include desktop {
+        top: 300px;
+        left: 360px;
     }
 }
 
 .slick-next {
-    top: 300;
-    right: 40;
+    top: 295px;
+    left: 275px;
     &::before {
     color: blue
+    }
+    @include tablet {
+        top: 240px;
+        left: 400px;
+    }
+    @include desktop {
+        top: 300px;
+        left: 400px;
     }
 }
 
 .arrow-left-icon {
+    position: absolute;
+    right: 64px;
+    bottom: -35px;
     &:hover {
-        fill: yellow;
+        fill: #f3c653;
+    }
+    @include tablet {
+        right: 110px;
+        bottom: -35px;
+    }
+    @include desktop {
+        right: 160px;
+        bottom: -50px;
     }
 }
+
+.arrow-right-icon {
+    position: absolute;
+    right: 0px;
+    bottom: -35px;
+    &:hover {
+        fill: #f3c653;
+    }
+    @include tablet {
+        right: 64px;
+        bottom: -35px;
+    }
+    @include desktop {
+        right: 110px;
+        bottom: -50px;
+    }
+}
+
