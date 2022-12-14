@@ -199,6 +199,48 @@
     }
 }
 
+.arrow-left {
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    right: 64px;
+    bottom: -35px;
+    display: flex;
+    align-items: center;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    @include tablet {
+        right: 110px;
+        bottom: -35px;
+    }
+    @include desktop {
+        right: 160px;
+        bottom: -50px;
+    }
+}
+
+.arrow-right {
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    right: 0px;
+    bottom: -35px;
+    display: flex;
+    align-items: center;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    @include tablet {
+        right: 64px;
+        bottom: -35px;
+    }
+    @include desktop {
+        right: 110px;
+        bottom: -50px;
+    }
+}
+
 .slick-next {
     top: 295px;
     left: 275px;
@@ -216,36 +258,16 @@
 }
 
 .arrow-left-icon {
-    position: absolute;
-    right: 64px;
-    bottom: -35px;
-    &:hover {
+    .arrow-left:hover &,
+    .arrow-left:focus & {
         fill: #f3c653;
-    }
-    @include tablet {
-        right: 110px;
-        bottom: -35px;
-    }
-    @include desktop {
-        right: 160px;
-        bottom: -50px;
     }
 }
 
 .arrow-right-icon {
-    position: absolute;
-    right: 0px;
-    bottom: -35px;
-    &:hover {
+    .arrow-right:hover &,
+    .arrow-right:focus & {
         fill: #f3c653;
-    }
-    @include tablet {
-        right: 64px;
-        bottom: -35px;
-    }
-    @include desktop {
-        right: 110px;
-        bottom: -50px;
     }
 }
 
