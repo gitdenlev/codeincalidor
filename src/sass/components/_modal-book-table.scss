@@ -1,0 +1,251 @@
+.backdrop-modal-table {
+    width: 100%;
+    height: 100%;
+    background-color:  rgb(96, 91, 91);
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: scroll;
+}
+.backdrope-modal-room.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.modal-table {
+    box-sizing: border-box;
+    width: 414px;
+    min-height: 668px;
+    padding: 60px 15px 60px 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // border: 1px solid red;
+    border-radius: 2px;
+    background-color: $background-light-lemon;
+    @include tablet {
+        // border: 1px solid blue;
+        width: 712px;
+        min-height: 552px;
+        padding: 60px;
+
+    }
+    @include desktop {
+        // border: 1px solid green;
+        
+
+    }
+}
+.modal-table-close {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: transparent;
+    position: absolute;
+    right: 16px;
+    top: 16px;  
+}
+.modal-table-close-icon {
+    fill: rgba(128, 128, 128, 1)
+}
+.modal-table-title {
+    font-family: $times-font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.05em;
+    color: $black;
+    text-align: center;
+    margin-bottom: 40px;
+    @include tablet {
+        font-size: 40px;
+        line-height: calc(46 / 40);
+        margin-bottom: 40px;
+
+    }
+
+}
+
+// Стилі фоорми
+
+.modal-table-contacts {
+    display: block;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    @include tablet {
+        &:not(:last-child) {
+            margin-bottom: 0px;
+
+    }
+}
+}
+.modal-table-input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 54px;
+    border: 1px solid $brown-text-color;
+    padding-left: 12px;
+    background-color: $background-light-lemon;
+    font-family: $times-font;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 /20);
+    letter-spacing: 0.05em;
+    color:#808080;
+    margin-bottom: 8px;
+    outline: transparent;
+    transition: border-color $main-transition-duration $main-transtition-timing-function;
+    &:hover, &:focus {
+        border-color: $brown-text-color;
+    }
+    
+    &::placeholder {
+        font-family: $times-font;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: calc(23 /20);
+        letter-spacing: 0.05em;
+        color:#808080;
+        @include tablet {
+            font-size: 24px;
+            line-height: calc(28 /24);
+        }
+        
+      }
+    @include tablet {
+        height: 64px;
+        font-size: 24px;
+        line-height: calc(28 /24);
+    }
+}
+      
+      
+
+.modal-table-input:not(:focus):not(:placeholder-shown):valid {
+    border-color: #C79002;
+}
+.modal-table-input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: rgb(217, 14, 45);
+}
+
+.modal-table-label {
+    display: block;
+    font-family: $montserrat-font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    letter-spacing: 0.02em;
+    color: $brown-text-color;
+    margin-bottom: 20px;
+    position: relative;
+    @include tablet {
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: calc(20 / 16);
+         
+        
+    }
+    
+}
+.contacts-ml {
+    margin-left: 12px;
+}
+.check-arrow::after {
+    background-image: url('/src/svg/arrow-down-bold.svg');
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 15px;
+    right: 15px;
+    z-index: 3;
+    background-color: $white;
+    pointer-events: none;
+}
+.label-span {
+    margin-left: 12px;
+    display: block;
+}
+
+
+.modal-table-select {
+    box-sizing: border-box;
+    width: 100%;
+    height: 54px;
+    border: 1px solid $brown-text-color;
+    padding-left: 15px;
+    background-color: $background-light-lemon;
+    font-family: $times-font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 /24);
+    letter-spacing: 0.05em;
+    color:#808080;
+    margin-bottom: 8px;
+    outline: transparent;
+    appearance: none;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+
+    transition: border-color $main-transition-duration $main-transtition-timing-function;
+    &:hover, &:focus {
+        border-color: $brown-text-color;
+    }
+    @include tablet {
+        height: 64px;
+        width: 288px;
+                
+    }
+}
+
+
+// Стилізування tablet та desktop
+.table-wrap {
+    display: flex;
+    gap: 20px;
+}
+.modal-table-wrap-tablet {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 288px;
+        
+    }
+    
+}
+
+// Кнопка оформлення
+.modal-price-btn {
+    width: 100%;
+    height: 64px;
+    background-color: $black;
+    border: 1px solid $accent-color;
+    border-radius: 2px;
+    font-family: $montserrat-font;
+    color: $white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    margin-top: 20px;
+    transition: background-color $main-transition-duration $main-transtition-timing-function, color $main-transition-duration $main-transtition-timing-function;
+    &:hover, &:focus {
+        background-color: $accent-color;
+        color: $black;
+    }
+    @include tablet {
+        margin-top: 40px;
+        
+}
+}
