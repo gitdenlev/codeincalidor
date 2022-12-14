@@ -17,11 +17,11 @@ $('.variable-width').slick({
 });
 
 $('.slider').slick({
-  infinite: true,
-  speed: 300,
-  slidesToShow: 2,
-  adaptiveHeight: true,
   arrows: true,
+  slidesToShow: 2,
+  variableWidth: true,
+  appendArrows: $('.arrows'),
+  speed: 300,
 });
 
 // $(document).ready(function () {

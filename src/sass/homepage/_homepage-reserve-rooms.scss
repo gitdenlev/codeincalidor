@@ -99,8 +99,8 @@
 }
 
 .hp-hotel {
-  padding-top: 24px;
-  padding-bottom: 40px;
+  // padding-top: 24px;
+  // padding-bottom: 40px;
   max-width: 414px;
   height: 735px;
   background: rgba(0, 0, 0, 0.7);
@@ -149,19 +149,19 @@
 }
 
 // ARROWS
-.arrows {
-  display: flex;
-  gap: 34px;
-  margin-left: 277px;
-  margin-bottom: 40px;
-  &__btn {
-    background-color: transparent;
-    border: none;
-  }
-  &__icon {
-    fill: $white;
-  }
-}
+// .arrows {
+//   display: flex;
+//   gap: 34px;
+//   margin-left: 277px;
+//   margin-bottom: 40px;
+//   &__btn {
+//     background-color: transparent;
+//     border: none;
+//   }
+//   &__icon {
+//     fill: $white;
+//   }
+// }
 
 // slider
 
@@ -171,34 +171,104 @@
 // }
 
 // флекс ел
-.slider {
-  min-width: 0;
-}
+// .slider {
+//   min-width: 0;
+// }
 
 // Стилізація кнопок стрілочок які перемикають слайди
 .slider {
   position: relative;
-  padding: 0 50px;
-  margin-bottom: 24px;
+  // padding: 0 50px;
+  padding-right: 50px;
+  margin-bottom: 80px;
 }
-// абсолютно позиціонуєм відносно слайдера
-.slider .slick-arrow {
+// КНОПКИ- СТРІЛОЧКИ ДО СЛАЙДЕРА абсолютно позиціонуєм відносно слайдера
+// .slider .slick-arrow {
+//   position: absolute;
+//   top: 100%;
+//   font-size: 0;
+//   width: 35px;
+//   height: 20px;
+//   z-index: 0;
+//   transform: translateY(24px);
+// }
+
+// .slider .slick-arrow.slick-prev {
+//   left: 277px;
+// }
+// .slider .slick-arrow.slick-next {
+//   right: 20px;
+// }
+
+.slick-track {
+  display: flex;
+  gap: 20px;
+  margin-left: -100px;
+  overflow: hidden;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+// .slider__wrap {
+//   width: 662px;
+//   position: absolute;
+//   top: 233;
+//   right: 40;
+// }
+
+.slider__wrap {
+  position: relative;
+}
+
+.arrows {
   position: absolute;
-  top: 100%;
-  font-size: 0;
-  width: 35px;
-  height: 20px;
-  z-index: 0;
-  transform: translateY(24px);
-}
-
-.slider .slick-arrow.slick-prev {
-  left: 277px;
-}
-.slider .slick-arrow.slick-next {
+  bottom: -32px;
   right: 20px;
+  width: 94px;
+
+  @media screen and (min-width: 1024px) {
+    right: 3px;
+  }
 }
 
-.slider__item {
-  opacity: 0.4;
+.arrows .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-9px);
+  width: 30px;
+  height: 18px;
+  z-index: 10;
+  font-size: 0;
+  border: none;
+}
+
+.arrows .slick-arrow.slick-prev {
+  left: 0;
+  -webkit-mask-image: url('/src/svg/slider-arrow-left.svg');
+  mask-image: url('/src/svg/slider-arrow-left.svg');
+  background-color: $white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.arrows .slick-arrow.slick-next {
+  right: 0;
+  -webkit-mask-image: url('/src/svg/slider-arrow-right.svg');
+  mask-image: url('/src/svg/slider-arrow-right.svg');
+  background-color: $white;
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // background-size: contain;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
