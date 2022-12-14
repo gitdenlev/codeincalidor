@@ -2,7 +2,7 @@ $('.one-time').slick({
   dots: true,
   infinite: true,
   speed: 300,
-  slidesToShow: 2,
+  slidesToShow: 3,
   adaptiveHeight: true,
 });
 
@@ -13,12 +13,16 @@ $('.variable-width').slick({
   slidesToShow: 1,
   centerMode: true,
   variableWidth: true,
+  appendDots: true,
 });
 
-$('.hp-hotel-slider').slick({
-  arrows: true,
-  slidesToShow: 2,
-  variableWidth: true,
-  appendArrows: $('.restaurant-details__slider-nav'),
-  speed: 300,
+// $('.slider').slick({
+//   infinite: true,
+//   speed: 300,
+//   slidesToShow: 3,
+//   adaptiveHeight: true,
+// });
+
+$(document).ready(function () {
+  $('.slider').slick();
 });

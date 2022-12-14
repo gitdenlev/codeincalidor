@@ -70,6 +70,8 @@
   justify-content: flex-end;
   align-items: center;
   gap: 16px;
+
+  margin-top: 60px;
 }
 
 .hp-hotel__btn {
@@ -148,4 +150,49 @@
   }
 }
 
+// ARROWS
+.arrows {
+  display: flex;
+  gap: 34px;
+  margin-left: 277px;
+  &__btn {
+    background-color: transparent;
+    border: none;
+  }
+}
+
 // slider
+
+// .one-time {
+//   width: 800px;
+//   margin: 0 auto;
+// }
+
+// флекс ел
+.slider {
+  min-width: 0;
+}
+
+// Стилізація кнопок стрілочок які перемикають слайди
+.slider {
+  position: relative;
+  padding: 0 50px;
+  margin-bottom: 24px;
+}
+// абсолютно позиціонуєм відносно слайдера
+.slider .slick-arrow {
+  position: absolute;
+  top: 100%;
+  font-size: 0;
+  width: 35px;
+  height: 20px;
+  z-index: 0;
+  transform: translateY(24px);
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 277px;
+}
+.slider .slick-arrow.slick-next {
+  right: 20px;
+}
