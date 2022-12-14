@@ -29,6 +29,14 @@ $('.variable-width').slick({
 //   $('.slider').slick();
 // });
 
-$(document).ready(function () {
-  $('.slider').slick();
+// $(document).ready(function () {
+//   $('.slider').slick();
+// });
+
+$('.one-time').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true,
 });
