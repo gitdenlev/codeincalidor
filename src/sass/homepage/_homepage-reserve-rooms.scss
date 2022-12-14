@@ -70,8 +70,6 @@
   justify-content: flex-end;
   align-items: center;
   gap: 16px;
-
-  margin-top: 60px;
 }
 
 .hp-hotel__btn {
@@ -155,9 +153,13 @@
   display: flex;
   gap: 34px;
   margin-left: 277px;
+  margin-bottom: 40px;
   &__btn {
     background-color: transparent;
     border: none;
+  }
+  &__icon {
+    fill: $white;
   }
 }
 
@@ -195,4 +197,8 @@
 }
 .slider .slick-arrow.slick-next {
   right: 20px;
+}
+
+.slider__item {
+  opacity: 0.4;
 }
