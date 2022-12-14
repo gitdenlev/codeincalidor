@@ -200,7 +200,10 @@
   line-height: calc(20px / 16px);
   letter-spacing: 0.02em;
   padding-bottom: 4px;
-  width: 260px;
+  width: 222px;
+  @include tablet {
+    width: 260px;
+  }
   @include desktop {
     width: 291px;
   }
