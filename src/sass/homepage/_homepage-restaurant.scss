@@ -1,0 +1,154 @@
+.container {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.hp-restaurant__title {
+  font-family: 'FilmP3', sans-serif;
+  font-style: normal;
+  @include font(40px, 700, 0.93, 0.3em);
+  color: $white;
+  text-transform: uppercase;
+
+  margin-left: 140px;
+  margin-bottom: 12px;
+  max-width: 127px;
+  @include tablet {
+    font-size: 64px;
+    max-width: 202px;
+    margin-bottom: 16px;
+    margin-left: 278px;
+  }
+  @include desktop {
+    margin-left: 338px;
+  }
+}
+
+.hp-restaurant__subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  @include font(20px, 700, 0.83, 0.02em);
+  color: $white;
+
+  margin-left: 140px;
+  margin-bottom: 20px;
+  max-width: 127px;
+  @include tablet {
+    font-size: 24px;
+    margin-bottom: 8px;
+    margin-left: 278px;
+  }
+  @include desktop {
+    margin-left: 338px;
+  }
+}
+
+.hp-restaurant__text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  @include font(12px, 600, 0.8, 0.02em);
+  color: $text-color-for-dark-bg;
+
+  margin-left: 140px;
+  margin-bottom: 48px;
+  max-width: 259px;
+  @include tablet {
+    font-size: 16px;
+    max-width: 610px;
+    margin-left: 278px;
+    margin-bottom: 40px;
+  }
+  @include desktop {
+    margin-left: 338px;
+  }
+}
+
+.hp-restaurant__btn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+
+.hp-restaurant__btn {
+  display: flex;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  @include font(16px, 700, 0.8, 0.02em);
+  color: $accent-color;
+
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.4);
+
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: center;
+  &:last-child {
+    padding: 14px 32px;
+  }
+
+  &:hover,
+  &:focus {
+    background: $white;
+    border: 2px solid #ffffff;
+  }
+}
+
+.hp-restaurant {
+  padding-top: 24px;
+  padding-bottom: 40px;
+  max-width: 414px;
+  height: 735px;
+  background: rgba(0, 0, 0, 0.7);
+  @include tablet {
+    max-width: 1024px;
+    height: 620px;
+    padding-top: 48px;
+    padding-bottom: 47px;
+  }
+  @include desktop {
+    max-width: 1280px;
+  }
+}
+
+.hp-rest-overlay {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(/src/images/homepage-images/homepage-mobile/hp-restaurant-bg-mob_1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include ratio {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/src/images/homepage-images/homepage-mobile/hp-restaurant-bg-mob_2x.jpg);
+  }
+
+  @include tablet {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/src/images/homepage-images/homepage-tablet/hp-restaurant-bg-tab_1x.jpg);
+
+    @include ratio {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(/src/images/homepage-images/homepage-tablet/hp-restaurant-bg-tab_2x.jpg);
+    }
+  }
+
+  @include desktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/src/images/homepage-images/homepage-desktop/hp-restaurant-bg-desk_1x.jpg);
+
+    @include ratio {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(/src/images/homepage-images/homepage-desktop/hp-restaurant-bg-desk_2x.jpg);
+    }
+  }
+}

@@ -1,65 +1,59 @@
-
 // Код для додавання у html між початком секціі та контейнером
+
+
+// Код для додавання у html між початком секціі та контейнером. Додам самостійно
+
 
 // <ul class="container">
 // <li class="line1"></li>
-// <li class="line2"></li> 
-// <li class="line3"></li> 
+// <li class="line2"></li>
+// <li class="line3"></li>
 // </ul>
 
-
-
-
-
-
 // Додавання ліній на задній фон
-.container > li{
-    position: absolute;
-    z-index: -1;
-    pointer-events: none;
-    top: 0px;
-    width: 0;
-    height: 100%;
-    border: 1px solid rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
-    
+.container > li {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  top: 0px;
+  width: 0;
+  height: 100%;
+  border: 1px solid rgba(186, 186, 186, 0.4);
+  filter: blur(0.5px);
+}
+
+.line1 {
+  margin-left: 125px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 231px;
   }
-  
-  .line1{
-    margin-left: 140px;
-  
-    @media screen and (min-width: 1024px){
-      margin-left: 278px;
-    }
-  
-    @media screen and (min-width: 1280px){
-      margin-left: 338px;
-    }
-  
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 253px;
   }
-  
-  .line2{
-    margin-left: 274px;
-  
-    @media screen and (min-width: 1024px){
-      margin-left: 512px;
-    }
-  
-    @media screen and (min-width: 1280px){
-      margin-left: 640px;
-    }
+}
+
+.line2 {
+  margin-left: 259px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 465px;
   }
-  
-  
-  .line3{
-    margin-left: -100px;
-  
-    @media screen and (min-width: 1024px){
-      margin-left: 746px;
-    }
-  
-    @media screen and (min-width: 1280px){
-      margin-left: 942px;
-    }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 555px;
   }
-  
+}
+
+.line3 {
+  margin-left: -100px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 699px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 857px;
+  }
+}
