@@ -45,8 +45,11 @@
   max-width: 259px;
   @include tablet {
     font-size: 16px;
-    max-width: 610px;
+    max-width: 549px;
     margin-bottom: 40px;
+  }
+  @include desktop {
+    max-width: 595px;
   }
 }
 
@@ -61,15 +64,24 @@
   @include tablet {
     max-width: 549px;
   }
+  @include desktop {
+    max-width: 595px;
+  }
 }
 
 .hp-hotel__btn-wrap {
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: flex-end;
   align-items: center;
   gap: 16px;
+  justify-content: flex-end;
+
+  @media screen and (max-width: 414px) {
+    justify-content: flex-end;
+  }
+  @include tablet {
+  }
 }
 
 .hp-hotel__btn {
@@ -183,6 +195,7 @@
   @include tablet {
     padding-right: 0;
     padding-left: 47px;
+    margin-bottom: 0;
   }
   @include desktop {
     padding-left: 52px;
@@ -298,3 +311,10 @@
 //     background-color: $accent-color;
 //   }
 // }
+
+.hp-reserve__wrap-bottom {
+  @include tablet {
+    display: flex;
+    gap: 16px;
+  }
+}
