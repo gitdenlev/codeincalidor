@@ -17,6 +17,7 @@
     align-items: center;
     width: 100%;
     justify-content: space-around;
+    padding: 28px 0px 12px;
   }
 }
 
@@ -31,11 +32,6 @@
   align-items: center;
   cursor: pointer;
   @media screen and(min-width: 1024px) {
-    // box-sizing: border-box;
-    // width: 264px;
-    // height: 40px;
-    // left: 102px;
-    // top: 0px;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
   }
@@ -120,10 +116,6 @@
     font-size: 20px;
     line-height: 1.2;
   }
-  // @media screen and(min-width: 1280px) {
-  //   margin-left: 96px;
-  //   margin-right: 32px;
-  // }
 }
 
 .list-hotel {
@@ -133,7 +125,6 @@
     margin-left: 44px;
     margin-right: 28px;
   }
-
   @media screen and(min-width: 1280px) {
     margin-left: 32px;
     margin-right: 28px;
@@ -179,7 +170,6 @@
 
 .social-contact {
   display: none;
-
   @media screen and(min-width: 1280px) {
     display: flex;
     gap: 20px;

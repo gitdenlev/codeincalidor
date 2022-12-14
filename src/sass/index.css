@@ -1026,6 +1026,7 @@ p {
     width: 100%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding: 28px 0px 12px;
   }
 }
 
