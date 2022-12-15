@@ -1,93 +1,87 @@
-body {
+.body {
   margin: 0 auto;
-}
-
-.double-lux {
-  display: block;
-  position: relative;
-  margin: 0 auto;
-}
-
-.container {
   box-sizing: border-box;
 }
 
-.overlay {
-  min-height: 740px;
-  background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_mob1x.jpg);
+.double-lux {
+  box-sizing: border-box;
+}
+
+.double-lux-container {
+  position: relative;
+  box-sizing: border-box;
+  height: 720px;
+  max-width: 414px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  font-family: $montserrat-font;
+  color: $white;
+  z-index: 2;
+  background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_mob1x.jpg);
 
   @include ratio {
-    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_mob2x.jpg);
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero-mobile2x.jpg);
   }
 
   @include tablet {
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-bottom: 47px;
+    margin: 0 auto;
+    min-width: 1024px;
+    align-items: normal;
     background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tub1x.jpg);
-  }
 
-  @include ratio {
-    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tub2x.jpg);
+    @include ratio {
+      background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tablet2x.jpg);
+    }
   }
 
   @include desktop {
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 48px;
+    max-width: 1280px;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
     background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_desk1x.jpg);
   }
 
   @include ratio {
-    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_desk2x.jpg);
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero-desktop2x.jpg);
   }
 }
 
-.lux-slider-wrap-left,
-.lux-slider-wrap-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  bottom: 350px;
-  background-color: rgba(0, 0, 0, 0.65);
+.double-lux-box {
+  box-sizing: border-box;
+  align-self: flex-start;
+  margin-bottom: 16px;
+  width: auto;
   @include tablet {
-    bottom: 340px;
-  }
-}
-
-.lux-slider-wrap-left {
-  left: 15px;
-  @include tablet {
-    left: 47px;
+    margin-bottom: 24px;
   }
   @include desktop {
-    left: 85px;
-  }
-}
-
-.lux-slider-wrap-right {
-  right: 15px;
-  @include tablet {
-    right: 47px;
-  }
-  @include desktop {
-    right: 85px;
-  }
-}
-
-.double-lux-slider-icon {
-  fill: #ffffff;
-  &:hover,
-  &:focus {
-    fill: #f3c653;
+    align-self: initial;
+    margin-bottom: 0;
+    width: 510px;
   }
 }
 
 .double-lux-tittle {
-  position: absolute;
-  bottom: 200px;
-  width: 300px;
-  height: 64px;
+  box-sizing: border-box;
+  max-width: 325px;
   font-style: normal;
   font-family: $times-font;
   font-weight: 700;
@@ -95,82 +89,54 @@ body {
   line-height: 1.14;
   letter-spacing: 0.05em;
   color: $white;
-  @include mobile {
-    width: 325px;
-  }
   @include tablet {
-    bottom: 211px;
-    width: 510px;
-    height: 41px;
+    max-width: 510px;
     font-size: 36px;
     line-height: 1.14;
   }
   @include desktop {
-    bottom: 155px;
+    min-width: 510px;
   }
 }
 
 .double-lux-text {
-  position: absolute;
-  bottom: 138px;
-  width: 300px;
-  height: 51px;
-  font-family: $montserrat-font;
+  box-sizing: border-box;
+  max-width: 325px;
+  margin-top: 14px;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: $white;
-  @include mobile {
-    bottom: 128px;
-    width: 325px;
-    height: 61px;
-  }
   @include tablet {
-    bottom: 104px;
-    width: 400px;
-    height: 83px;
+    margin-top: 24px;
+    max-width: 400px;
     font-size: 16px;
-  }
-  @include desktop {
-    bottom: 48px;
+    line-height: 1.14;
   }
 }
 
-.double-lux-list {
-  position: absolute;
-  bottom: 14px;
+.double-lux-contact {
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  @include tablet {
-    flex-direction: row;
-    right: 540px;
-    bottom: 38px;
-    gap: 20px;
-  }
-  @include desktop {
-    display: none;
-  }
-}
-
-.double-lux-icon {
-  fill: rgba(243, 198, 83, 0.7);
+  align-items: center;
+  z-index: 2;
 }
 
 .double-lux-adress {
+  box-sizing: border-box;
   position: absolute;
-  bottom: 629px;
+  top: 64px;
   right: 15px;
   width: 210px;
-  height: 47px;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
   @include tablet {
-    left: 47px;
-    bottom: 24px;
+    display: block;
+    position: inherit;
+    margin-right: 40px;
     width: 285px;
-    height: 56px;
   }
   @include desktop {
     display: none;
@@ -178,40 +144,61 @@ body {
 }
 
 .double-lux-adress-link {
-  position: absolute;
-  left: 34px;
-  top: 8px;
-  bottom: 8px;
+  box-sizing: border-box;
+  padding: 9px 6px 9px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   font-family: $montserrat-font;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.01em;
   color: #e5e5e5;
   @include tablet {
-    left: 44px;
     font-size: 16px;
   }
 }
 
 .double-lux-adress-icon {
-  position: absolute;
-  left: 6px;
-  top: 13px;
-  bottom: 14px;
+  box-sizing: border-box;
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
   fill: $accent-color;
   @include tablet {
-    left: 10px;
-    top: 16px;
-    bottom: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
+.double-lux-list {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @include tablet {
+    flex-direction: row;
+    gap: 20px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.double-lux-item {
+  box-sizing: border-box;
+  height: 24px;
+  width: 24px;
+}
+
+.double-lux-icon {
+  fill: rgba(243, 198, 83, 0.7);
+}
+
 .double-lux-button {
-  position: absolute;
-  bottom: 40px;
-  right: 23px;
-  padding: 14px 35px;
-  min-width: 232px;
+  margin: 0 auto;
+  padding: 14px;
+  min-width: 236px;
   height: 48px;
   border: 2px solid $white;
   border-radius: 25px;
@@ -220,24 +207,16 @@ body {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: $accent-color;
   background: rgba(0, 0, 0, 0.4);
   &:hover,
   &:focus {
     background: $white;
   }
-  @include mobile {
-    right: 73px;
-  }
   @include tablet {
-    bottom: 64px;
-    right: 47px;
+    margin-left: 261px;
   }
   @include desktop {
-    bottom: 66px;
-    right: 85px;
+    margin-left: 368px;
   }
 }
