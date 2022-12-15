@@ -191,7 +191,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .contacts-container {
-    min-width: 1024px;
+    max-width: 1024px;
     padding-left: 47px;
     padding-right: 47px;
     display: flex;
@@ -200,7 +200,7 @@ p {
 }
 @media screen and (min-width: 1280px) {
   .contacts-container {
-    min-width: 1280px;
+    max-width: 1280px;
     padding-left: 85px;
     padding-right: 85px;
     gap: 108px;
@@ -682,7 +682,7 @@ p {
   }
 }
 
-.one-time {
+.one-time-slick {
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   background-color: #DADADA;
@@ -722,7 +722,7 @@ p {
   }
 }
 
-.one-time .slick-arrow.slick-prev {
+.one-time-slick .slick-arrow.slick-prev {
   background-image: url(/src/svg/arrow-left-black.svg);
   width: 32px;
   height: 32px;
@@ -731,11 +731,11 @@ p {
   background-position: 50% 50%;
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.one-time .slick-arrow.slick-prev:hover, .one-time .slick-arrow.slick-prev:focus {
+.one-time-slick .slick-arrow.slick-prev:hover, .one-time-slick .slick-arrow.slick-prev:focus {
   background-image: url(/src/svg/arrow-left-yellow.svg);
 }
 
-.one-time .slick-arrow.slick-next {
+.one-time-slick .slick-arrow.slick-next {
   background-image: url(/src/svg/arrow-right-black.svg);
   width: 32px;
   height: 32px;
@@ -744,16 +744,16 @@ p {
   background-position: 50% 50%;
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.one-time .slick-arrow.slick-next:hover, .one-time .slick-arrow.slick-next:focus {
+.one-time-slick .slick-arrow.slick-next:hover, .one-time-slick .slick-arrow.slick-next:focus {
   background-image: url(/src/svg/arrow-right-yellow.svg);
 }
 
-.one-time .slick-arrow {
+.one-time-slick .slick-arrow {
   font-size: 0;
 }
 
-.one-time .slick-prev:before,
-.one-time .slick-next:before {
+.one-time-slick .slick-prev:before,
+.one-time-slick .slick-next:before {
   opacity: 0;
 }
 
@@ -1033,9 +1033,20 @@ p {
   }
 }
 
-.container {
+.hp-restaurant__container {
   box-sizing: border-box;
   width: 100%;
+  padding: 24px 15px 40px 15px;
+}
+@media screen and (min-width: 1024px) {
+  .hp-restaurant__container {
+    padding: 47px 50px 96px 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hp-restaurant__container {
+    padding: 47px 0 96px 85px;
+  }
 }
 
 .hp-restaurant__title {
@@ -1047,7 +1058,7 @@ p {
   letter-spacing: 0.3em;
   color: #ffffff;
   text-transform: uppercase;
-  margin-left: 140px;
+  margin-left: 125px;
   margin-bottom: 12px;
   max-width: 127px;
 }
@@ -1056,7 +1067,7 @@ p {
     font-size: 64px;
     max-width: 202px;
     margin-bottom: 16px;
-    margin-left: 278px;
+    margin-left: 230px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1073,7 +1084,7 @@ p {
   line-height: 0.83;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-left: 140px;
+  margin-left: 125px;
   margin-bottom: 20px;
   max-width: 127px;
 }
@@ -1081,7 +1092,7 @@ p {
   .hp-restaurant__subtitle {
     font-size: 24px;
     margin-bottom: 8px;
-    margin-left: 278px;
+    margin-left: 230px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1095,10 +1106,10 @@ p {
   font-style: normal;
   font-size: 12px;
   font-weight: 600;
-  line-height: 0.8;
+  line-height: 1.25;
   letter-spacing: 0.02em;
   color: #bababa;
-  margin-left: 140px;
+  margin-left: 125px;
   margin-bottom: 48px;
   max-width: 259px;
 }
@@ -1106,7 +1117,7 @@ p {
   .hp-restaurant__text {
     font-size: 16px;
     max-width: 610px;
-    margin-left: 278px;
+    margin-left: 230px;
     margin-bottom: 40px;
   }
 }
@@ -1123,6 +1134,7 @@ p {
   justify-content: flex-end;
   align-items: center;
   gap: 16px;
+  margin-top: 80px;
 }
 
 .hp-restaurant__btn {
@@ -1150,8 +1162,6 @@ p {
 }
 
 .hp-restaurant {
-  padding-top: 24px;
-  padding-bottom: 40px;
   max-width: 414px;
   height: 735px;
   background: rgba(0, 0, 0, 0.7);
@@ -1160,8 +1170,6 @@ p {
   .hp-restaurant {
     max-width: 1024px;
     height: 620px;
-    padding-top: 48px;
-    padding-bottom: 47px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1200,6 +1208,110 @@ p {
   .hp-rest-overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/homepage-images/homepage-desktop/hp-restaurant-bg-desk_2x.jpg);
   }
+}
+
+@media screen and (min-width: 1024px) {
+  .hp-rest__wrap-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hp-rest__wrap-bottom {
+    gap: 32px;
+  }
+}
+
+.hp-rest-slider .slick-track {
+  display: flex;
+  gap: 25px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .hp-rest-slider .slick-track {
+    gap: 34px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hp-rest-slider .slick-track {
+    gap: 86px;
+  }
+}
+
+.hp-rest-slider__img {
+  border-radius: 2px;
+}
+
+.hp-rest-slider .slick-list {
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .hp-rest-slider .slick-list {
+    width: 660px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hp-rest-slider .slick-list {
+    width: 876px;
+  }
+}
+
+.hp-rest-slider {
+  position: relative;
+  padding-left: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .hp-rest-slider {
+    margin-bottom: 0;
+    width: 645px;
+    padding-left: 0;
+  }
+}
+
+.hp-rest-slider .slick-arrow {
+  position: absolute;
+  top: 100%;
+  font-size: 0;
+  width: 30px;
+  height: 17px;
+  z-index: 0;
+  transform: translateY(24px);
+}
+@media screen and (min-width: 1024px) {
+  .hp-rest-slider .slick-arrow {
+    transform: translateY(32px);
+  }
+}
+
+.hp-rest-slider .slick-arrow.slick-prev {
+  left: 25px;
+  background: url(/src/svg/arrow-left-white-rest.svg) 0 0/100% no-repeat;
+}
+@media screen and (min-width: 1024px) {
+  .hp-rest-slider .slick-arrow.slick-prev {
+    left: 0;
+  }
+}
+
+.hp-rest-slider .slick-arrow.slick-prev::before {
+  color: transparent;
+}
+
+.hp-rest-slider .slick-arrow.slick-next {
+  right: 264px;
+  cursor: pointer;
+  background: url(/src/svg/arrow-right-white-rest.svg) 0 0/100% no-repeat;
+}
+@media screen and (min-width: 1024px) {
+  .hp-rest-slider .slick-arrow.slick-next {
+    left: 64px;
+  }
+}
+
+.hp-rest-slider .slick-arrow.slick-next::before {
+  color: transparent;
 }
 
 .homepage-rooms-section {
@@ -4003,11 +4115,13 @@ body {
 .fade {
   width: 1280px;
   height: 100%;
+  margin: 0 auto;
   justify-content: center;
   text-align: center;
   border: 1px solid red;
 }
-.fade .slick-prev, .fade .slick-next {
+.fade .slick-prev,
+.fade .slick-next {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -4017,7 +4131,8 @@ body {
 .fade .slick-prev {
   left: 85px;
 }
-.fade .slick-prev::before, .fade .slick-next::before {
+.fade .slick-prev::before,
+.fade .slick-next::before {
   opacity: 0;
 }
 .fade .slick-next {
@@ -4050,7 +4165,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .fade .slick-arrow.slick-next {
@@ -4059,10 +4174,12 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
-.fade .slick-arrow.slick-next:hover, .fade .slick-arrow.slick-next:focus,
-.fade .slick-arrow.slick-prev:hover, .fade .slick-arrow.slick-prev:focus {
+.fade .slick-arrow.slick-next:hover,
+.fade .slick-arrow.slick-next:focus,
+.fade .slick-arrow.slick-prev:hover,
+.fade .slick-arrow.slick-prev:focus {
   fill: rgb(243, 198, 83);
 }/*# sourceMappingURL=index.css.map */
