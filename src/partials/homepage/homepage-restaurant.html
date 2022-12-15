@@ -1,6 +1,5 @@
 <section class="hp-restaurant hp-rest-overlay">
-
-  <div class="container">
+  <div class="hp-restaurant__container">
     <h1 class="hp-restaurant__title">Mimiho</h1>
     <h2 class="hp-restaurant__subtitle">Ресторан</h2>
     <p class="hp-restaurant__text">
@@ -10,10 +9,10 @@
 
     <!-- SLIDER -->
     <!-- WRAP FOR SLIDER AND BUTTONS -->
-    <div class="hp-reserve__wrap-bottom">
+    <div class="hp-rest__wrap-bottom">
       <!-- SLIDER  -->
-      <div class="slider">
-        <div class="slider__item">
+      <div class="slider hp-rest-slider">
+        <div class="hp-rest-slider__item">
           <picture>
             <source
               srcset="
@@ -38,14 +37,14 @@
             />
 
             <img
-              class="slider__img"
+              class="hp-rest-slider__img"
               src="/src/images/homepage-images/homepage-mobile/meat-steak_mob1x.jpg"
               alt="М'ясний стейк з розмарином на тарілці"
               sizes="(min-width: 1280px) 270px, (min-width: 1024px) 270px, (max-width: 1023px) 274px"
             />
           </picture>
         </div>
-        <div class="slider__item">
+        <div class="hp-rest-slider__item">
           <picture>
             <source
               srcset="
@@ -70,14 +69,14 @@
             />
 
             <img
-              class="slider__img"
+              class="hp-rest-slider__img"
               src="/src/images/homepage-images/homepage-tablet/khachapuri-tab_1x.jpg"
               alt="Шашлик з лавашем на дерев'яній дошці"
               sizes="(min-width: 1280px) 162px, (min-width: 1024px) 162px, (max-width: 1023px) 274px"
             />
           </picture>
         </div>
-        <div class="slider__item">
+        <div class="hp-rest-slider__item">
           <picture>
             <source
               srcset="
@@ -102,7 +101,7 @@
             />
 
             <img
-              class="slider__img"
+              class="hp-rest-slider__img"
               src="/src/images/homepage-images/homepage-tablet/cottonbro-tab_1x.jpg"
               alt="Апетитний салат з куркою гранатом і буряком"
               sizes="(min-width: 1280px) 270px, (min-width: 1024px) 162px, (max-width: 1023px) 274px"
@@ -111,20 +110,23 @@
         </div>
       </div>
 
-    <div class="hp-restaurant-slider__buttons"></div>
+      <div class="hp-restaurant-slider__buttons"></div>
 
-      <div class="hp-hotel__btn-wrap">
-        <button type="button" class="hp-hotel__btn">Забронювати номер</button>
-        <a href="./hotel.html" class="hp-hotel__btn">Переглянути ціни</a>
+      <!-- buttons -->
+      <div class="hp-restaurant__btn-wrap">
+        <button type="button" class="hp-restaurant__btn">
+          Забронювати столик
+        </button>
+        <a href="./restaurant.html" class="hp-restaurant__btn"
+          >Переглянути меню</a
+        >
       </div>
     </div>
   </div>
 </section>
 
-
-
-    <!-- ARROWS -->
-    <!-- <div class="hp-restaurant-slider__buttons">
+<!-- ARROWS -->
+<!-- <div class="hp-restaurant-slider__buttons">
       <button type="button" class="hp-restaurant-slider__arrow-left">
         <svg class="hp-restaurant-slider__icon" width="30" height="17">
           <use href=""></use>
@@ -136,16 +138,3 @@
         </svg>
       </button>
     </div> -->
-
-
-
-    <!-- buttons -->
-    <!-- <div class="hp-restaurant__btn-wrap">
-      <button type="button" class="hp-restaurant__btn">
-        Забронювати столик
-      </button>
-      <a href="./restaurant.html" class="hp-restaurant__btn"
-        >Переглянути меню</a
-      >
-    </div> -->
-</section>

@@ -1,6 +1,13 @@
-.container {
+.hp-restaurant__container {
   box-sizing: border-box;
   width: 100%;
+  padding: 24px 15px 40px 15px;
+  @include tablet {
+    padding: 48px 50px 96px 47px;
+  }
+  @include desktop {
+    padding: 48px 0 96px 85px;
+  }
 }
 
 .hp-restaurant__title {
@@ -10,14 +17,14 @@
   color: $white;
   text-transform: uppercase;
 
-  margin-left: 140px;
+  margin-left: 125px;
   margin-bottom: 12px;
   max-width: 127px;
   @include tablet {
     font-size: 64px;
     max-width: 202px;
     margin-bottom: 16px;
-    margin-left: 278px;
+    margin-left: 230px;
   }
   @include desktop {
     margin-left: 338px;
@@ -30,13 +37,13 @@
   @include font(20px, 700, 0.83, 0.02em);
   color: $white;
 
-  margin-left: 140px;
+  margin-left: 125px;
   margin-bottom: 20px;
   max-width: 127px;
   @include tablet {
     font-size: 24px;
     margin-bottom: 8px;
-    margin-left: 278px;
+    margin-left: 230px;
   }
   @include desktop {
     margin-left: 338px;
@@ -49,13 +56,13 @@
   @include font(12px, 600, 1.25, 0.02em);
   color: $text-color-for-dark-bg;
 
-  margin-left: 140px;
+  margin-left: 125px;
   margin-bottom: 48px;
   max-width: 259px;
   @include tablet {
     font-size: 16px;
     max-width: 610px;
-    margin-left: 278px;
+    margin-left: 230px;
     margin-bottom: 40px;
   }
   @include desktop {
@@ -99,16 +106,12 @@
 }
 
 .hp-restaurant {
-  padding-top: 24px;
-  padding-bottom: 40px;
   max-width: 414px;
   height: 735px;
   background: rgba(0, 0, 0, 0.7);
   @include tablet {
     max-width: 1024px;
     height: 620px;
-    padding-top: 48px;
-    padding-bottom: 47px;
   }
   @include desktop {
     max-width: 1280px;
@@ -153,147 +156,163 @@
   }
 }
 
-// arrows
-
-// .hp-restaurant-slider__buttons {
+// ARROWS
+// .arrows {
+//   display: flex;
+//   gap: 34px;
+//   margin-left: 277px;
 //   margin-bottom: 40px;
-//   position: relative;
-// }
-
-// .hp-restaurant-slider__arrow-left,
-// .hp-restaurant-slider__arrow-right {
-//   background: transparent;
-//   border: none;
-// }
-
-// .hp-restaurant-slider__arrow-left {
-//   margin-right: 34px;
-// }
-
-// .hp-restaurant-slider__icon {
-//   fill: $white;
-//   &:hover,
-//   &:focus {
-//     fill: $accent-color;
+//   &__btn {
+//     background-color: transparent;
+//     border: none;
+//   }
+//   &__icon {
+//     fill: $white;
 //   }
 // }
 
-// .slick-next:before {
-//   width: 45px;
-//   height: 25px;
-//   cursor: pointer;
-//   // background-color: rgba(0, 0, 0, 0);
-//   background-color: red;
-//   border: none;
-//   font-size: 0;
-//   position: absolute;
-//   left: 55px;
+// slider
+
+// .one-time {
+//   width: 800px;
+//   margin: 0 auto;
 // }
 
-//  SLIDER TEST
-// если слайдер внутри флекс ел или сам флекс ел - указ мин виз 0 иначе не будет работать
+// флекс ел
 // .slider {
 //   min-width: 0;
 // }
-// .flex__column{
-//   min-width: 0;
-// }
 
-// обмежуюча оболонка
-// .slick-list {
-//   overflow: hidden;
-// }
-// лента слайдів (если нужно включить адаптивную высоту - доб со 2 строки)
+// Стилізація кнопок стрілочок які перемикають слайди
+.hp-rest-slider {
+  position: relative;
+  margin-bottom: 80px;
+  padding-left: 25px;
+  @include tablet {
+    margin-bottom: 0;
+    width: 645px;
+    padding-left: 0;
+  }
+}
+// КНОПКИ- СТРІЛОЧКИ ДО СЛАЙДЕРА абсолютно позиціонуєм відносно слайдера
+.hp-rest-slider .slick-arrow {
+  position: absolute;
+  top: 100%;
+  font-size: 0;
+  width: 35px;
+  height: 20px;
+  z-index: 0;
+  transform: translateY(24px);
+}
+
+.hp-rest-slider .slick-arrow.slick-prev {
+  left: 277px;
+  // -webkit-mask-image: url('/src/svg/slider-arrow-left.svg');
+  // mask-image: url('/src/svg/slider-arrow-left.svg');
+  background-color: $white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.hp-rest-slider .slick-arrow.slick-next {
+  right: 20px;
+}
+
 .slick-track {
-  // display: flex;
-  // align-items: flex-start;
-  // gap: 20px;
+  display: flex;
+  gap: 25px;
+  overflow: hidden;
+  // margin-left: -100px;
+  @include tablet {
+    gap: 34px;
+  }
+  @include desktop {
+    gap: 86px;
+  }
 }
 
-// конкретный слайдер
-
-// .hp-restaurant-slider {
-//   position: relative;
-//   padding-left: 40px;
-// }
-
-// звертаюсь до стрілки всередині слайдера
-.hp-restaurant-slider .slick-arrow {
-  // position: absolute;
-  // top: 50%;
-  // z-index: 10;
-
-  // font-size: 0;
-  // width: 30px;
-  // height: 17px;
+.hp-rest-slider__img {
+  border-radius: 2px;
+}
+.slick-list {
+  overflow: hidden;
+  @include tablet {
+    width: 660px;
+  }
+  @include desktop {
+    width: 876px;
+  }
 }
 
-.hp-restaurant-slider .slick-arrow.slick-prev {
-  // left: 0;
-  // background: url(/src/svg/icons.svg#icon-double-lux-arrow-left) 0 0 / 100%
-  //   no-repeat;
-
-  // position: absolute;
-  // background-color: transparent;
-  // font-size: 0;
-  // z-index: 10;
-  // width: 45px;
-  // height: 25px;
-  // border: none;
-  // cursor: pointer;
+.slider__wrap {
+  position: relative;
 }
 
-.hp-restaurant-slider .slick-arrow.slick-next {
-  // right: 0;
-  // background: url(/src/svg/icons.svg#icon-double-lux-arrow-right) 0 0 / 100%
-  //   no-repeat;
-  // fill: $white;
+//  КНОПКИ РОЗМІЩЕННЯ СКЛАДНИМ ДЛЯ МЕНЕ СПОСОБОМ
 
-  // position: absolute;
-  // background-color: transparent;
-  // font-size: 0;
-  // width: 45px;
-  // height: 25px;
-  // left: 55px;
-  // border: none;
-  // cursor: pointer;
-}
-
-// .hp-restaurant-slider__item {
-//   text-align: center;
-// }
-
-// ще одна версія перенесення кнопок
-// .hp-restaurant-slider .slick-prev {
+// .arrows {
 //   position: absolute;
-//   background-color: transparent;
-//   font-size: 0;
+//   bottom: -32px;
+//   right: 20px;
+//   width: 94px;
+
+//   @media screen and (min-width: 1024px) {
+//     right: 3px;
+//   }
+// }
+
+// .arrows .slick-arrow {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-9px);
+//   width: 30px;
+//   height: 18px;
 //   z-index: 10;
-//   width: 45px;
-//   height: 25px;
+//   font-size: 0;
 //   border: none;
+// }
+
+// .arrows .slick-arrow.slick-prev {
+//   left: 0;
+//   -webkit-mask-image: url('/src/svg/slider-arrow-left.svg');
+//   mask-image: url('/src/svg/slider-arrow-left.svg');
+//   background-color: $white;
 //   cursor: pointer;
+
 //   &:hover,
 //   &:focus {
-//     .hp-restaurant-slider__icon {
-//       fill: $accent-color;
-//     }
+//     background-color: $accent-color;
 //   }
 // }
 
-// .hp-restaurant-slider .slick-next {
-//   position: absolute;
-//   background-color: transparent;
-//   font-size: 0;
-//   width: 45px;
-//   height: 25px;
-//   left: 55px;
-//   border: none;
+// .arrows .slick-arrow.slick-next {
+//   right: 0;
+//   -webkit-mask-image: url('/src/svg/slider-arrow-right.svg');
+//   mask-image: url('/src/svg/slider-arrow-right.svg');
+//   background-color: $white;
+//   // background-repeat: no-repeat;
+//   // background-position: center center;
+//   // background-size: contain;
 //   cursor: pointer;
+
 //   &:hover,
 //   &:focus {
-//     .hp-restaurant-slider__icon {
-//       fill: $accent-color;
-//     }
+//     background-color: $accent-color;
 //   }
 // }
+
+.hp-rest__wrap-bottom {
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 9px;
+    justify-content: start;
+  }
+  @include desktop {
+    gap: 16px;
+  }
+}
