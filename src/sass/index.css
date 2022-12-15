@@ -2461,22 +2461,9 @@ p {
   padding-bottom: 15px;
   align-items: center;
   text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
   font-family: "Montserrat", "sans-serif";
   color: #ffffff;
-  z-index: 2;
-  background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_mob1x.jpg);
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .double-lux-container {
-    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero-mobile2x.jpg);
-  }
+  z-index: 999;
 }
 @media screen and (min-width: 1024px) {
   .double-lux-container {
@@ -2486,12 +2473,6 @@ p {
     margin: 0 auto;
     min-width: 1024px;
     align-items: normal;
-    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tub1x.jpg);
-  }
-}
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
-  .double-lux-container {
-    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tablet2x.jpg);
   }
 }
 @media screen and (min-width: 1280px) {
@@ -2503,12 +2484,6 @@ p {
     align-items: flex-end;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_desk1x.jpg);
-  }
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .double-lux-container {
-    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero-desktop2x.jpg);
   }
 }
 
@@ -2517,6 +2492,7 @@ p {
   align-self: flex-start;
   margin-bottom: 16px;
   width: auto;
+  z-index: 999;
 }
 @media screen and (min-width: 1024px) {
   .double-lux-box {
@@ -2692,6 +2668,36 @@ p {
   .double-lux-button {
     margin-left: 368px;
   }
+}
+
+.fade {
+  border: none;
+}
+
+.double-room-hero {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.slick-box {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.double-room-hero .slick-list {
+  width: 1280px;
+}
+
+.double-room-hero .slick-track {
+  gap: 0;
+}
+
+.double-room-hero .slick-dotted.slick-slider {
+  margin-bottom: 0;
 }
 
 .header {
@@ -5752,19 +5758,15 @@ body {
 }
 
 .double-room-hero {
-  position: relative;
   width: 1280px;
   height: 720px;
-  margin-left: 85px;
-  margin-right: 85px;
+  margin: 0 auto;
 }
 
 .slick-box {
   position: relative;
   width: 100%;
   height: 100%;
-  margin-left: 85px;
-  margin-right: 85px;
 }
 
 .fade {
@@ -5790,8 +5792,13 @@ body {
   border: 1px solid red;
   background-image: "../../svg/icons.svg";
 }
-.fade .slick-prev {
+.fade > .slick-prev {
+  z-index: 10;
   left: 85px;
+}
+.fade > .slick-next {
+  left: 1170px;
+  z-index: 10;
 }
 .fade .slick-prev::before,
 .fade .slick-next::before {
