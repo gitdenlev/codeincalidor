@@ -15,7 +15,7 @@
 // Додавання ліній на задній фон
 .container > li{
     position: absolute;
-    z-index: -1;
+    // z-index: -1;
     pointer-events: none;
     top: 0px;
     width: 0;
