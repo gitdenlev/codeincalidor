@@ -58,7 +58,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/homepage-images/homepage-mobile/homepage-hero_mob1x.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/homepage-images/homepage-mobile/homepage-hero_mob1x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,14 +68,14 @@
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__homepage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/homepage-images/homepage-mobile/homepage-hero_mob2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/homepage-images/homepage-mobile/homepage-hero_mob2x.jpg);
   }
 }
 @media screen and (min-width: 1024px) {
   .hero__homepage {
     padding: 100px 47px 15px;
     height: 605px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/homepage-images/homepage-tablet/homepage-hero_tub1x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/homepage-images/homepage-tablet/homepage-hero_tub1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,14 +84,14 @@
 }
 @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .hero__homepage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/homepage-images/homepage-tablet/homepage-hero_tub2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/homepage-images/homepage-tablet/homepage-hero_tub2x.jpg);
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__homepage {
     padding: 100px 85px 64px;
     height: 620px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/homepage-images/homepage-desktop/homepage-hero_desk1x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/homepage-images/homepage-desktop/homepage-hero_desk1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,7 +100,7 @@
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero__homepage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/homepage-images/homepage-desktop/homepage-hero_desk2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/homepage-images/homepage-desktop/homepage-hero_desk2x.jpg);
   }
 }
 
@@ -778,7 +778,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/homepage-images/homepage-mobile/homepage-hero_mob1x.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/homepage-images/homepage-mobile/homepage-hero_mob1x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -788,14 +788,14 @@ p {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__homepage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/homepage-images/homepage-mobile/homepage-hero_mob2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/homepage-images/homepage-mobile/homepage-hero_mob2x.jpg);
   }
 }
 @media screen and (min-width: 1024px) {
   .hero__homepage {
     padding: 100px 47px 15px;
     height: 605px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/homepage-images/homepage-tablet/homepage-hero_tub1x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/homepage-images/homepage-tablet/homepage-hero_tub1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -804,14 +804,14 @@ p {
 }
 @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .hero__homepage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/homepage-images/homepage-tablet/homepage-hero_tub2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/homepage-images/homepage-tablet/homepage-hero_tub2x.jpg);
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__homepage {
     padding: 100px 85px 64px;
     height: 620px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/homepage-images/homepage-desktop/homepage-hero_desk1x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/homepage-images/homepage-desktop/homepage-hero_desk1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -820,7 +820,7 @@ p {
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero__homepage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/homepage-images/homepage-desktop/homepage-hero_desk2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/homepage-images/homepage-desktop/homepage-hero_desk2x.jpg);
   }
 }
 
@@ -1972,7 +1972,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/hotel-images/hotel-hero/hotel-hero_mob1x.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hotel-images/hotel-hero/hotel-hero_mob1x.jpg);
   backgrounjpgd-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1982,14 +1982,14 @@ p {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/hotel-images/hotel-hero/hotel-hero_mob2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hotel-images/hotel-hero/hotel-hero_mob2x.jpg);
   }
 }
 @media screen and (min-width: 1024px) {
   .hero__hotel {
     padding: 100px 47px 15px;
     height: 605px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/hotel-images/hotel-hero/hotel-hero_tub1x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hotel-images/hotel-hero/hotel-hero_tub1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1998,14 +1998,14 @@ p {
 }
 @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .hero__hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/hotel-images/hotel-hero/hotel-hero_tub2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hotel-images/hotel-hero/hotel-hero_tub2x.jpg);
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__hotel {
     padding: 100px 85px 64px;
     height: 620px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/hotel-images/hotel-hero/hotel-hero_desk1x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hotel-images/hotel-hero/hotel-hero_desk1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2014,7 +2014,7 @@ p {
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero__hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/hotel-images/hotel-hero/hotel-hero_desk2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hotel-images/hotel-hero/hotel-hero_desk2x.jpg);
   }
 }
 
@@ -2263,6 +2263,259 @@ p {
 }
 .hero__soc-icon:hover, .hero__soc-icon:focus {
   fill: #f3c653;
+}
+
+.body {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.double-lux {
+  box-sizing: border-box;
+}
+
+.double-lux-container {
+  position: relative;
+  box-sizing: border-box;
+  height: 720px;
+  max-width: 414px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat", "sans-serif";
+  color: #ffffff;
+  z-index: 2;
+  background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_mob1x.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .double-lux-container {
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero-mobile2x.jpg);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .double-lux-container {
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-bottom: 47px;
+    margin: 0 auto;
+    min-width: 1024px;
+    align-items: normal;
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tub1x.jpg);
+  }
+}
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+  .double-lux-container {
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tablet2x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .double-lux-container {
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 48px;
+    max-width: 1280px;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_desk1x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .double-lux-container {
+    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero-desktop2x.jpg);
+  }
+}
+
+.double-lux-box {
+  box-sizing: border-box;
+  align-self: flex-start;
+  margin-bottom: 16px;
+  width: auto;
+}
+@media screen and (min-width: 1024px) {
+  .double-lux-box {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .double-lux-box {
+    align-self: initial;
+    margin-bottom: 0;
+    width: 510px;
+  }
+}
+
+.double-lux-tittle {
+  box-sizing: border-box;
+  max-width: 325px;
+  font-style: normal;
+  font-family: "TimesNewRoman", "sans-serif";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .double-lux-tittle {
+    max-width: 510px;
+    font-size: 36px;
+    line-height: 1.14;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .double-lux-tittle {
+    min-width: 510px;
+  }
+}
+
+.double-lux-text {
+  box-sizing: border-box;
+  max-width: 325px;
+  margin-top: 14px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .double-lux-text {
+    margin-top: 24px;
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 1.14;
+  }
+}
+
+.double-lux-contact {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.double-lux-adress {
+  box-sizing: border-box;
+  position: absolute;
+  top: 64px;
+  right: 15px;
+  width: 210px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
+@media screen and (min-width: 1024px) {
+  .double-lux-adress {
+    display: block;
+    position: inherit;
+    margin-right: 40px;
+    width: 285px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .double-lux-adress {
+    display: none;
+  }
+}
+
+.double-lux-adress-link {
+  box-sizing: border-box;
+  padding: 9px 6px 9px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", "sans-serif";
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+}
+@media screen and (min-width: 1024px) {
+  .double-lux-adress-link {
+    font-size: 16px;
+  }
+}
+
+.double-lux-adress-icon {
+  box-sizing: border-box;
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  fill: #f3c653;
+}
+@media screen and (min-width: 1024px) {
+  .double-lux-adress-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.double-lux-list {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media screen and (min-width: 1024px) {
+  .double-lux-list {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .double-lux-list {
+    display: none;
+  }
+}
+
+.double-lux-item {
+  box-sizing: border-box;
+  height: 24px;
+  width: 24px;
+}
+
+.double-lux-icon {
+  fill: rgba(243, 198, 83, 0.7);
+}
+
+.double-lux-button {
+  margin: 0 auto;
+  padding: 14px;
+  min-width: 236px;
+  height: 48px;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  background: rgba(0, 0, 0, 0.4);
+}
+.double-lux-button:hover, .double-lux-button:focus {
+  background: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .double-lux-button {
+    margin-left: 261px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .double-lux-button {
+    margin-left: 368px;
+  }
 }
 
 .header {
@@ -4135,7 +4388,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/restourant-images/restoran-hero_mob1x.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/restourant-images/restoran-hero_mob1x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4145,14 +4398,14 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__rest {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/restourant-images/restoran-hero_mob2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/restourant-images/restoran-hero_mob2x.jpg);
   }
 }
 @media screen and (min-width: 1024px) {
   .hero__rest {
     padding: 100px 47px 15px;
     height: 605px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/restourant-images/restoran-hero_tub1x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/restourant-images/restoran-hero_tub1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -4161,14 +4414,14 @@ body {
 }
 @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .hero__rest {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/restourant-images/restoran-hero_tub2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/restourant-images/restoran-hero_tub2x.jpg);
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__rest {
     padding: 100px 85px 64px;
     height: 620px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/restourant-images/restoran-hero_desk1x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/restourant-images/restoran-hero_desk1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -4177,7 +4430,7 @@ body {
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero__rest {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/restourant-images/restoran-hero_desk2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/restourant-images/restoran-hero_desk2x.jpg);
   }
 }
 
@@ -5266,12 +5519,19 @@ body {
 }
 
 .fade {
+  position: relative;
   width: 1280px;
   height: 100%;
   margin: 0 auto;
   justify-content: center;
   text-align: center;
   border: 1px solid red;
+}
+.fade > .slick-list {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .fade .slick-prev,
 .fade .slick-next {
@@ -5292,6 +5552,10 @@ body {
   right: 85px;
   background-size: cover;
   background-position: 0px 0px;
+}
+
+.fade__pict {
+  position: absolute;
 }
 
 .swiper__icon {
@@ -5330,9 +5594,9 @@ body {
   fill: #ffffff;
 }
 
-.fade .slick-arrow.slick-next:hover,
+.fade .slick-arrow.slick-next:active,
 .fade .slick-arrow.slick-next:focus,
-.fade .slick-arrow.slick-prev:hover,
+.fade .slick-arrow.slick-prev:active,
 .fade .slick-arrow.slick-prev:focus {
   fill: rgb(243, 198, 83);
 }/*# sourceMappingURL=index.css.map */
