@@ -148,13 +148,13 @@
     }
 }
 
-.slick {
+.slick-container {
     display: block;
     width: 548px;
     padding-left: 84px;
     margin-left: auto;
     margin-bottom: 72px;
-    position: relative;
+    // position: relative;
     @include tablet {
         padding-left: 0;
         width: 428px;
@@ -176,103 +176,77 @@
     }
 }
 
-.one-time {
-    position: relative;
+.one-time-slick {
+    // position: relative;
     box-shadow: $picture-shadow;
     border-radius: 2px;
     background-color: #DADADA;
 }
 
 .slick-prev {
-    top: 295px;
-    left: 240px;
-    &::before {
-    color: blue;
-    }
+    top: 275px;
+    left: 215px;
     @include tablet {
-        top: 240px;
-        left: 360px;
+        top: 234px;
+        left: 337px;
     }
     @include desktop {
         top: 300px;
-        left: 360px;
+        left: 427px;
     }
 }
 
 .slick-next {
-    top: 295px;
+    top: 275px;
     left: 275px;
-    &::before {
-    color: blue
-    }
     @include tablet {
-        top: 240px;
+        top: 234px;
         left: 400px;
     }
     @include desktop {
         top: 300px;
-        left: 400px;
+        left: 490px;
     }
 }
 
-.arrow-left {
-    width: 40px;
+.one-time-slick .slick-arrow.slick-prev{
+    background-image: url(/src/svg/arrow-left-black.svg);
+    width: 32px;
     height: 32px;
-    position: absolute;
-    right: 64px;
-    bottom: -35px;
-    display: flex;
-    align-items: center;
-    color: transparent;
-    background-color: transparent;
-    border: none;
-    @include tablet {
-        right: 110px;
-        bottom: -35px;
-    }
-    @include desktop {
-        right: 160px;
-        bottom: -50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-image: url(/src/svg/arrow-left-yellow.svg);
     }
 }
 
-.arrow-right {
-    width: 40px;
+.one-time-slick .slick-arrow.slick-next{
+    background-image: url(/src/svg/arrow-right-black.svg);
+    width: 32px;
     height: 32px;
-    position: absolute;
-    right: 0px;
-    bottom: -35px;
-    display: flex;
-    align-items: center;
-    color: transparent;
-    background-color: transparent;
-    border: none;
-    @include tablet {
-        right: 64px;
-        bottom: -35px;
-    }
-    @include desktop {
-        right: 110px;
-        bottom: -50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-image: url(/src/svg/arrow-right-yellow.svg);
     }
 }
 
-
-.arrow-left-icon {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .arrow-left:hover &,
-    .arrow-left:focus & {
-        fill: #f3c653;
-    }
+.one-time-slick .slick-arrow {
+    font-size: 0;
 }
 
-.arrow-right-icon {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .arrow-right:hover &,
-    .arrow-right:focus & {
-        fill: #f3c653;
-    }
+.one-time-slick .slick-prev:before, 
+.one-time-slick .slick-next:before {
+    opacity: 0;
 }
+
+
 
 
 
