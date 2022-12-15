@@ -3,9 +3,13 @@ $('.one-time').slick({
   infinite: true,
   speed: 300,
 
+  slidesToShow: 2,
+
+
   slidesToShow: 3,
 
   slidesToShow: 2,
+
 
   adaptiveHeight: true,
 });
@@ -52,3 +56,4 @@ $('.one-time-slick').slick({
   slidesToShow: 2,
   adaptiveHeight: true,
 });
+
