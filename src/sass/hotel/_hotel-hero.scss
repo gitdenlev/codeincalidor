@@ -320,6 +320,10 @@
 }
 
 .triple_content {
+  @include mobile {
+    justify-content: end;
+    display: grid;
+  }
   @include tablet {
     margin-left: auto;
   }
@@ -329,6 +333,9 @@
 }
 
 .mimino-container {
+  @include mobile {
+    text-align: right;
+  }
   @include tablet {
     text-align: right;
     margin-right: 17px;
