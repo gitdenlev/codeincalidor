@@ -53,6 +53,7 @@ $('.fade').slick({
 
 
 
+
 $('.one-time-slick').slick({
   dots: false,
   infinite: true,
