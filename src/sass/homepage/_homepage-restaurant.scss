@@ -77,6 +77,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: 16px;
+  margin-top: 80px;
 }
 
 .hp-restaurant__btn {
@@ -156,70 +157,16 @@
   }
 }
 
-// ARROWS
-// .arrows {
-//   display: flex;
-//   gap: 34px;
-//   margin-left: 277px;
-//   margin-bottom: 40px;
-//   &__btn {
-//     background-color: transparent;
-//     border: none;
-//   }
-//   &__icon {
-//     fill: $white;
-//   }
-// }
-
-// slider
-
-// .one-time {
-//   width: 800px;
-//   margin: 0 auto;
-// }
-
-// флекс ел
-// .slider {
-//   min-width: 0;
-// }
-
-// Стилізація кнопок стрілочок які перемикають слайди
-.hp-rest-slider {
-  position: relative;
-  margin-bottom: 80px;
-  padding-left: 25px;
+.hp-rest__wrap-bottom {
   @include tablet {
-    margin-bottom: 0;
-    width: 645px;
-    padding-left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 9px;
+    justify-content: start;
   }
-}
-// КНОПКИ- СТРІЛОЧКИ ДО СЛАЙДЕРА абсолютно позиціонуєм відносно слайдера
-.hp-rest-slider .slick-arrow {
-  position: absolute;
-  top: 100%;
-  font-size: 0;
-  width: 35px;
-  height: 20px;
-  z-index: 0;
-  transform: translateY(24px);
-}
-
-.hp-rest-slider .slick-arrow.slick-prev {
-  left: 277px;
-  // -webkit-mask-image: url('/src/svg/slider-arrow-left.svg');
-  // mask-image: url('/src/svg/slider-arrow-left.svg');
-  background-color: $white;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
+  @include desktop {
+    gap: 16px;
   }
-}
-
-.hp-rest-slider .slick-arrow.slick-next {
-  right: 20px;
 }
 
 .slick-track {
@@ -252,67 +199,110 @@
   position: relative;
 }
 
+// ARROWS
+// .arrows {
+//   display: flex;
+//   gap: 34px;
+//   margin-left: 277px;
+//   margin-bottom: 40px;
+//   &__btn {
+//     background-color: transparent;
+//     border: none;
+//   }
+//   &__icon {
+//     fill: $white;
+//   }
+// }
+
+// Стилізація кнопок стрілочок які перемикають слайди
+// Витягаємо з боків і ліпимо вниз
+.hp-rest-slider {
+  position: relative;
+  padding-left: 25px;
+  @include tablet {
+    margin-bottom: 0;
+    width: 645px;
+    padding-left: 0;
+  }
+}
+
+// КНОПКИ- СТРІЛОЧКИ ДО СЛАЙДЕРА абсолютно позиціонуєм відносно слайдера що вгорі
+// .hp-rest-slider .slick-arrow {
+//   position: absolute;
+//   top: 100%;
+//   font-size: 0;
+//   width: 35px;
+//   height: 20px;
+//   z-index: 0;
+//   transform: translateY(24px);
+// }
+
+// .hp-rest-slider .slick-arrow.slick-prev {
+//   left: 277px;
+//   // -webkit-mask-image: url('/src/svg/slider-arrow-left.svg');
+//   // mask-image: url('/src/svg/slider-arrow-left.svg');
+//   background-color: $white;
+//   cursor: pointer;
+
+//   &:hover,
+//   &:focus {
+//     background-color: $accent-color;
+//   }
+// }
+
+// .hp-rest-slider .slick-arrow.slick-next {
+//   right: 20px;
+// }
+
 //  КНОПКИ РОЗМІЩЕННЯ СКЛАДНИМ ДЛЯ МЕНЕ СПОСОБОМ
 
-// .arrows {
-//   position: absolute;
-//   bottom: -32px;
-//   right: 20px;
-//   width: 94px;
+.hp-restaurant-slider__arrows {
+  position: absolute;
+  // bottom: -32px;
+  // right: 20px;
+  // width: 94px;
 
-//   @media screen and (min-width: 1024px) {
-//     right: 3px;
-//   }
-// }
+  // @media screen and (min-width: 1024px) {
+  //   right: 3px;
+  // }
+}
 
-// .arrows .slick-arrow {
-//   position: absolute;
-//   top: 50%;
-//   transform: translateY(-9px);
-//   width: 30px;
-//   height: 18px;
-//   z-index: 10;
-//   font-size: 0;
-//   border: none;
-// }
+.hp-restaurant-slider__arrows .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-9px);
+  width: 30px;
+  height: 18px;
+  z-index: 10;
+  font-size: 0;
+  border: none;
+}
 
-// .arrows .slick-arrow.slick-prev {
-//   left: 0;
-//   -webkit-mask-image: url('/src/svg/slider-arrow-left.svg');
-//   mask-image: url('/src/svg/slider-arrow-left.svg');
-//   background-color: $white;
-//   cursor: pointer;
+.hp-restaurant-slider__arrows .slick-arrow.slick-prev {
+  left: 0;
+  // -webkit-mask-image: url('/src/svg/slider-arrow-left.svg');
+  // mask-image: url('/src/svg/slider-arrow-left.svg');
+  background-color: $white;
+  cursor: pointer;
 
-//   &:hover,
-//   &:focus {
-//     background-color: $accent-color;
-//   }
-// }
-
-// .arrows .slick-arrow.slick-next {
-//   right: 0;
-//   -webkit-mask-image: url('/src/svg/slider-arrow-right.svg');
-//   mask-image: url('/src/svg/slider-arrow-right.svg');
-//   background-color: $white;
-//   // background-repeat: no-repeat;
-//   // background-position: center center;
-//   // background-size: contain;
-//   cursor: pointer;
-
-//   &:hover,
-//   &:focus {
-//     background-color: $accent-color;
-//   }
-// }
-
-.hp-rest__wrap-bottom {
-  @include tablet {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 9px;
-    justify-content: start;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
   }
-  @include desktop {
-    gap: 16px;
+}
+
+.hp-restaurant-slider__arrows .slick-arrow.slick-next {
+  right: 0;
+  // -webkit-mask-image: url('/src/svg/slider-arrow-right.svg');
+  // mask-image: url('/src/svg/slider-arrow-right.svg');
+  // background-color: $white;
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // background-size: contain;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
   }
 }

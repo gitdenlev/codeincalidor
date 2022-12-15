@@ -16,9 +16,9 @@ $('.variable-width').slick({
 });
 
 $('.slider').slick({
-  arrows: true,
+  // arrows: true,
   slidesToShow: 2,
   variableWidth: true,
-  // appendArrows: $('.arrows'),
+  appendArrows: $('.hp-restaurant-slider__arrows'),
   speed: 300,
 });
