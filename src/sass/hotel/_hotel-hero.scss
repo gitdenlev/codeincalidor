@@ -178,6 +178,10 @@
   box-shadow: 2px 2px 60px 2px rgb(0 0 0 / 25%);
   width: 244px;
 
+  @include mobile {
+    margin-bottom: 32px;
+  }
+
   @include tablet {
     margin-top: -94px;
     margin-left: 42px;
