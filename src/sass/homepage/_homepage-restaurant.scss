@@ -257,7 +257,7 @@
 //  КНОПКИ РОЗМІЩЕННЯ СКЛАДНИМ ДЛЯ МЕНЕ СПОСОБОМ
 
 .hp-restaurant-slider__arrows {
-  position: absolute;
+  // position: absolute;
   // bottom: -32px;
   // right: 20px;
   // width: 94px;
@@ -268,41 +268,41 @@
 }
 
 .hp-restaurant-slider__arrows .slick-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-9px);
-  width: 30px;
-  height: 18px;
-  z-index: 10;
-  font-size: 0;
-  border: none;
+  // position: absolute;
+  // top: 50%;
+  // transform: translateY(-9px);
+  // width: 30px;
+  // height: 18px;
+  // z-index: 10;
+  // font-size: 0;
+  // border: none;
 }
 
 .hp-restaurant-slider__arrows .slick-arrow.slick-prev {
-  left: 0;
+  // left: 0;
   // -webkit-mask-image: url('/src/svg/slider-arrow-left.svg');
   // mask-image: url('/src/svg/slider-arrow-left.svg');
-  background-color: $white;
-  cursor: pointer;
+  //   background-color: $white;
+  //   cursor: pointer;
 
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-  }
+  //   &:hover,
+  //   &:focus {
+  //     background-color: $accent-color;
+  //   }
 }
 
 .hp-restaurant-slider__arrows .slick-arrow.slick-next {
-  right: 0;
+  // right: 0;
   // -webkit-mask-image: url('/src/svg/slider-arrow-right.svg');
   // mask-image: url('/src/svg/slider-arrow-right.svg');
   // background-color: $white;
   // background-repeat: no-repeat;
   // background-position: center center;
   // background-size: contain;
-  cursor: pointer;
+  // cursor: pointer;
 
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: $accent-color;
+  // }
 }
