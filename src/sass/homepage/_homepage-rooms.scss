@@ -190,7 +190,7 @@
 
 
 
-.arrows-list {
+.arrows-wrap {
     display: flex;
     gap: 32px;
     margin-bottom: 20px;
@@ -207,8 +207,15 @@
 // .arrows-item{
 //     fill: $white;
 // }
-.arrows-item:hover,
-.arrows-item:hover {
+
+.homepage-rooms-btn-arrows{
+    display: inline-block;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+.homepage-rooms-btn-arrows:hover,
+.homepage-rooms-btn-arrows:hover {
     fill: $accent-color;
 }
 
