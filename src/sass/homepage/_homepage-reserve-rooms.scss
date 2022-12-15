@@ -1,6 +1,16 @@
 .hp-hotel__container {
   box-sizing: border-box;
-  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  @include tablet {
+    // padding: 47px 50px 96px 47px;
+    padding-top: 47px;
+    padding-bottom: 96px;
+  }
+  @include desktop {
+    // padding: 47px 0 96px 85px;
+    padding-left: 52px;
+  }
 }
 
 .hp-hotel__title {
@@ -8,7 +18,6 @@
   font-style: normal;
   @include font(40px, 700, 0.93, 0.3em);
   color: $white;
-  // color: red;
   text-transform: uppercase;
 
   margin-bottom: 12px;
@@ -60,10 +69,11 @@
   max-width: 243px;
   justify-content: flex-end;
   align-items: center;
-  margin: 0 auto;
   position: relative;
+  margin-left: 17px;
   @include tablet {
     max-width: 549px;
+    margin-left: 150px;
   }
   @include desktop {
     max-width: 595px;
@@ -112,16 +122,12 @@
 }
 
 .hp-hotel {
-  padding-top: 24px;
-  padding-bottom: 40px;
   max-width: 414px;
   height: 735px;
   background: rgba(0, 0, 0, 0.7);
   @include tablet {
     max-width: 1024px;
     height: 620px;
-    padding-top: 48px;
-    padding-bottom: 47px;
   }
   @include desktop {
     max-width: 1280px;
@@ -161,88 +167,12 @@
   }
 }
 
-// ARROWS
-// .arrows {
-//   display: flex;
-//   gap: 34px;
-//   margin-left: 277px;
-//   margin-bottom: 40px;
-//   &__btn {
-//     background-color: transparent;
-//     border: none;
-//   }
-//   &__icon {
-//     fill: $white;
-//   }
-// }
-
 // slider
 
-// Стилізація кнопок стрілочок які перемикають слайди
-.hp-hotel-slider {
-  position: relative;
-  padding-right: 40px;
-  margin-bottom: 80px;
-  @include tablet {
-    padding-right: 0;
-    padding-left: 47px;
-    margin-bottom: 0;
-  }
-  @include desktop {
-    padding-left: 52px;
-  }
-}
-// КНОПКИ- СТРІЛОЧКИ ДО СЛАЙДЕРА абсолютно позиціонуєм відносно слайдера
-.hp-hotel-slider .slick-arrow {
-  position: absolute;
-  top: 100%;
-  font-size: 0;
-  width: 30px;
-  height: 17px;
-  z-index: 0;
-  transform: translateY(24px);
-}
-
-.hp-hotel-slider .slick-arrow.slick-prev {
-  left: 277px;
-  // -webkit-mask-image: url('/src/svg/slider-arrow-left.svg');
-  // mask-image: url('/src/svg/slider-arrow-left.svg');
-  background: url(/src/svg/arrow-left-white.svg) 0 0 / 100% no-repeat;
-  // background-color: $white;
-  fill: $white;
-  cursor: pointer;
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-  }
-}
-
-.hp-hotel-slider .slick-arrow.slick-prev::before {
-  color: transparent;
-}
-
-.hp-hotel-slider .slick-arrow.slick-next {
-  right: 43px;
-  cursor: pointer;
-  background: url(/src/svg/arrow-right-white.svg) 0 0 / 100% no-repeat;
-  // -webkit-mask-image: url('/src/svg/slider-arrow-right.svg');
-  // mask-image: url('/src/svg/slider-arrow-right.svg');
-  // background-color: $white;
-  // &:hover,
-  // &:focus {
-  //   background-color: $accent-color;
-  // }
-}
-
-.hp-hotel-slider .slick-arrow.slick-next::before {
-  color: transparent;
-}
-
-.slick-track {
+.hp-hotel-slider .slick-track {
   display: flex;
   gap: 20px;
   overflow: hidden;
-  // margin-left: -100px;
   @include tablet {
     gap: 34px;
   }
@@ -254,7 +184,7 @@
 .hp-hotel-slider__img {
   border-radius: 2px;
 }
-.slick-list {
+.hp-hotel-slider .slick-list {
   overflow: hidden;
   @include tablet {
     width: 660px;
@@ -264,66 +194,70 @@
   }
 }
 
-.slider__wrap {
-  position: relative;
-}
+// .slider__wrap {
+//   position: relative;
+// }
 
 .hp-reserve__wrap-bottom {
   @include tablet {
     display: flex;
-    gap: 16px;
+    gap: 15px;
   }
 }
 
-//  КНОПКИ РОЗМІЩЕННЯ СКЛАДНИМ ДЛЯ МЕНЕ СПОСОБОМ
+// Стилізація кнопок стрілочок які перемикають слайди
+.hp-hotel-slider {
+  position: relative;
+  padding-right: 40px;
+  margin-bottom: 80px;
+  @include tablet {
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+}
+// КНОПКИ- СТРІЛОЧКИ ДО СЛАЙДЕРА  ЗАГАЛЬНІ СТИЛІ
+.hp-hotel-slider .slick-arrow {
+  position: absolute;
+  top: 100%;
+  font-size: 0;
+  width: 30px;
+  height: 17px;
+  transform: translateY(24px);
+  @include tablet {
+    transform: translateY(32px);
+  }
+}
 
-// .arrows {
-//   position: absolute;
-//   bottom: -32px;
-//   right: 20px;
-//   width: 94px;
+// КНОПКА ЛІВОРУЧ
+.hp-hotel-slider .slick-arrow.slick-prev {
+  left: 266px;
+  background: url(/src/svg/arrow-left-white.svg) 0 0 / 100% no-repeat;
+  @include tablet {
+    left: 562px;
+  }
+  @include desktop {
+    left: 778px;
+  }
+}
 
-//   @media screen and (min-width: 1024px) {
-//     right: 3px;
-//   }
-// }
+.hp-hotel-slider .slick-arrow.slick-prev::before {
+  color: transparent;
+}
 
-// .arrows .slick-arrow {
-//   position: absolute;
-//   top: 50%;
-//   transform: translateY(-9px);
-//   width: 30px;
-//   height: 18px;
-//   z-index: 10;
-//   font-size: 0;
-//   border: none;
-// }
+// КНОПКА ПРАВОРУЧ
 
-// .arrows .slick-arrow.slick-prev {
-//   left: 0;
-//   -webkit-mask-image: url('/src/svg/slider-arrow-left.svg');
-//   mask-image: url('/src/svg/slider-arrow-left.svg');
-//   background-color: $white;
-//   cursor: pointer;
+.hp-hotel-slider .slick-arrow.slick-next {
+  left: 326px;
+  cursor: pointer;
+  background: url(/src/svg/arrow-right-white.svg) 0 0 / 100% no-repeat;
+  @include tablet {
+    left: 628px;
+  }
+  @include desktop {
+    left: 838px;
+  }
+}
 
-//   &:hover,
-//   &:focus {
-//     background-color: $accent-color;
-//   }
-// }
-
-// .arrows .slick-arrow.slick-next {
-//   right: 0;
-//   -webkit-mask-image: url('/src/svg/slider-arrow-right.svg');
-//   mask-image: url('/src/svg/slider-arrow-right.svg');
-//   background-color: $white;
-//   // background-repeat: no-repeat;
-//   // background-position: center center;
-//   // background-size: contain;
-//   cursor: pointer;
-
-//   &:hover,
-//   &:focus {
-//     background-color: $accent-color;
-//   }
-// }
+.hp-hotel-slider .slick-arrow.slick-next::before {
+  color: transparent;
+}

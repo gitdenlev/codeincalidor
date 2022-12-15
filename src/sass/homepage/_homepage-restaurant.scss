@@ -1,6 +1,5 @@
 .hp-restaurant__container {
   box-sizing: border-box;
-  width: 100%;
   padding: 24px 15px 40px 15px;
   @include tablet {
     padding: 47px 50px 96px 47px;
@@ -107,6 +106,7 @@
 }
 
 .hp-restaurant {
+  position: relative;
   max-width: 414px;
   height: 735px;
   background: rgba(0, 0, 0, 0.7);
@@ -120,6 +120,7 @@
 }
 
 .hp-rest-overlay {
+  // z-index: -2;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(/src/images/homepage-images/homepage-mobile/hp-restaurant-bg-mob_1x.jpg);
   background-repeat: no-repeat;
@@ -216,7 +217,7 @@
   font-size: 0;
   width: 30px;
   height: 17px;
-  z-index: 0;
+  z-index: 1;
   transform: translateY(24px);
   @include tablet {
     transform: translateY(32px);
@@ -227,7 +228,7 @@
 
 .hp-rest-slider .slick-arrow.slick-prev {
   left: 25px;
-  background: url(/src/svg/arrow-left-white-rest.svg) 0 0 / 100% no-repeat;
+  background: url(/src/svg/arrow-left-white.svg) 0 0 / 100% no-repeat;
   @include tablet {
     left: 0;
   }
@@ -239,11 +240,10 @@
 
 // СТИЛІ ДЛЯ СТРІЛКИ ПРАВОРУЧ
 .hp-rest-slider .slick-arrow.slick-next {
-  right: 264px;
+  left: 90;
   cursor: pointer;
-  background: url(/src/svg/arrow-right-white-rest.svg) 0 0 / 100% no-repeat;
+  background: url(/src/svg/arrow-right-white.svg) 0 0 / 100% no-repeat;
   @include tablet {
-    // right: 570px;
     left: 64px;
   }
 }
@@ -266,3 +266,55 @@
 //     fill: $white;
 //   }
 // }
+
+.line-container-for-bg-img > li {
+  position: absolute;
+  // z-index: -1;
+  pointer-events: none;
+  top: 0px;
+  width: 0;
+  height: 735px;
+  border: 1px solid rgba(122, 122, 122, 0.4);
+  filter: blur(0.5px);
+  @include tablet {
+    height: 620px;
+  }
+}
+
+.line-1 {
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 278px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 338px;
+  }
+}
+
+.line-2 {
+  margin-left: 140px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 512px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 640px;
+  }
+}
+
+.line-3 {
+  margin-left: 274px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 746px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 942px;
+  }
+}
