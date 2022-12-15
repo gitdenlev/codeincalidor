@@ -3,10 +3,10 @@
   width: 100%;
   padding: 24px 15px 40px 15px;
   @include tablet {
-    padding: 48px 50px 96px 47px;
+    padding: 47px 50px 96px 47px;
   }
   @include desktop {
-    padding: 48px 0 96px 85px;
+    padding: 47px 0 96px 85px;
   }
 }
 
@@ -15,7 +15,6 @@
   font-style: normal;
   @include font(40px, 700, 0.93, 0.3em);
   color: $white;
-  // color: red;
   text-transform: uppercase;
 
   margin-left: 125px;
@@ -162,15 +161,17 @@
   @include tablet {
     display: flex;
     flex-direction: row-reverse;
-    gap: 9px;
+    gap: 30px;
     justify-content: start;
   }
   @include desktop {
-    gap: 16px;
+    gap: 32px;
   }
 }
 
-.slick-track {
+// SLIDER
+
+.hp-rest-slider .slick-track {
   display: flex;
   gap: 25px;
   overflow: hidden;
@@ -185,7 +186,7 @@
 .hp-rest-slider__img {
   border-radius: 2px;
 }
-.slick-list {
+.hp-rest-slider .slick-list {
   overflow: hidden;
   @include tablet {
     width: 660px;
@@ -194,25 +195,6 @@
     width: 876px;
   }
 }
-
-.slider__wrap {
-  position: relative;
-}
-
-// ARROWS
-// .arrows {
-//   display: flex;
-//   gap: 34px;
-//   margin-left: 277px;
-//   margin-bottom: 40px;
-//   &__btn {
-//     background-color: transparent;
-//     border: none;
-//   }
-//   &__icon {
-//     fill: $white;
-//   }
-// }
 
 // Стилізація кнопок стрілочок які перемикають слайди
 // Витягаємо з боків і ліпимо вниз
@@ -236,13 +218,19 @@
   height: 17px;
   z-index: 0;
   transform: translateY(24px);
+  @include tablet {
+    transform: translateY(32px);
+  }
 }
 
 // СТИЛІ ДЛЯ СТРІЛКИ ЛІВОРУЧ
+
 .hp-rest-slider .slick-arrow.slick-prev {
-  left: 277px;
+  left: 25px;
   background: url(/src/svg/arrow-left-white-rest.svg) 0 0 / 100% no-repeat;
-  // background: url(/src/svg/slider-arrow-left.svg) 0 0 / 100% no-repeat;
+  @include tablet {
+    left: 0;
+  }
 }
 
 .hp-rest-slider .slick-arrow.slick-prev::before {
@@ -250,12 +238,31 @@
 }
 
 // СТИЛІ ДЛЯ СТРІЛКИ ПРАВОРУЧ
-// .hp-rest-slider .slick-arrow.slick-next {
-//   right: 43px;
-//   cursor: pointer;
-//   background: url(/src/svg/arrow-right-white-rest.svg) 0 0 / 100% no-repeat;
-// }
+.hp-rest-slider .slick-arrow.slick-next {
+  right: 264px;
+  cursor: pointer;
+  background: url(/src/svg/arrow-right-white-rest.svg) 0 0 / 100% no-repeat;
+  @include tablet {
+    // right: 570px;
+    left: 64px;
+  }
+}
 
-// .hp-rest-slider .slick-arrow.slick-next::before {
-//   color: transparent;
+.hp-rest-slider .slick-arrow.slick-next::before {
+  color: transparent;
+}
+
+// ARROWS
+// .arrows {
+//   display: flex;
+//   gap: 34px;
+//   margin-left: 277px;
+//   margin-bottom: 40px;
+//   &__btn {
+//     background-color: transparent;
+//     border: none;
+//   }
+//   &__icon {
+//     fill: $white;
+//   }
 // }

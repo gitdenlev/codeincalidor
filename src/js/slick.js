@@ -19,6 +19,5 @@ $('.hp-rest-slider').slick({
   arrows: true,
   slidesToShow: 2,
   variableWidth: true,
-  appendArrows: $('.hp-restaurant-slider__arrows'),
   speed: 300,
 });
