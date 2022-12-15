@@ -485,10 +485,6 @@ p {
   }
 }
 
-.homepage-container {
-  position: relative;
-}
-
 .meal-first-hall {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -651,23 +647,22 @@ p {
   }
 }
 
-.slick {
+.slick-container {
   display: block;
   width: 548px;
   padding-left: 84px;
   margin-left: auto;
   margin-bottom: 72px;
-  position: relative;
 }
 @media screen and (min-width: 1024px) {
-  .slick {
+  .slick-container {
     padding-left: 0;
     width: 428px;
     margin-bottom: 96px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .slick {
+  .slick-container {
     width: 540px;
     margin-bottom: 118px;
   }
@@ -688,114 +683,78 @@ p {
 }
 
 .one-time {
-  position: relative;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   background-color: #DADADA;
 }
 
 .slick-prev {
-  top: 295px;
-  left: 240px;
-}
-.slick-prev::before {
-  color: blue;
+  top: 275px;
+  left: 215px;
 }
 @media screen and (min-width: 1024px) {
   .slick-prev {
-    top: 240px;
-    left: 360px;
+    top: 234px;
+    left: 337px;
   }
 }
 @media screen and (min-width: 1280px) {
   .slick-prev {
     top: 300px;
-    left: 360px;
+    left: 427px;
   }
 }
 
 .slick-next {
-  top: 295px;
+  top: 275px;
   left: 275px;
-}
-.slick-next::before {
-  color: blue;
 }
 @media screen and (min-width: 1024px) {
   .slick-next {
-    top: 240px;
+    top: 234px;
     left: 400px;
   }
 }
 @media screen and (min-width: 1280px) {
   .slick-next {
     top: 300px;
-    left: 400px;
+    left: 490px;
   }
 }
 
-.arrow-left {
-  width: 40px;
+.one-time .slick-arrow.slick-prev {
+  background-image: url(/src/svg/arrow-left-black.svg);
+  width: 32px;
   height: 32px;
-  position: absolute;
-  right: 64px;
-  bottom: -35px;
-  display: flex;
-  align-items: center;
-  color: transparent;
-  background-color: transparent;
-  border: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1024px) {
-  .arrow-left {
-    right: 110px;
-    bottom: -35px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .arrow-left {
-    right: 160px;
-    bottom: -50px;
-  }
+.one-time .slick-arrow.slick-prev:hover, .one-time .slick-arrow.slick-prev:focus {
+  background-image: url(/src/svg/arrow-left-yellow.svg);
 }
 
-.arrow-right {
-  width: 40px;
+.one-time .slick-arrow.slick-next {
+  background-image: url(/src/svg/arrow-right-black.svg);
+  width: 32px;
   height: 32px;
-  position: absolute;
-  right: 0px;
-  bottom: -35px;
-  display: flex;
-  align-items: center;
-  color: transparent;
-  background-color: transparent;
-  border: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1024px) {
-  .arrow-right {
-    right: 64px;
-    bottom: -35px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .arrow-right {
-    right: 110px;
-    bottom: -50px;
-  }
+.one-time .slick-arrow.slick-next:hover, .one-time .slick-arrow.slick-next:focus {
+  background-image: url(/src/svg/arrow-right-yellow.svg);
 }
 
-.arrow-left-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.arrow-left:hover .arrow-left-icon, .arrow-left:focus .arrow-left-icon {
-  fill: #f3c653;
+.one-time .slick-arrow {
+  font-size: 0;
 }
 
-.arrow-right-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.arrow-right:hover .arrow-right-icon, .arrow-right:focus .arrow-right-icon {
-  fill: #f3c653;
+.one-time .slick-prev:before,
+.one-time .slick-next:before {
+  opacity: 0;
 }
 
 .hp-hotel__container {
@@ -2526,19 +2485,6 @@ body {
   }
 }
 
-.modal-room-select::after {
-  background-image: url("/src/images/slyder-images/slyder-desktop/1-desk_1x.jpg");
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 15px;
-  right: 15px;
-  z-index: 5;
-  background-color: #fffdee;
-  pointer-events: none;
-}
-
 @media screen and (min-width: 1024px) {
   .modal-room-wrap-tablet {
     display: flex;
@@ -2548,7 +2494,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .room-select {
-    display: block;
+    display: flex;
     justify-content: flex-end;
   }
 }
@@ -2622,7 +2568,7 @@ body {
   overflow: scroll;
 }
 
-.backdrope-modal-room.is-hidden {
+.backdrope-modal-table.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -2646,6 +2592,7 @@ body {
     padding: 60px;
   }
 }
+
 .modal-table-close {
   width: 35px;
   height: 35px;
@@ -2855,9 +2802,11 @@ body {
   }
 }
 
-.table-wrap {
-  display: flex;
-  gap: 20px;
+@media screen and (min-width: 1024px) {
+  .table-wrap {
+    display: flex;
+    gap: 20px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -2983,7 +2932,7 @@ body {
   margin-bottom: 20px;
 }
 
-.modal-room-select {
+.modal-price-room-select {
   box-sizing: border-box;
   width: 100%;
   height: 54px;
@@ -3003,11 +2952,11 @@ body {
           appearance: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-room-select:hover, .modal-room-select:focus {
+.modal-price-room-select:hover, .modal-price-room-select:focus {
   border-color: #c79002;
 }
 @media screen and (min-width: 1024px) {
-  .modal-room-select {
+  .modal-price-room-select {
     height: 64px;
   }
 }
