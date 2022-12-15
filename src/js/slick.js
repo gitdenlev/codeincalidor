@@ -16,10 +16,10 @@ $('.variable-width').slick({
   appendDots: true,
 });
 
-$('.slider').slick({
+$('.hp-hotel-slider').slick({
   arrows: true,
   slidesToShow: 2,
   variableWidth: true,
-  // appendArrows: $('.arrows'),
+  // appendArrows: $('.hp-hotel-slider__arrows'),
   speed: 300,
 });

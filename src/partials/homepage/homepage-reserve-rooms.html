@@ -1,9 +1,9 @@
 <section class="hp-hotel hp-hotel-overlay">
-  <ul class="container">
+  <!-- <ul class="container">
     <li class="line1"></li>
     <li class="line2"></li>
     <li class="line3"></li>
-  </ul>
+  </ul> -->
   <div class="hp-hotel__container">
     <div class="hp-hotel__wrap-info">
       <h1 class="hp-hotel__title">Mimiho</h1>
@@ -16,8 +16,8 @@
     <!-- WRAP FOR SLIDER AND BUTTONS -->
     <div class="hp-reserve__wrap-bottom">
       <!-- SLIDER  -->
-      <div class="slider">
-        <div class="slider__item">
+      <div class="hp-hotel-slider">
+        <div class="hp-hotel-slider__item">
           <picture>
             <source
               srcset="
@@ -42,14 +42,13 @@
             />
 
             <img
-              class="slider__img"
+              class="hp-hotel-slider__img"
               src="/src/images/homepage-images/homepage-mobile/bed-mob_1x.jpg"
               alt="Зображення двуспального ліжка"
-              sizes="(min-width: 1280px) 274px, (min-width: 1024px) 270px, (max-width: 1023px) 270px"
             />
           </picture>
         </div>
-        <div class="slider__item">
+        <div class="hp-hotel-slider__item">
           <picture>
             <source
               srcset="
@@ -63,25 +62,17 @@
                 /src/images/homepage-images/homepage-tablet/breakfast-tab_1x.jpg 1x,
                 /src/images/homepage-images/homepage-tablet/breakfast-tab_2x.jpg 2x
               "
-              media="(min-width: 1024px)"
-            />
-            <source
-              srcset="
-                /src/images/homepage-images/homepage-tablet/breakfast-tab_1x.jpg 1x,
-                /src/images/homepage-images/homepage-tablet/breakfast-tab_2x.jpg 2x
-              "
-              media="(max-width: 1023px)"
+              media="(max-width: 1279px)"
             />
 
             <img
-              class="slider__img"
+              class="hp-hotel-slider__img"
               src="/src/images/homepage-images/homepage-tablet/breakfast-tab_1x.jpg"
               alt="Красивий сніданок яєшня і апельсиновий сік"
-              sizes="(min-width: 1280px) 274px, (min-width: 1024px) 162px, ((max-width: 1023px) 162px"
             />
           </picture>
         </div>
-        <div class="slider__item">
+        <div class="hp-hotel-slider__item">
           <picture>
             <source
               srcset="
@@ -95,27 +86,18 @@
                 /src/images/homepage-images/homepage-tablet/client-tab_1x.jpg 1x,
                 /src/images/homepage-images/homepage-tablet/client-tab_2x.jpg 2x
               "
-              media="(min-width: 1024px)"
+              media="(max-width: 1279px)"
             />
-            <source
-              srcset="
-                /src/images/homepage-images/homepage-tablet/client-tab_1x.jpg 1x,
-                /src/images/homepage-images/homepage-tablet/client-tab_2x.jpg 2x
-              "
-              media="(max-width: 1023px)"
-            />
-
             <img
-              class="slider__img"
+              class="hp-hotel-slider__img"
               src="/src/images/homepage-images/homepage-tablet/client-tab_1x.jpg"
               alt="Дівчина біля ресепшену з валізою"
-              sizes="(min-width: 1280px) 274px, (min-width: 1024px) 162px, (max-width: 1023px) 270px"
             />
           </picture>
         </div>
       </div>
 
-      <div class="arrows"></div>
+      <div class="hp-hotel-slider__arrows"></div>
 
       <div class="hp-hotel__btn-wrap">
         <button type="button" class="hp-hotel__btn">Забронювати номер</button>

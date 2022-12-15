@@ -8,6 +8,7 @@
   font-style: normal;
   @include font(40px, 700, 0.93, 0.3em);
   color: $white;
+  // color: red;
   text-transform: uppercase;
 
   margin-bottom: 12px;
@@ -177,18 +178,8 @@
 
 // slider
 
-// .one-time {
-//   width: 800px;
-//   margin: 0 auto;
-// }
-
-// флекс ел
-// .slider {
-//   min-width: 0;
-// }
-
 // Стилізація кнопок стрілочок які перемикають слайди
-.slider {
+.hp-hotel-slider {
   position: relative;
   padding-right: 40px;
   margin-bottom: 80px;
@@ -202,31 +193,49 @@
   }
 }
 // КНОПКИ- СТРІЛОЧКИ ДО СЛАЙДЕРА абсолютно позиціонуєм відносно слайдера
-.slider .slick-arrow {
+.hp-hotel-slider .slick-arrow {
   position: absolute;
   top: 100%;
   font-size: 0;
-  width: 35px;
-  height: 20px;
+  width: 30px;
+  height: 17px;
   z-index: 0;
   transform: translateY(24px);
 }
 
-.slider .slick-arrow.slick-prev {
+.hp-hotel-slider .slick-arrow.slick-prev {
   left: 277px;
-  -webkit-mask-image: url('/src/svg/slider-arrow-left.svg');
-  mask-image: url('/src/svg/slider-arrow-left.svg');
-  background-color: $white;
+  // -webkit-mask-image: url('/src/svg/slider-arrow-left.svg');
+  // mask-image: url('/src/svg/slider-arrow-left.svg');
+  background: url(/src/svg/arrow-left-white.svg) 0 0 / 100% no-repeat;
+  // background-color: $white;
+  fill: $white;
   cursor: pointer;
-
   &:hover,
   &:focus {
-    background-color: $accent-color;
+    fill: $accent-color;
   }
 }
 
-.slider .slick-arrow.slick-next {
-  right: 20px;
+.hp-hotel-slider .slick-arrow.slick-prev::before {
+  color: transparent;
+}
+
+.hp-hotel-slider .slick-arrow.slick-next {
+  right: 43px;
+  cursor: pointer;
+  background: url(/src/svg/arrow-right-white.svg) 0 0 / 100% no-repeat;
+  // -webkit-mask-image: url('/src/svg/slider-arrow-right.svg');
+  // mask-image: url('/src/svg/slider-arrow-right.svg');
+  // background-color: $white;
+  // &:hover,
+  // &:focus {
+  //   background-color: $accent-color;
+  // }
+}
+
+.hp-hotel-slider .slick-arrow.slick-next::before {
+  color: transparent;
 }
 
 .slick-track {
@@ -242,7 +251,7 @@
   }
 }
 
-.slider__img {
+.hp-hotel-slider__img {
   border-radius: 2px;
 }
 .slick-list {
@@ -257,6 +266,13 @@
 
 .slider__wrap {
   position: relative;
+}
+
+.hp-reserve__wrap-bottom {
+  @include tablet {
+    display: flex;
+    gap: 16px;
+  }
 }
 
 //  КНОПКИ РОЗМІЩЕННЯ СКЛАДНИМ ДЛЯ МЕНЕ СПОСОБОМ
@@ -311,10 +327,3 @@
 //     background-color: $accent-color;
 //   }
 // }
-
-.hp-reserve__wrap-bottom {
-  @include tablet {
-    display: flex;
-    gap: 16px;
-  }
-}
