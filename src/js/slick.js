@@ -37,3 +37,10 @@ $('.fade').slick({
 
   cssEase: 'linear',
 });
+
+$('.hp-rest-slider').slick({
+  arrows: true,
+  slidesToShow: 2,
+  variableWidth: true,
+  speed: 300,
+});
