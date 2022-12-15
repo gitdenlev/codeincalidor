@@ -1,0 +1,92 @@
+.double-room-hero {
+  position: relative;
+  width: 1280px;
+  height: 720px;
+  margin-left: 85px;
+  margin-right: 85px;
+}
+
+.slick-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 85px;
+  margin-right: 85px;
+}
+
+.fade {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid red;
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+    // background: rgba(0, 0, 0, 0.65);
+    background-image: '../../svg/icons.svg';
+  }
+
+  .slick-prev {
+    left: 85px;
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+    opacity: 0;
+  }
+  .slick-next {
+    right: 85px;
+    // overflow: hidden;
+    background-size: cover;
+    background-position: 0px 0px;
+  }
+}
+
+.swiper__icon {
+  width: 37px;
+  height: 37px;
+  color: $accent-color;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.65);
+  width: 40px;
+  height: 40px;
+}
+
+.fade .slick-arrow {
+  font-size: 0;
+}
+
+.fade .slick-arrow.slick-prev {
+  background: rgba(0, 0, 0, 0.65);
+  background-image: url(../svg/leftsvg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  fill: #ffffff;
+}
+
+.fade .slick-arrow.slick-next {
+  background: rgba(0, 0, 0, 0.65);
+  background-image: url(../svg/right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  fill: #ffffff;
+}
+
+.fade .slick-arrow.slick-next:hover,
+.fade .slick-arrow.slick-next:focus,
+.fade .slick-arrow.slick-prev:hover,
+.fade .slick-arrow.slick-prev:focus {
+  fill: rgba(243, 198, 83, 1);
+}

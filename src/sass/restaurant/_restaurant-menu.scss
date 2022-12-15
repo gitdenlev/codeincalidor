@@ -1,0 +1,296 @@
+.menu {
+  background-color: $background-dark-lemon;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  @include tablet {
+    padding-bottom: 40px;
+    padding-top: 58px;
+  }
+  @include desktop {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.menu__container {
+  margin: 0 auto;
+  position: relative;
+}
+
+.menu__header {
+  font-family: $times-font;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(37px / 32px);
+  color: $black;
+  margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 40px;
+    &::after {
+      content: '';
+      position: absolute;
+      border: 1px solid rgba(186, 186, 186, 0.4);
+      filter: blur(0.5px);
+      z-index: 1;
+      top: 0;
+      height: 616px;
+      right: 265px;
+      transform: translateY(-58px);
+    }
+  }
+  @include desktop {
+    margin-bottom: 40px;
+    &::after {
+      right: 640px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      border: 1px solid rgba(186, 186, 186, 0.4);
+      filter: blur(0.5px);
+      z-index: 1;
+      top: 0;
+      height: 616px;
+      right: 338px;
+      transform: translateY(-58px);
+    }
+  }
+}
+.menu__flex {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+  @include desktop {
+    &::before {
+      content: '';
+      position: absolute;
+      border: 1px solid rgba(186, 186, 186, 0.4);
+      filter: blur(0.5px);
+      z-index: 1;
+      top: 0;
+      height: 616px;
+      left: 338px;
+      transform: translateY(-58px);
+    }
+  }
+}
+.menu__first-flex {
+  width: 100%;
+  @include tablet {
+    width: 412px;
+  }
+  @include desktop {
+    width: 485px;
+  }
+}
+.menu__second-flex {
+  width: 100%;
+  @include tablet {
+    width: 430px;
+  }
+  @include desktop {
+    width: 485px;
+  }
+}
+.hot-meals__header,
+.appetizers__header,
+.salads__header,
+.desserts__header,
+.drinkables__header {
+  font-family: $times-font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28px / 24px);
+  color: $black;
+  padding-bottom: 16px;
+  display: inline-block;
+  @include tablet {
+    padding-bottom: 20px;
+  }
+}
+.hot-meals__list,
+.appetizers__list,
+.salads__list,
+.desserts__list,
+.drinkables__list {
+  padding-bottom: 16px;
+  display: block;
+  @include tablet {
+    padding-bottom: 20px;
+  }
+}
+.hot-meals__item,
+.appetizers__item {
+  @include tablet {
+    width: 430px;
+  }
+  @include desktop {
+    width: 485px;
+  }
+}
+.desserts__item,
+.drinkables__item {
+  height: 20px;
+}
+.drinkables__list {
+  padding-bottom: 32px;
+  @include tablet {
+    padding-bottom: 0;
+  }
+}
+.appetizers__list {
+  @include tablet {
+    padding-bottom: 0;
+  }
+}
+.hot-meals__item,
+.appetizers__item,
+.salads__item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+  @include mobile {
+    width: 384px;
+  }
+  @include tablet {
+    width: 410px;
+  }
+  @include desktop {
+    width: 485px;
+  }
+}
+.hot-meals__box-name,
+.appetizers__box-name,
+.salads__box-name {
+  width: 200px;
+  @include mobile {
+    width: 220px;
+  }
+  @include tablet {
+    width: 260px;
+  }
+}
+
+.hot-meals__box-price-weight,
+.appetizers-box-price-weight,
+.salads-box-price-weight,
+.desserts__box,
+.drinkables__box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  @include mobile {
+    gap: 32px;
+  }
+}
+.hot-meals__name,
+.appetizers__name,
+.salads__name,
+.desserts__name,
+.drinkables__name {
+  font-family: 'Montserrat', 'sans-serif';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20px / 16px);
+  letter-spacing: 0.02em;
+  padding-bottom: 4px;
+  width: 222px;
+  @include tablet {
+    width: 260px;
+  }
+  @include desktop {
+    width: 291px;
+  }
+}
+.desserts__name,
+.drinkables__name {
+  padding-bottom: 0;
+}
+.hot-meals__ingridients,
+.appetizers__ingridients,
+.salads__ingridients {
+  font-family: 'Montserrat', 'sans-serif';
+  font-weight: 400;
+  font-size: 10px;
+  font-style: normal;
+  line-height: calc(12px / 10px);
+  letter-spacing: 0.02em;
+  color: $black;
+  width: 225px;
+  @include desktop {
+    width: 262px;
+  }
+}
+.hot-meals__weight,
+.appetizers__weight,
+.salads__weight,
+.desserts__weight,
+.drinkables__weight {
+  font-family: $montserrat-font;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: calc(17px / 14px);
+  letter-spacing: 0.02em;
+  color: $black;
+}
+.hot-meals__price,
+.appetizers__price,
+.salads__price,
+.desserts__price,
+.drinkables__price {
+  font-family: $montserrat-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(17px / 14px);
+  letter-spacing: 0.02em;
+  color: $black;
+}
+.salads__item,
+.desserts__item,
+.drinkables__item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+  @include mobile {
+    width: 384px;
+  }
+  @include tablet {
+    width: 430px;
+  }
+  @include desktop {
+    width: 485px;
+  }
+}
+.button__menu {
+  font-family: $montserrat-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20px / 16px);
+  letter-spacing: 0.02em;
+  color: $accent-color;
+  background-color: $black;
+  border: 2px solid $background-light-lemon;
+  border-radius: 25px;
+  padding: 13px 22px;
+  display: block;
+  margin: 0 auto;
+  &:hover,
+  &:focus {
+    background: $white;
+    border: 2px solid $white;
+    border-radius: 25px;
+  }
+  @include tablet {
+    margin-right: 0;
+  }
+}
