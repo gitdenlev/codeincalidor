@@ -15,7 +15,7 @@ $('.variable-width').slick({
   variableWidth: true,
 });
 
-$('.slider').slick({
+$('.hp-rest-slider').slick({
   arrows: true,
   slidesToShow: 2,
   variableWidth: true,
