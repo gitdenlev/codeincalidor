@@ -18,21 +18,21 @@
   padding-bottom: 15px;
   align-items: center;
   text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-end;
+  // flex-wrap: nowrap;
+  // background-position: 50%;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   font-family: $montserrat-font;
   color: $white;
-  z-index: 2;
-  background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_mob1x.jpg);
+  z-index: 999;
+  // background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_mob1x.jpg);
 
-  @include ratio {
-    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero-mobile2x.jpg);
-  }
+  // @include ratio {
+  //   background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero-mobile2x.jpg);
+  // }
 
   @include tablet {
     padding-left: 47px;
@@ -41,11 +41,11 @@
     margin: 0 auto;
     min-width: 1024px;
     align-items: normal;
-    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tub1x.jpg);
+    // background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tub1x.jpg);
 
-    @include ratio {
-      background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tablet2x.jpg);
-    }
+    // @include ratio {
+    //   background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tablet2x.jpg);
+    // }
   }
 
   @include desktop {
@@ -56,12 +56,12 @@
     align-items: flex-end;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_desk1x.jpg);
+    // background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_desk1x.jpg);
   }
 
-  @include ratio {
-    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero-desktop2x.jpg);
-  }
+  // @include ratio {
+  //   background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero-desktop2x.jpg);
+  // }
 }
 
 .double-lux-box {
@@ -69,6 +69,7 @@
   align-self: flex-start;
   margin-bottom: 16px;
   width: auto;
+  z-index: 999;
   @include tablet {
     margin-bottom: 24px;
   }
@@ -219,4 +220,43 @@
   @include desktop {
     margin-left: 368px;
   }
+}
+
+.fade {
+  border: none;
+}
+
+.double-room-hero {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.slick-box {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.double-room-hero .slick-list {
+  width: 1280px;
+}
+.double-room-hero .slick-track {
+  gap: 0;
+}
+
+.double-room-hero .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.double-room-hero > .slick-prev {
+  z-index: 10;
+  left: 85px;
+}
+
+.double-room-hero > .slick-next {
+  left: 1170px;
+  z-index: 10;
 }
