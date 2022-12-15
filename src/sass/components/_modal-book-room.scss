@@ -26,7 +26,6 @@
     border: 1px solid red;
     border-radius: 2px;
     background-color: $background-light-lemon;
-    // z-index: 5;
     @include tablet {
         border: 1px solid blue;
         width: 712px;
@@ -199,19 +198,7 @@
                 
     }
 }
-.modal-room-select::after {
-    background-image: url('/src/images/slyder-images/slyder-desktop/1-desk_1x.jpg');
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 15px;
-    right: 15px;
-    z-index: 5;
-    background-color: #fffdee;
-    pointer-events: none;
 
-}
 
 // Стилізування tablet та desktop
 .modal-room-wrap-tablet {
@@ -223,13 +210,10 @@
 }
 .room-select {
     @include tablet {
-        display: block;
+        display: flex;
         justify-content: flex-end;
-
     }
-
 }
-
 
 .modal-room-btn {
     width: 100%;
