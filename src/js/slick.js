@@ -2,7 +2,11 @@ $('.one-time').slick({
   dots: true,
   infinite: true,
   speed: 300,
+
   slidesToShow: 3,
+
+  slidesToShow: 2,
+
   adaptiveHeight: true,
 });
 
@@ -22,4 +26,14 @@ $('.hp-hotel-slider').slick({
   variableWidth: true,
   // appendArrows: $('.hp-hotel-slider__arrows'),
   speed: 300,
+});
+
+$('.fade').slick({
+  dots: true,
+  infinite: true,
+  speed: 600,
+  fade: true,
+  autoplay: true,
+
+  cssEase: 'linear',
 });
