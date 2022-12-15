@@ -14,13 +14,25 @@
   margin-right: 85px;
 }
 
+
+
 .fade {
+  position: relative;
   width: 1280px;
   height: 100%;
   margin: 0 auto;
   justify-content: center;
   text-align: center;
   border: 1px solid red;
+  // background-color: none;
+
+  > .slick-list{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
 
   .slick-prev,
   .slick-next {
@@ -46,6 +58,13 @@
     background-size: cover;
     background-position: 0px 0px;
   }
+
+
+}
+
+.fade__pict{
+  position: absolute;
+
 }
 
 .swiper__icon {
@@ -84,9 +103,9 @@
   fill: #ffffff;
 }
 
-.fade .slick-arrow.slick-next:hover,
+.fade .slick-arrow.slick-next:active,
 .fade .slick-arrow.slick-next:focus,
-.fade .slick-arrow.slick-prev:hover,
+.fade .slick-arrow.slick-prev:active,
 .fade .slick-arrow.slick-prev:focus {
   fill: rgba(243, 198, 83, 1);
 }

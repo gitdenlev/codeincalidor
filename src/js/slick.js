@@ -29,11 +29,11 @@ $('.hp-hotel-slider').slick({
 });
 
 $('.fade').slick({
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 600,
   fade: true,
-  autoplay: true,
+  // autoplay: true,
 
   cssEase: 'linear',
 });
