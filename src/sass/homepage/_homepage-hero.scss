@@ -5,7 +5,7 @@
   align-items: center;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../../images/homepage-images/homepage-mobile/homepage-hero_mob1x.jpg);
+    url(../images/homepage-images/homepage-mobile/homepage-hero_mob1x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,14 +16,14 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../../images/homepage-images/homepage-mobile/homepage-hero_mob2x.jpg);
+      url(../images/homepage-images/homepage-mobile/homepage-hero_mob2x.jpg);
   }
 
   @media screen and (min-width: 1024px) {
     padding: 100px 47px 15px;
     height: 605px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../../images/homepage-images/homepage-tablet/homepage-hero_tub1x.jpg);
+      url(../images/homepage-images/homepage-tablet/homepage-hero_tub1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,7 +35,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(../../images/homepage-images/homepage-tablet/homepage-hero_tub2x.jpg);
+        url(../images/homepage-images/homepage-tablet/homepage-hero_tub2x.jpg);
     }
   }
 
@@ -43,7 +43,7 @@
     padding: 100px 85px 64px;
     height: 620px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../../images/homepage-images/homepage-desktop/homepage-hero_desk1x.jpg);
+      url(../images/homepage-images/homepage-desktop/homepage-hero_desk1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +55,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(../../images/homepage-images/homepage-desktop/homepage-hero_desk2x.jpg);
+        url(../images/homepage-images/homepage-desktop/homepage-hero_desk2x.jpg);
     }
   }
 }
