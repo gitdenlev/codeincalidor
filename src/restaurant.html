@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+
+    <!-- slick -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- Add animation -->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
+
+  <body>
+    <!-- Робочий блок -->
+    <ul>
+      <li><a href="./hotel.html">HOTEL</a></li>
+      <li><a href="./restaurant.html">RESTAURANT</a></li>
+      <li><a href="./double-room-lux.html">DOUBLE ROOM LUX</a></li>
+      <li><a href="./triple-room.html">TRIPLE ROOM</a></li>
+      <li><a href="./double-room.html">DOUBLE ROOM</a></li>
+    </ul>
+
+
+    
+    <include src="./partials/homepage/homepage-header.html"></include>
+    <main>
+      <include src="./partials/restaurant/restaurant-hero.html"></include>        
+      <include src="./partials/restaurant/restaurant-about-kitchen.html"></include>
+      <include src="./partials/restaurant/restaurant-menu.html"></include>
+    </main>
+      <include src="./partials/restaurant/restaurant-footer.html"></include>
+
+
+
+
+      <!-- Slick Jquery -->
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+      <!-- Slick JS -->
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+      <!-- Base JS -->
+      <script type="module" src="./js/slick.js"></script>
+
+      <!-- Animation on scroll script -->
+        <script src="./js/wow.min.js"></script>
+        <script>new WOW().init();</script>
+  </body>
+</html>

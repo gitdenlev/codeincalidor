@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  background-color: #fffdee;
+  background-color: $background-light-lemon;
 }
 
 p {
@@ -11,9 +11,21 @@ p {
   width: 100%;
   max-width: 414px;
   margin: 0px auto;
-  //   background-color: #fffdee;
   padding-top: 36px;
   padding-bottom: 32px;
+  position: relative;
+
+  
+  @include tablet {
+    min-width: 1024px;
+    padding-top: 56px;
+    padding-bottom: 40px;
+  }
+
+  @include desktop {
+    min-width: 1280px;
+    padding-bottom: 73px;
+  }
 }
 
 .contacts-container {
@@ -21,31 +33,64 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0px auto;
+  @include tablet {
+    max-width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+    display: flex;
+    gap: 101px;
+  }
+
+  @include desktop {
+    max-width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+    gap: 108px;
+  }
 }
 
 .contacts-title {
-  font-family: 'FilmP3', sans-serif;
+  font-family: $film-font;
   font-weight: 700;
   font-size: 40px;
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #494848;
+  color: $contact-text-color;
   margin-bottom: 12px;
+  @include tablet {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    margin-bottom: 8px;
+  }
+  @include desktop {
+    margin-bottom: 16px;
+  }
 }
 
 .contacts-subtitle {
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: $montserrat-font;
   font-weight: 600;
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
-  color: #5f5f5f;
+  color: $main-text-color;
   margin-bottom: 16px;
+  @include tablet {
+    margin-bottom: 52px;
+  }
+  @include desktop {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
 }
 
 .contacts-list {
   margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 0px;
+  }
 }
 
 .contacts-item {
@@ -56,10 +101,24 @@ p {
   &:not(:last-child) {
     margin-bottom: 16px;
   }
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    &:first-child {
+      margin-bottom: 24px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 48px;
+    }
+    &:last-child {
+      gap: 0px;
+    }
+  }
 }
 
 .contacts-text {
-  font-family: 'Montserrat';
+  font-family: $montserrat-font;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -68,12 +127,12 @@ p {
 
   /* Brown */
 
-  color: #c79002;
+  color: $brown-text-color;
   width: 102px;
 }
 
 .contacts-block-1 {
-  background-color: #fff;
+  background-color: $white;
   width: 144px;
   height: 40px;
   margin-left: 0px;
@@ -84,7 +143,7 @@ p {
 }
 
 .contacts-block-2 {
-  background-color: #fff;
+  background-color: $white;
   width: 260px;
   height: 40px;
   margin-left: 0px;
@@ -93,10 +152,13 @@ p {
   box-sizing: border-box;
   border: 0.5px solid $accent-color;
   border-radius: 2px;
+  @include tablet {
+    width: 264px;
+  }
 }
 
 .contacts-block-3 {
-  background-color: #fff;
+  background-color: $white;
   width: 260px;
   height: 76px;
   margin-left: 0px;
@@ -105,10 +167,14 @@ p {
   box-sizing: border-box;
   border: 0.5px solid $accent-color;
   border-radius: 2px;
+  @include tablet {
+    width: 285px;
+    height: 56px;
+  }
 }
 
 .contacts-link {
-  font-family: 'Montserrat';
+  font-family: $montserrat-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -116,7 +182,7 @@ p {
   display: flex;
   align-items: center;
   letter-spacing: 0.02em;
-  color: #494848;
+  color: $contact-text-color;
 }
 
 .contacts-icon {
@@ -131,18 +197,97 @@ p {
   margin-top: 26px;
   margin-right: 10px;
   margin-bottom: 26px;
+  @include tablet {
+    margin-top: 17px;
+    margin-bottom: 15px;
+  }
 }
 
 .contacts-icon,
 .contacts-map-icon {
-  fill: #c79002;
+  fill: $brown-text-color;
 }
 
 .contacts-map {
   display: block;
-  min-width: 384px;
-  height: 220px;
-  border: 1px solid #bababa;
+  max-width: 384px;
+  max-height: 220px;
+  box-sizing: border-box;
+  border: 1px solid $text-color-for-dark-bg;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+  @include tablet {
+    max-width: 535px;
+    max-height: 412px;
+    margin-top: 13px;
+  }
+
+  @include desktop {
+    max-width: 634px;
+    max-height: 412px;
+    margin-top: 8px;
+  }
+}
+
+.line-container > li {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  top: 0px;
+  width: 0;
+  height: 550px;
+  border: 1px solid rgba(186, 186, 186, 0.4);
+  filter: blur(0.5px);
+}
+
+.line-1 {
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+  // margin-left: 140px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 278px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 338px;
+  }
+}
+
+.line-2 {
+  margin-left: 140px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 512px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 640px;
+  }
+}
+
+.line-3 {
+  margin-left: 274px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 746px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 942px;
+  }
+}
+
+.contacts-adress-mob {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.contacts-adress-desk {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: contents;
+  }
 }
