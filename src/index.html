@@ -30,7 +30,6 @@
 
   <body>
 
-
     <!-- робочій блок -->
     <ul>
       <li><a href="./hotel.html">HOTEL</a></li>
@@ -92,6 +91,28 @@
       new WOW().init();
     </script>
 
+      <include src="./partials/homepage/homepage-footer.html"></include>
+
+      <include src="./partials/modal/room-modal.html"></include>
+
+      <!-- slick jquery -->
+      <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-1.11.0.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+      ></script>
+      <!-- slick js -->
+      <script
+        type="text/javascript"
+        src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      ></script>
+
+      <!-- base js -->
+      <script type="module" src="./js/slick.js"></script>
+    </main>
     <include src="./partials/homepage/homepage-footer.html"></include>
 
     <include src="./partials/modal/room-modal.html"></include>
@@ -120,8 +141,5 @@
       <!-- animation on scroll script -->
         <script src="./js/wow.min.js"></script>
         <script>new WOW().init();</script>
-
-
-
   </body>
 </html>
