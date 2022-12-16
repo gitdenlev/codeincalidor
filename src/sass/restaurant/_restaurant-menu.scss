@@ -101,8 +101,8 @@
 .drinkables__header {
   font-family: $times-font;
   font-weight: 700;
-  font-size: 20px;
-  line-height: calc(23px / 20px);
+  font-size: 24px;
+  line-height: calc(28px / 24px);
   color: $black;
   padding-bottom: 16px;
   display: inline-block;
@@ -172,8 +172,8 @@
   @include mobile {
     width: 220px;
   }
-  @include desktop {
-    width: 257px;
+  @include tablet {
+    width: 260px;
   }
 }
 
@@ -194,15 +194,18 @@
 .salads__name,
 .desserts__name,
 .drinkables__name {
-  font-family: $montserrat-font;
+  font-family: 'Montserrat', 'sans-serif';
   font-weight: 500;
   font-size: 16px;
   line-height: calc(20px / 16px);
   letter-spacing: 0.02em;
   padding-bottom: 4px;
-  width: 220px;
+  width: 222px;
+  @include tablet {
+    width: 260px;
+  }
   @include desktop {
-    width: 290px;
+    width: 291px;
   }
 }
 .desserts__name,
@@ -212,14 +215,17 @@
 .hot-meals__ingridients,
 .appetizers__ingridients,
 .salads__ingridients {
-  font-family: $montserrat-font;
+  font-family: 'Montserrat', 'sans-serif';
   font-weight: 400;
   font-size: 10px;
   font-style: normal;
   line-height: calc(12px / 10px);
   letter-spacing: 0.02em;
   color: $black;
-  width: 210px;
+  width: 225px;
+  @include desktop {
+    width: 262px;
+  }
 }
 .hot-meals__weight,
 .appetizers__weight,
@@ -280,8 +286,8 @@
   margin: 0 auto;
   &:hover,
   &:focus {
-    // background: $hover-bgcolor-small-btn;
-    // border: 2px solid $hover-bgcolor-small-btn;
+    background: $white;
+    border: 2px solid $white;
     border-radius: 25px;
   }
   @include tablet {

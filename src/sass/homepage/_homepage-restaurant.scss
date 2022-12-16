@@ -1,6 +1,13 @@
-.container {
+.hp-restaurant__container {
   box-sizing: border-box;
   width: 100%;
+  padding: 24px 15px 40px 15px;
+  @include tablet {
+    padding: 47px 50px 96px 47px;
+  }
+  @include desktop {
+    padding: 47px 0 96px 85px;
+  }
 }
 
 .hp-restaurant__title {
@@ -10,14 +17,14 @@
   color: $white;
   text-transform: uppercase;
 
-  margin-left: 140px;
+  margin-left: 125px;
   margin-bottom: 12px;
   max-width: 127px;
   @include tablet {
     font-size: 64px;
     max-width: 202px;
     margin-bottom: 16px;
-    margin-left: 278px;
+    margin-left: 230px;
   }
   @include desktop {
     margin-left: 338px;
@@ -30,13 +37,13 @@
   @include font(20px, 700, 0.83, 0.02em);
   color: $white;
 
-  margin-left: 140px;
+  margin-left: 125px;
   margin-bottom: 20px;
   max-width: 127px;
   @include tablet {
     font-size: 24px;
     margin-bottom: 8px;
-    margin-left: 278px;
+    margin-left: 230px;
   }
   @include desktop {
     margin-left: 338px;
@@ -46,16 +53,16 @@
 .hp-restaurant__text {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  @include font(12px, 600, 0.8, 0.02em);
+  @include font(12px, 600, 1.25, 0.02em);
   color: $text-color-for-dark-bg;
 
-  margin-left: 140px;
+  margin-left: 125px;
   margin-bottom: 48px;
   max-width: 259px;
   @include tablet {
     font-size: 16px;
     max-width: 610px;
-    margin-left: 278px;
+    margin-left: 230px;
     margin-bottom: 40px;
   }
   @include desktop {
@@ -70,6 +77,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: 16px;
+  margin-top: 80px;
 }
 
 .hp-restaurant__btn {
@@ -99,16 +107,12 @@
 }
 
 .hp-restaurant {
-  padding-top: 24px;
-  padding-bottom: 40px;
   max-width: 414px;
   height: 735px;
   background: rgba(0, 0, 0, 0.7);
   @include tablet {
     max-width: 1024px;
     height: 620px;
-    padding-top: 48px;
-    padding-bottom: 47px;
   }
   @include desktop {
     max-width: 1280px;
@@ -152,3 +156,113 @@
     }
   }
 }
+
+.hp-rest__wrap-bottom {
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    justify-content: start;
+  }
+  @include desktop {
+    gap: 32px;
+  }
+}
+
+// SLIDER
+
+.hp-rest-slider .slick-track {
+  display: flex;
+  gap: 25px;
+  overflow: hidden;
+  @include tablet {
+    gap: 34px;
+  }
+  @include desktop {
+    gap: 86px;
+  }
+}
+
+.hp-rest-slider__img {
+  border-radius: 2px;
+}
+.hp-rest-slider .slick-list {
+  overflow: hidden;
+  @include tablet {
+    width: 660px;
+  }
+  @include desktop {
+    width: 876px;
+  }
+}
+
+// Стилізація кнопок стрілочок які перемикають слайди
+// Витягаємо з боків і ліпимо вниз
+.hp-rest-slider {
+  position: relative;
+  padding-left: 25px;
+  @include tablet {
+    margin-bottom: 0;
+    width: 645px;
+    padding-left: 0;
+  }
+}
+
+// КНОПКИ- СТРІЛОЧКИ ДО СЛАЙДЕРА абсолютно позиціонуєм відносно слайдера що вгорі
+// Загальні стилі для стрілок
+.hp-rest-slider .slick-arrow {
+  position: absolute;
+  top: 100%;
+  font-size: 0;
+  width: 30px;
+  height: 17px;
+  z-index: 0;
+  transform: translateY(24px);
+  @include tablet {
+    transform: translateY(32px);
+  }
+}
+
+// СТИЛІ ДЛЯ СТРІЛКИ ЛІВОРУЧ
+
+.hp-rest-slider .slick-arrow.slick-prev {
+  left: 25px;
+  background: url(/src/svg/arrow-left-white-rest.svg) 0 0 / 100% no-repeat;
+  @include tablet {
+    left: 0;
+  }
+}
+
+.hp-rest-slider .slick-arrow.slick-prev::before {
+  color: transparent;
+}
+
+// СТИЛІ ДЛЯ СТРІЛКИ ПРАВОРУЧ
+.hp-rest-slider .slick-arrow.slick-next {
+  right: 264px;
+  cursor: pointer;
+  background: url(/src/svg/arrow-right-white-rest.svg) 0 0 / 100% no-repeat;
+  @include tablet {
+    // right: 570px;
+    left: 64px;
+  }
+}
+
+.hp-rest-slider .slick-arrow.slick-next::before {
+  color: transparent;
+}
+
+// ARROWS
+// .arrows {
+//   display: flex;
+//   gap: 34px;
+//   margin-left: 277px;
+//   margin-bottom: 40px;
+//   &__btn {
+//     background-color: transparent;
+//     border: none;
+//   }
+//   &__icon {
+//     fill: $white;
+//   }
+// }
