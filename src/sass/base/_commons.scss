@@ -4,6 +4,7 @@ body {
   // font-family: $main-font;
   font-size: 14px;
   letter-spacing: 0.03em;
+  background-color: none;
 }
 
 button {
@@ -31,7 +32,7 @@ img {
 }
 
 .container {
-  z-index: 2;
+  // z-index: 2;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;

@@ -76,7 +76,7 @@
     margin-left: auto;
     box-shadow: $picture-shadow;
     border-radius: 2px;
-    background-color: #DADADA;
+    // background-color: #DADADA;
     @include tablet {
         position: absolute;
         width: 400px;
@@ -110,7 +110,7 @@
     width: 200px;
     box-shadow: $picture-shadow;
     border-radius: 2px;
-    background-color: #DADADA;
+    // background-color: #DADADA;
     @include tablet {
         position: absolute;
         width: 350px;
@@ -146,6 +146,7 @@
 }
 
 .slick-container {
+    opacity: 0;
     display: block;
     width: 548px;
     padding-left: 84px;
@@ -153,6 +154,7 @@
     margin-bottom: 72px;
     // position: relative;
     @include tablet {
+        opacity: 1;
         padding-left: 0;
         width: 428px;
         margin-bottom: 96px;
@@ -178,7 +180,7 @@
     // position: relative;
     box-shadow: $picture-shadow;
     border-radius: 2px;
-    background-color: #DADADA;
+    // background-color: #DADADA;
 }
 
 .slick-prev {
