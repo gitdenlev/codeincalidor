@@ -18,21 +18,9 @@
   padding-bottom: 15px;
   align-items: center;
   text-align: left;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-end;
-  // flex-wrap: nowrap;
-  // background-position: 50%;
-  // background-repeat: no-repeat;
-  // background-size: cover;
   font-family: $montserrat-font;
   color: $white;
   z-index: 999;
-  // background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_mob1x.jpg);
-
-  // @include ratio {
-  //   background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero-mobile2x.jpg);
-  // }
 
   @include tablet {
     padding-left: 47px;
@@ -41,11 +29,6 @@
     margin: 0 auto;
     min-width: 1024px;
     align-items: normal;
-    // background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tub1x.jpg);
-
-    // @include ratio {
-    //   background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tablet2x.jpg);
-    // }
   }
 
   @include desktop {
@@ -56,12 +39,7 @@
     align-items: flex-end;
     flex-direction: row;
     justify-content: space-between;
-    // background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_desk1x.jpg);
   }
-
-  // @include ratio {
-  //   background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero-desktop2x.jpg);
-  // }
 }
 
 .double-lux-box {

@@ -1,8 +1,6 @@
 // Код для додавання у html між початком секціі та контейнером
 
-
 // Код для додавання у html між початком секціі та контейнером. Додам самостійно
-
 
 // <ul class="container">
 // <li class="line1"></li>
@@ -36,30 +34,26 @@
 
 .line2 {
   margin-left: 259px;
-}
-
-
-
-// Додавання ліній на задній фон
-.container > li{
-    position: absolute;
-    // z-index: -1;
-    pointer-events: none;
-    top: 0px;
-    width: 0;
-    height: 100%;
-    border: 1px solid rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
-    
 
   @media screen and (min-width: 1024px) {
     margin-left: 465px;
-
   }
 
   @media screen and (min-width: 1280px) {
     margin-left: 555px;
   }
+}
+
+// Додавання ліній на задній фон
+.container > li {
+  position: absolute;
+  // z-index: -1;
+  pointer-events: none;
+  top: 0px;
+  width: 0;
+  height: 100%;
+  border: 1px solid rgba(186, 186, 186, 0.4);
+  filter: blur(0.5px);
 }
 
 .line3 {
