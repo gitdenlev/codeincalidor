@@ -1,11 +1,28 @@
-.hp-restaurant__container {
-  box-sizing: border-box;
-  padding: 24px 15px 40px 15px;
+.hp-restaurant {
+  position: relative;
+  max-width: 414px;
+  height: 735px;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 0 auto;
   @include tablet {
-    padding: 47px 50px 96px 47px;
+    max-width: 1024px;
+    height: 620px;
   }
   @include desktop {
-    padding: 47px 0 96px 85px;
+    max-width: 1280px;
+  }
+}
+
+.hp-restaurant__container {
+  box-sizing: border-box;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  @include tablet {
+    padding-top: 47px;
+    padding-bottom: 96px;
+  }
+  @include desktop {
+    padding-left: 85px;
   }
 }
 
@@ -86,20 +103,6 @@
   padding: 14px 24px;
   &:last-child {
     padding: 14px 32px;
-  }
-}
-
-.hp-restaurant {
-  position: relative;
-  max-width: 414px;
-  height: 735px;
-  background: rgba(0, 0, 0, 0.7);
-  @include tablet {
-    max-width: 1024px;
-    height: 620px;
-  }
-  @include desktop {
-    max-width: 1280px;
   }
 }
 
