@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: transparent;
   z-index: 9999;
   position: absolute;
   top: 0;
@@ -17,7 +17,7 @@
     align-items: center;
     width: 100%;
     justify-content: space-around;
-    padding: 28px 0px 12px;
+    padding: 28px 0px 30px;
   }
 }
 
