@@ -30,11 +30,6 @@
   font-family: $montserrat-font;
   color: $white;
   z-index: 2;
-  background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_mob1x.jpg);
-
-  @include ratio {
-    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero-mobile2x.jpg);
-  }
 
   @include tablet {
     padding-left: 47px;
@@ -43,11 +38,6 @@
     margin: 0 auto;
     min-width: 1024px;
     align-items: normal;
-    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tub1x.jpg);
-
-    @include ratio {
-      background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tablet2x.jpg);
-    }
   }
 
   @include desktop {
@@ -58,19 +48,15 @@
     align-items: flex-end;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_desk1x.jpg);
-  }
-
-  @include ratio {
-    background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero-desktop2x.jpg);
   }
 }
 
 .double-lux-box {
   box-sizing: border-box;
   align-self: flex-start;
-    margin-bottom: 16px;
+  margin-bottom: 16px;
   width: auto;
+  z-index: 999;
   @include tablet {
     margin-bottom: 24px;
   }
@@ -267,7 +253,6 @@
   height: 740px;
   margin: 0 auto;
 
-
   @media screen and (min-width: 1024px) {
     width: 1024px;
     height: 720px;
@@ -277,7 +262,6 @@
     width: 1280px;
     height: 720px;
   }
-
 }
 
 .double-room-hero .slick-dotted.slick-slider {
