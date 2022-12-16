@@ -1,0 +1,168 @@
+// ____________СЕКЦІЯ - ТРІПЛ______________
+
+.triple {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #f0ecd6;
+
+  @include mobile {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @include tablet {
+    padding-top: 62px;
+    padding-bottom: 145px;
+  }
+
+  @include desktop {
+    padding-top: 72px;
+    padding-bottom: 182px;
+  }
+}
+
+.triple_revert {
+  @include tablet {
+    display: revert;
+  }
+}
+
+.triple_content {
+  @include mobile {
+    justify-content: end;
+    display: grid;
+  }
+  @include tablet {
+    margin-left: auto;
+  }
+  @include desktop {
+    margin-left: auto;
+  }
+}
+
+.mimino-container {
+  @include mobile {
+    text-align: right;
+  }
+  @include tablet {
+    text-align: right;
+    margin-right: 17px;
+    .hotel-hero_pretitle {
+      margin-right: -20px;
+    }
+  }
+  @include desktop {
+    text-align: right;
+    margin-right: 60px;
+  }
+}
+
+// .text-container {
+//   @include tablet {
+//     text-align: right;
+//   }
+//   @include desktop {
+//     text-align: right;
+//   }
+// }
+
+.triple-text-container {
+  @include tablet {
+    margin-left: 510px;
+  }
+
+  @include desktop {
+    margin-left: 595px;
+  }
+}
+
+.hotel-img-left {
+  background-color: #dadada;
+  border-radius: 2px;
+  // margin-left: auto;
+  box-shadow: 2px 2px 60px 2px rgb(0 0 0 / 25%);
+
+  @include mobile {
+    // margin-top: 286px;
+    width: 244px;
+  }
+
+  @include tablet {
+    margin-top: -430px;
+    // margin-right: 45px;
+    margin-left: 65px;
+    width: 400px;
+  }
+
+  @include desktop {
+    margin-top: -460px;
+    // margin-right: 40px;
+    margin-left: 95px;
+    width: 460px;
+  }
+}
+
+.triple_slider {
+  display: flex;
+  justify-content: end;
+  margin-top: 48px;
+}
+
+.triple_btn-container {
+  @include tablet {
+    margin-top: -120px;
+  }
+}
+
+.triple_room-btn {
+  display: inline-block;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  @include font(16px, 700, 0.8, 0.02em);
+  color: $accent-color;
+
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  background: #000000;
+
+  padding: 14px 65px;
+  // min-width: 236px;
+  // margin: 0 auto;
+  margin-bottom: 16px;
+  &:hover,
+  &:focus {
+    background: $white;
+    border: 2px solid #ffffff;
+  }
+
+  @include tablet {
+    display: table;
+    margin-right: auto;
+  }
+}
+
+.triple_price-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  @include font(16px, 700, 0.8, 0.02em);
+  color: $accent-color;
+
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  background: #000000;
+
+  padding: 14px 37px;
+  // min-width: 236px;
+  // margin: 0 auto;
+  &:hover,
+  &:focus {
+    background: $white;
+    border: 2px solid #ffffff;
+  }
+
+  @include tablet {
+    display: block;
+    margin-right: auto;
+  }
+}
