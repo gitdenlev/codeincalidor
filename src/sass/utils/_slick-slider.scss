@@ -15,8 +15,6 @@
   // margin-right: 85px;
 }
 
-
-
 .fade {
   position: relative;
   width: 1280px;
@@ -27,17 +25,14 @@
 
   // border: 1px solid red;
 
-  border: 1px solid red;
   // background-color: none;
 
-  > .slick-list{
+  > .slick-list {
     background-color: black;
     position: absolute;
     top: 0;
     left: 0;
   }
-
-
 
   .slick-prev,
   .slick-next {
@@ -70,13 +65,10 @@
     background-size: cover;
     background-position: 0px 0px;
   }
-
-
 }
 
-.fade__pict{
+.fade__pict {
   position: absolute;
-
 }
 
 .swiper__icon {
@@ -104,6 +96,15 @@
   background-size: contain;
   background-position: 50% 50%;
   fill: #ffffff;
+  border: none;
+  position: absolute;
+  top: 350px;
+  @include tablet {
+    top: 340px;
+  }
+  @include desktop {
+    top: 412px;
+  }
 }
 
 .fade .slick-arrow.slick-next {
@@ -113,6 +114,15 @@
   background-size: contain;
   background-position: 50% 50%;
   fill: #ffffff;
+  border: none;
+  position: absolute;
+  top: 350px;
+  @include tablet {
+    top: 340px;
+  }
+  @include desktop {
+    top: 412px;
+  }
 }
 
 .fade .slick-arrow.slick-next:active,
