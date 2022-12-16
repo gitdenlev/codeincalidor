@@ -261,10 +261,21 @@
 }
 
 .double-room-pic {
+  width: 414px;
   height: 740px;
-  @include tablet {
+  margin: 0 auto;
+
+
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
     height: 720px;
   }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    height: 720px;
+  }
+
 }
 
 .double-room-hero .slick-dotted.slick-slider {
