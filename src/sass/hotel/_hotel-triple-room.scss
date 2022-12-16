@@ -1,0 +1,277 @@
+.body {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.double-lux {
+  box-sizing: border-box;
+}
+
+.double-lux-container {
+  position: relative;
+  box-sizing: border-box;
+  height: 720px;
+  max-width: 414px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+  text-align: left;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-end;
+  // flex-wrap: nowrap;
+  // background-position: 50%;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  font-family: $montserrat-font;
+  color: $white;
+  z-index: 999;
+  // background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_mob1x.jpg);
+
+  // @include ratio {
+  //   background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero-mobile2x.jpg);
+  // }
+
+  @include tablet {
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-bottom: 47px;
+    margin: 0 auto;
+    min-width: 1024px;
+    align-items: normal;
+    // background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tub1x.jpg);
+
+    // @include ratio {
+    //   background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_tablet2x.jpg);
+    // }
+  }
+
+  @include desktop {
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 48px;
+    max-width: 1280px;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    // background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero_desk1x.jpg);
+  }
+
+  // @include ratio {
+  //   background-image: url(/src/images/hotel-images/hotel-hero/hotel-hero-desktop2x.jpg);
+  // }
+}
+
+.double-lux-box {
+  box-sizing: border-box;
+  align-self: flex-start;
+  margin-bottom: 16px;
+  width: auto;
+  z-index: 999;
+  @include tablet {
+    margin-bottom: 24px;
+  }
+  @include desktop {
+    align-self: initial;
+    margin-bottom: 0;
+    width: 510px;
+  }
+}
+
+.double-lux-tittle {
+  box-sizing: border-box;
+  max-width: 325px;
+  font-style: normal;
+  font-family: $times-font;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  color: $white;
+  @include tablet {
+    max-width: 510px;
+    font-size: 36px;
+    line-height: 1.14;
+  }
+  @include desktop {
+    min-width: 510px;
+  }
+}
+
+.double-lux-text {
+  box-sizing: border-box;
+  max-width: 325px;
+  margin-top: 14px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $white;
+  @include tablet {
+    margin-top: 24px;
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 1.14;
+  }
+}
+
+.double-lux-contact {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.double-lux-adress {
+  box-sizing: border-box;
+  position: absolute;
+  top: 64px;
+  right: 15px;
+  width: 210px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  @include tablet {
+    display: block;
+    position: inherit;
+    margin-right: 40px;
+    width: 285px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.double-lux-adress-link {
+  box-sizing: border-box;
+  padding: 9px 6px 9px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: $montserrat-font;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+.double-lux-adress-icon {
+  box-sizing: border-box;
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  fill: $accent-color;
+  @include tablet {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.double-lux-list {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @include tablet {
+    flex-direction: row;
+    gap: 20px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.double-lux-item {
+  box-sizing: border-box;
+  height: 24px;
+  width: 24px;
+}
+
+.double-lux-icon {
+  fill: rgba(243, 198, 83, 0.7);
+}
+
+.double-lux-button {
+  margin: 0 auto;
+  padding: 14px;
+  min-width: 236px;
+  height: 48px;
+  border: 2px solid $white;
+  border-radius: 25px;
+  font-family: $montserrat-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+  background: rgba(0, 0, 0, 0.4);
+  &:hover,
+  &:focus {
+    background: $white;
+  }
+  @include tablet {
+    margin-left: 261px;
+  }
+  @include desktop {
+    margin-left: 368px;
+  }
+}
+
+.fade {
+  border: none;
+}
+
+.double-room-hero {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.slick-box {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.double-room-hero .slick-list {
+  width: 414px;
+
+  @include tablet {
+    width: 1024px;
+    height: 720px;
+  }
+  @include desktop {
+    width: 1280px;
+  }
+}
+.double-room-hero .slick-track {
+  gap: 0;
+}
+
+.double-room-hero .slick-slide {
+  @include tablet {
+    height: 720px;
+  }
+}
+
+.double-room-pic {
+  height: 740px;
+  @include tablet {
+    height: 720px;
+  }
+}
+
+.double-room-hero .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.double-room-hero .slick-dots {
+  opacity: 0;
+}
