@@ -219,10 +219,12 @@
   @include tablet {
     margin-left: auto;
     margin-top: 89px;
+    display: block;
   }
 
   @include desktop {
     margin-top: 120px;
+    display: block;
   }
 }
 
