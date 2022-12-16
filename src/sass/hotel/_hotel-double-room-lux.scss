@@ -126,10 +126,7 @@
 
 // __________СЕКЦІЯ - ДАБЛ-ЛЮКС_______________
 
-.double-lux {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
+.double-lux-hotel {
   @include mobile {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -157,7 +154,7 @@
 }
 
 .hotel-img {
-  background-color: #dadada;
+  // background-color: #dadada;
   border-radius: 2px;
   // margin-left: auto;
   box-shadow: 2px 2px 60px 2px rgb(0 0 0 / 25%);
@@ -165,16 +162,17 @@
 
   @include mobile {
     margin-bottom: 32px;
+    margin-left: auto;
   }
 
   @include tablet {
-    margin-top: -94px;
+    margin-top: -96px;
     margin-left: 42px;
     width: 400px;
   }
 
   @include desktop {
-    margin-top: -104px;
+    margin-top: -108px;
     margin-left: 48px;
     width: 460px;
   }
@@ -213,16 +211,20 @@
 .hotel-hero_btn-container {
   @include mobile {
     margin-top: 37px;
-    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   @include tablet {
     margin-left: auto;
     margin-top: 89px;
+    display: block;
   }
 
   @include desktop {
     margin-top: 120px;
+    display: block;
   }
 }
 

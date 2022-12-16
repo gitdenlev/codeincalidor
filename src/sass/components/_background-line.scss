@@ -10,6 +10,7 @@
 
 // Додавання ліній на задній фон
 .container > li {
+  background-color: $background-light-lemon;
   position: absolute;
   z-index: -1;
   pointer-events: none;

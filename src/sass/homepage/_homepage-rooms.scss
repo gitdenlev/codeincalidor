@@ -1,6 +1,6 @@
 .homepage-rooms-section {
     position: relative;
-    background-color: $background-light-lemon;
+
 }
 
 .discribe-room-wrap {
@@ -185,7 +185,7 @@
 
 .slick-track {
     display: flex;
-    gap: 20px;
+    // gap: 20px;
 
     @include tablet {
         gap: 40px;
