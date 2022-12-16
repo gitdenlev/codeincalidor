@@ -1,0 +1,280 @@
+.hotel-hero_upper-text {
+  margin-bottom: 8px;
+
+  font-family: 'TimesNewRoman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  color: #b4b4b4;
+
+  @include mobile {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+  }
+
+  @include tablet {
+    margin-bottom: 4px;
+    font-size: 32px;
+    line-height: calc(37 / 32);
+  }
+}
+.hotel-hero_pretitle {
+  margin-bottom: 32px;
+
+  font-family: 'FilmP3', 'sans-serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  color: #494848;
+  text-transform: uppercase;
+
+  @include mobile {
+    font-size: 40px;
+    line-height: calc(43 / 40);
+  }
+  @include tablet {
+    margin-bottom: 62px;
+    font-size: 64px;
+    line-height: calc(69 / 64);
+  }
+  @include desktop {
+    margin-bottom: 72px;
+  }
+}
+
+.hotel-hero_title {
+  margin-bottom: 12px;
+
+  font-family: 'TimesNewRoman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-transform: uppercase;
+  span {
+    text-transform: none;
+  }
+
+  @include mobile {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+
+  @include tablet {
+    margin-bottom: 16px;
+    font-size: 30px;
+    line-height: calc(34 / 30);
+    width: 424px;
+  }
+
+  @include desktop {
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: calc(41 / 36);
+    width: 509px;
+  }
+}
+.hotel-hero_text {
+  font-family: 'Montserrat', 'sans-serif';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+  color: #7a7a7a;
+
+  @include mobile {
+    font-size: 12px;
+    line-height: calc(15 / 12);
+
+    margin-bottom: 32px;
+    max-width: 242px;
+  }
+
+  @include tablet {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    max-width: 400px;
+  }
+
+  @include desktop {
+    font-weight: 700;
+    max-width: 400px;
+  }
+}
+
+.slider-img-hotel {
+  @include mobile {
+    width: 194px;
+  }
+
+  @include tablet {
+    width: 194px;
+  }
+
+  @include desktop {
+    width: 254px;
+  }
+}
+
+// __________СЕКЦІЯ - ДАБЛ-ЛЮКС_______________
+
+.double-lux {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include mobile {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @include tablet {
+    padding-top: 62px;
+    padding-bottom: 47px;
+  }
+
+  @include desktop {
+    padding-top: 72px;
+    padding-bottom: 47px;
+  }
+}
+
+.double-lux_upper-content {
+  @include tablet {
+    display: flex;
+  }
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.hotel-img {
+  background-color: #dadada;
+  border-radius: 2px;
+  // margin-left: auto;
+  box-shadow: 2px 2px 60px 2px rgb(0 0 0 / 25%);
+  width: 244px;
+
+  @include mobile {
+    margin-bottom: 32px;
+  }
+
+  @include tablet {
+    margin-top: -94px;
+    margin-left: 42px;
+    width: 400px;
+  }
+
+  @include desktop {
+    margin-top: -104px;
+    margin-left: 48px;
+    width: 460px;
+  }
+}
+
+.hotel_lower-content {
+  @include tablet {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+
+.hotel-hero_slider {
+  // padding-top: 21px;
+  // padding-bottom: 72px;
+  // justify-content: flex-end;
+  // margin-right: 85px;
+  display: flex;
+  flex-wrap: nowrap;
+
+  @include tablet {
+    margin-top: 48px;
+  }
+
+  @include desktop {
+    margin-top: 48px;
+  }
+}
+
+.hotel-hero_btn-container {
+  @include mobile {
+    margin-top: 37px;
+    margin-left: auto;
+  }
+
+  @include tablet {
+    margin-left: auto;
+    margin-top: 89px;
+  }
+
+  @include desktop {
+    margin-top: 120px;
+  }
+}
+
+.hotel-hero_room-btn {
+  display: inline-block;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  @include font(16px, 700, 0.8, 0.02em);
+  color: $accent-color;
+
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  background: #000000;
+
+  padding: 14px 65px;
+  // min-width: 236px;
+  // margin: 0 auto;
+  margin-bottom: 16px;
+  &:hover,
+  &:focus {
+    background: $white;
+    border: 2px solid #ffffff;
+  }
+
+  @include tablet {
+    display: table;
+    margin-left: auto;
+  }
+}
+
+.hotel-hero_price-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  @include font(16px, 700, 0.8, 0.02em);
+  color: $accent-color;
+
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  background: #000000;
+
+  padding: 14px 37px;
+  // min-width: 236px;
+  // margin: 0 auto;
+  &:hover,
+  &:focus {
+    background: $white;
+    border: 2px solid #ffffff;
+  }
+
+  @include tablet {
+    display: block;
+    margin-left: auto;
+  }
+}
