@@ -241,12 +241,40 @@
 }
 
 .double-room-hero .slick-list {
-  width: 1280px;
+  width: 414px;
+
+  @include tablet {
+    width: 1024px;
+    height: 720px;
+  }
+  @include desktop {
+    width: 1280px;
+  }
 }
 .double-room-hero .slick-track {
   gap: 0;
+  // @include tablet {
+  //   height: 720px;
+  // }
+}
+
+.double-room-hero .slick-slide {
+  @include tablet {
+    height: 720px;
+  }
+}
+
+.double-room-pic {
+  height: 740px;
+  @include tablet {
+    height: 720px;
+  }
 }
 
 .double-room-hero .slick-dotted.slick-slider {
   margin-bottom: 0;
+}
+
+.double-room-hero .slick-dots {
+  opacity: 0;
 }

@@ -1,46 +1,75 @@
 .double-room-hero {
   // position: relative;
-  width: 1280px;
-  height: 720px;
+  width: 414px;
+  height: 740px;
   margin: 0 auto;
-  // margin-left: 85px;
-  // margin-right: 85px;
+  @include tablet {
+    width: 1024px;
+    height: 720px;
+  }
+  @include desktop {
+    width: 1280px;
+  }
 }
 
 .slick-box {
   position: relative;
   width: 100%;
   height: 100%;
-  // margin-left: 85px;
-  // margin-right: 85px;
 }
 
 .fade {
-  width: 1280px;
+  width: 414px;
   height: 100%;
   margin: 0 auto;
   justify-content: center;
   text-align: center;
-  // border: 1px solid red;
+  @include tablet {
+    width: 1024px;
+  }
+  @include desktop {
+    width: 1280px;
+  }
 
   .slick-prev,
   .slick-next {
     position: absolute;
     width: 40px;
     height: 40px;
-    border: 1px solid red;
     // background: rgba(0, 0, 0, 0.65);
     background-image: '../../svg/icons.svg';
   }
 
-  > .slick-prev {
+  .slick-prev {
     z-index: 10;
-    left: 85px;
+    top: 350px;
+    left: 15px;
+
+    @include tablet {
+      top: 340px;
+      left: 47px;
+    }
+
+    @include desktop {
+      top: 340px;
+      left: 85px;
+    }
   }
 
-  > .slick-next {
-    left: 1170px;
+  .slick-next {
     z-index: 10;
+    top: 350px;
+    left: 359px;
+
+    @include tablet {
+      top: 340px;
+      left: 937px;
+    }
+
+    @include desktop {
+      top: 340px;
+      left: 1155px;
+    }
   }
 
   .slick-prev::before,
@@ -49,7 +78,7 @@
   }
 
   .slick-next {
-    right: 85px;
+    // right: 85px;
     // overflow: hidden;
     background-size: cover;
     background-position: 0px 0px;
@@ -59,7 +88,7 @@
 .swiper__icon {
   width: 37px;
   height: 37px;
-  color: $accent-color;
+  fill: #ffffff;
 }
 
 .swiper-button-next,
@@ -80,7 +109,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  fill: #ffffff;
+  color: #ffffff;
 }
 
 .fade .slick-arrow.slick-next {
