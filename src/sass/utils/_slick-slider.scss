@@ -18,18 +18,33 @@
   height: 100%;
 }
 
+
+
 .fade {
   width: 414px;
   height: 100%;
   margin: 0 auto;
   justify-content: center;
   text-align: center;
+
   @include tablet {
     width: 1024px;
   }
   @include desktop {
     width: 1280px;
   }
+
+  border: 1px solid red;
+  // background-color: none;
+
+  > .slick-list{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+
 
   .slick-prev,
   .slick-next {
@@ -83,6 +98,13 @@
     background-size: cover;
     background-position: 0px 0px;
   }
+
+
+}
+
+.fade__pict{
+  position: absolute;
+
 }
 
 .swiper__icon {

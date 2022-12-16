@@ -1,11 +1,15 @@
 $('.one-time').slick({
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 300,
+
+  slidesToShow: 2,
+
 
   slidesToShow: 3,
 
   slidesToShow: 2,
+
 
   adaptiveHeight: true,
 });
@@ -29,11 +33,11 @@ $('.hp-hotel-slider').slick({
 });
 
 $('.fade').slick({
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 600,
   fade: true,
-  autoplay: true,
+  // autoplay: true,
 
   cssEase: 'linear',
 });
@@ -44,3 +48,12 @@ $('.hp-rest-slider').slick({
   variableWidth: true,
   speed: 300,
 });
+
+$('.one-time-slick').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  adaptiveHeight: true,
+});
+

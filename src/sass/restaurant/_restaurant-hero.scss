@@ -1,0 +1,298 @@
+.hero__rest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/restourant-images/restoran-hero_mob1x.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 52px 15px 20px;
+  height: 688px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/restourant-images/restoran-hero_mob2x.jpg);
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 100px 47px 15px;
+    height: 605px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/restourant-images/restoran-hero_tub1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/restourant-images/restoran-hero_tub2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 100px 85px 64px;
+    height: 620px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/restourant-images/restoran-hero_desk1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/restourant-images/restoran-hero_desk2x.jpg);
+    }
+  }
+}
+
+.hero__title {
+  font-family: 'FilmP3', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  max-width: 303px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 0.93;
+  letter-spacing: 0.3em;
+
+  color: #ffffff;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 88px;
+    margin-bottom: 16px;
+    max-width: 404px;
+    font-size: 128px;
+    line-height: 1.07;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 64px;
+    margin-bottom: 32px;
+  }
+}
+
+.hero__subtitle {
+  margin-bottom: 44px;
+  font-family: 'Montserrat', 'sans-serif';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 56px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.2;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 64px;
+  }
+}
+
+.hero__description {
+  margin-bottom: 113px;
+  font-family: 'TimesNewRoman', 'sans-serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+    font-size: 36px;
+    line-height: 1.13;
+  }
+}
+
+// Налаштування блоку адреси
+.hero__blok-info {
+  @media screen and (min-width: 1023px) {
+    display: flex;
+    align-items: center;
+    margin-top: 137px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    margin-top: auto;
+    margin-right: auto;
+  }
+}
+
+.hero__location-upper {
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+
+  @media screen and (max-width: 1023px) {
+    width: 210px;
+    height: 47px;
+    display: flex;
+    margin-left: auto;
+    margin-top: 12px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.hero__location-lower {
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-right: 115px;
+    width: 285px;
+    height: 56px;
+    display: flex;
+    text-align: initial;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 297px;
+  }
+}
+
+.hero__location-link {
+  font-family: 'Montserrat', 'sans-serif';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+
+  color: #e5e5e5;
+
+  @media screen and (max-width: 1023px) {
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 8px;
+    padding-right: 7px;
+    padding-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    line-height: 1.25;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+  }
+}
+
+.hero__location-icon {
+  fill: #f3c653;
+
+  @media screen and (max-width: 1023px) {
+    margin-left: 6px;
+    margin-top: 13px;
+    margin-right: 8px;
+    margin-bottom: 14px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 10px;
+    margin-top: 16px;
+    margin-right: 10px;
+    margin-bottom: 16px;
+  }
+}
+
+// Кнопки
+
+.hero__button-item {
+  margin-bottom: 24px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+}
+
+.button {
+  cursor: pointer;
+  width: 236px;
+  height: 48px;
+
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.02em;
+  color: #f3c653;
+
+  &:hover,
+  &:focus {
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+  }
+}
+
+.hero__button-list {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.hero__soc-box {
+  display: flex;
+  margin-top: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 25px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.hero__soc-list {
+  gap: 20px;
+  display: flex;
+}
+
+.hero__soc-icon {
+  fill: rgba(243, 198, 83, 0.7);
+  &:hover,
+  &:focus {
+    fill: #f3c653;
+  }
+}
