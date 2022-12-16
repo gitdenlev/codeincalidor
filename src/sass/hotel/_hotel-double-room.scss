@@ -1,0 +1,31 @@
+// ____________СЕКЦІЯ - ДАБЛ______________
+
+.double {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include mobile {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @include tablet {
+    padding-top: 62px;
+    padding-bottom: 47px;
+  }
+
+  @include desktop {
+    padding-top: 72px;
+    padding-bottom: 47px;
+  }
+}
+
+.double_upper-content {
+  @include tablet {
+    display: flex;
+  }
+
+  @include desktop {
+    display: flex;
+  }
+}
