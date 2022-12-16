@@ -1,26 +1,7 @@
 
 // ____________СЕКЦІЯ - ТРІПЛ______________
 
-.triple {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  background-color: #f0ecd6;
 
-  @include mobile {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-
-  @include tablet {
-    padding-top: 62px;
-    padding-bottom: 145px;
-  }
-
-  @include desktop {
-    padding-top: 72px;
-    padding-bottom: 182px;
-  }
-}
 
 .triple_revert {
   @include tablet {
