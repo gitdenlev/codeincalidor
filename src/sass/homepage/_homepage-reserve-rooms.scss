@@ -3,12 +3,10 @@
   padding-top: 24px;
   padding-bottom: 40px;
   @include tablet {
-    // padding: 47px 50px 96px 47px;
     padding-top: 47px;
     padding-bottom: 96px;
   }
   @include desktop {
-    // padding: 47px 0 96px 85px;
     padding-left: 52px;
   }
 }
@@ -96,32 +94,14 @@
 }
 
 .hp-hotel__btn {
-  display: flex;
-
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  @include font(16px, 700, 0.8, 0.02em);
-  color: $accent-color;
-
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-  background: rgba(0, 0, 0, 0.4);
-
   padding: 14px 24px;
-  justify-content: center;
-  align-items: center;
   &:last-child {
     padding: 14px 32px;
-  }
-
-  &:hover,
-  &:focus {
-    background: $white;
-    border: 2px solid #ffffff;
   }
 }
 
 .hp-hotel {
+  position: relative;
   max-width: 414px;
   height: 735px;
   background: rgba(0, 0, 0, 0.7);
@@ -194,10 +174,6 @@
   }
 }
 
-// .slider__wrap {
-//   position: relative;
-// }
-
 .hp-reserve__wrap-bottom {
   @include tablet {
     display: flex;
@@ -238,6 +214,10 @@
   @include desktop {
     left: 778px;
   }
+  &:hover,
+  &:focus {
+    background: url(/src/svg/arrow-left-yellow-hp.svg) 0 0 / 100% no-repeat;
+  }
 }
 
 .hp-hotel-slider .slick-arrow.slick-prev::before {
@@ -255,6 +235,10 @@
   }
   @include desktop {
     left: 838px;
+  }
+  &:hover,
+  &:focus {
+    background: url(/src/svg/arrow-right-yellow-hp.svg) 0 0 / 100% no-repeat;
   }
 }
 

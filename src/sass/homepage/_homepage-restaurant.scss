@@ -80,28 +80,12 @@
 }
 
 .hp-restaurant__btn {
-  display: flex;
-
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  @include font(16px, 700, 0.8, 0.02em);
-  color: $accent-color;
-
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-  background: rgba(0, 0, 0, 0.4);
-
+  // display: flex;
+  //   justify-content: center;
+  // align-items: center;
   padding: 14px 24px;
-  justify-content: center;
-  align-items: center;
   &:last-child {
     padding: 14px 32px;
-  }
-
-  &:hover,
-  &:focus {
-    background: $white;
-    border: 2px solid #ffffff;
   }
 }
 
@@ -232,6 +216,10 @@
   @include tablet {
     left: 0;
   }
+  &:hover,
+  &:focus {
+    background: url(/src/svg/arrow-left-yellow-hp.svg) 0 0 / 100% no-repeat;
+  }
 }
 
 .hp-rest-slider .slick-arrow.slick-prev::before {
@@ -246,26 +234,17 @@
   @include tablet {
     left: 64px;
   }
+  &:hover,
+  &:focus {
+    background: url(/src/svg/arrow-right-yellow-hp.svg) 0 0 / 100% no-repeat;
+  }
 }
 
 .hp-rest-slider .slick-arrow.slick-next::before {
   color: transparent;
 }
 
-// ARROWS
-// .arrows {
-//   display: flex;
-//   gap: 34px;
-//   margin-left: 277px;
-//   margin-bottom: 40px;
-//   &__btn {
-//     background-color: transparent;
-//     border: none;
-//   }
-//   &__icon {
-//     fill: $white;
-//   }
-// }
+// лінії для блоку з бекграунд імедж
 
 .line-container-for-bg-img > li {
   position: absolute;
