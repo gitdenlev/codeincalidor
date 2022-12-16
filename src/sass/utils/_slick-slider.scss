@@ -1,31 +1,38 @@
 .double-room-hero {
   // position: relative;
-  width: 1280px;
-  height: 720px;
+  width: 414px;
+  height: 740px;
   margin: 0 auto;
-  // margin-left: 85px;
-  // margin-right: 85px;
+  @include tablet {
+    width: 1024px;
+    height: 720px;
+  }
+  @include desktop {
+    width: 1280px;
+  }
 }
 
 .slick-box {
   position: relative;
   width: 100%;
   height: 100%;
-  // margin-left: 85px;
-  // margin-right: 85px;
 }
 
 
 
 .fade {
-  position: relative;
-  width: 1280px;
+  width: 414px;
   height: 100%;
   margin: 0 auto;
   justify-content: center;
   text-align: center;
 
-  // border: 1px solid red;
+  @include tablet {
+    width: 1024px;
+  }
+  @include desktop {
+    width: 1280px;
+  }
 
   border: 1px solid red;
   // background-color: none;
@@ -44,19 +51,40 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    border: 1px solid red;
     // background: rgba(0, 0, 0, 0.65);
     background-image: '../../svg/icons.svg';
   }
 
-  > .slick-prev {
+  .slick-prev {
     z-index: 10;
-    left: 85px;
+    top: 350px;
+    left: 15px;
+
+    @include tablet {
+      top: 340px;
+      left: 47px;
+    }
+
+    @include desktop {
+      top: 340px;
+      left: 85px;
+    }
   }
 
-  > .slick-next {
-    left: 1170px;
+  .slick-next {
     z-index: 10;
+    top: 350px;
+    left: 359px;
+
+    @include tablet {
+      top: 340px;
+      left: 937px;
+    }
+
+    @include desktop {
+      top: 340px;
+      left: 1155px;
+    }
   }
 
   .slick-prev::before,
@@ -65,7 +93,7 @@
   }
 
   .slick-next {
-    right: 85px;
+    // right: 85px;
     // overflow: hidden;
     background-size: cover;
     background-position: 0px 0px;
@@ -82,7 +110,7 @@
 .swiper__icon {
   width: 37px;
   height: 37px;
-  color: $accent-color;
+  fill: #ffffff;
 }
 
 .swiper-button-next,
@@ -99,25 +127,31 @@
 
 .fade .slick-arrow.slick-prev {
   background: rgba(0, 0, 0, 0.65);
-  background-image: url(../svg/leftsvg.svg);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='38' height='22' fill='none'%3E%3Cpath fill='%23F3C653' d='M37.854 9.75H5.257l7.5-7.5L10.989.483.472 11l10.517 10.517 1.768-1.767-7.5-7.5h32.597v-2.5Z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  fill: #ffffff;
+  color: #ffffff;
 }
+
+
+.fade .slick-arrow.slick-prev:hover,
+.fade .slick-arrow.slick-prev:focus {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='17' viewBox='0 0 30 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 7.48971H3.84047L9.85902 1.42865L8.44038 0L0 8.5L8.44038 17L9.85902 15.5713L3.84035 9.51017H30V7.48971Z' fill='white'/%3E%3C/svg%3E");
+
+}
+
 
 .fade .slick-arrow.slick-next {
   background: rgba(0, 0, 0, 0.65);
-  background-image: url(../svg/right.svg);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='38' height='22' fill='none'%3E%3Cpath fill='%23F3C653' d='M27.115.483 25.347 2.25l7.5 7.5H.25v2.5h32.597l-7.5 7.5 1.768 1.767L37.633 11 27.115.483Z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
   fill: #ffffff;
 }
 
-.fade .slick-arrow.slick-next:active,
-.fade .slick-arrow.slick-next:focus,
-.fade .slick-arrow.slick-prev:active,
-.fade .slick-arrow.slick-prev:focus {
-  fill: rgba(243, 198, 83, 1);
+.fade .slick-arrow.slick-next:hover,
+.fade .slick-arrow.slick-next:focus {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='17' viewBox='0 0 30 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.5595 0L20.1409 1.42865L26.1595 7.48984H0V9.51036H26.1594L20.1409 15.5713L21.5595 17L30 8.5L21.5595 0Z' fill='white'/%3E%3C/svg%3E");
 }
