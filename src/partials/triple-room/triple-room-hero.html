@@ -1,4 +1,3 @@
-
 <section class="double-lux">
   <div class="double-lux-container">
     <div class="double-lux-box">
@@ -81,15 +80,17 @@
               />
               <source
                 srcset="
-                ./images/hotel-images/triple-room/tablet/tr-slide1-room-tab-1x.jpg 1x,
-                ./images/hotel-images/triple-room/tablet/tr-slide1-room-tab-1x.jpg 2x
+                  ./images/hotel-images/triple-room/tablet/tr-slide1-room-tab-1x.jpg 1x,
+                  ./images/hotel-images/triple-room/tablet/tr-slide1-room-tab-1x.jpg 2x
                 "
                 media="(min-width: 1024px) and (max-width:1280px)"
                 sizes="1280"
               />
               <img
                 class="double-room-pic"
-                srcset="./images/hotel-images/triple-room/mobile/tr-slide1-room-mob-2x.jpg 2x"
+                srcset="
+                  ./images/hotel-images/triple-room/mobile/tr-slide1-room-mob-2x.jpg 2x
+                "
                 src="./images/hotel-images/triple-room/mobile/tr-slide1-room-mob-1x.jpg"
                 alt="Двухмісний номер люкс"
                 width="414"
@@ -108,15 +109,17 @@
               />
               <source
                 srcset="
-                ./images/hotel-images/triple-room/tablet/tr-slide2-room-tab-1x.jpg 1x,
-                ./images/hotel-images/triple-room/tablet/tr-slide2-room-tab-1x.jpg 2x
+                  ./images/hotel-images/triple-room/tablet/tr-slide2-room-tab-1x.jpg 1x,
+                  ./images/hotel-images/triple-room/tablet/tr-slide2-room-tab-1x.jpg 2x
                 "
                 media="(min-width: 1024px) and (max-width:1280px)"
                 sizes="1280"
               />
               <img
                 class="double-room-pic"
-                srcset="./images/hotel-images/triple-room/mobile/tr-slide2-room-mob-2x.jpg 2x"
+                srcset="
+                  ./images/hotel-images/triple-room/mobile/tr-slide2-room-mob-2x.jpg 2x
+                "
                 src="./images/hotel-images/triple-room/mobile/tr-slide2-room-mob-1x.jpg"
                 alt="Двухмісний номер люкс"
                 width="414"
@@ -125,7 +128,8 @@
           </div>
           <div class="double-room-pic">
             <picture class="double-room-pic">
-              <source class="double-room-pic"
+              <source
+                class="double-room-pic"
                 srcset="
                   ./images/hotel-images/triple-room/desktop/tr-slide3-room-desk-1x.jpg 1x,
                   ./images/hotel-images/triple-room/desktop/tr-slide3-room-desk-2x.jpg 2x
@@ -135,15 +139,17 @@
               />
               <source
                 srcset="
-                ./images/hotel-images/triple-room/tablet/tr-slide3-room-tab-1x.jpg 1x,
-                ./images/hotel-images/triple-room/tablet/tr-slide3-room-tab-1x.jpg 2x
+                  ./images/hotel-images/triple-room/tablet/tr-slide3-room-tab-1x.jpg 1x,
+                  ./images/hotel-images/triple-room/tablet/tr-slide3-room-tab-1x.jpg 2x
                 "
                 media="(min-width: 1024px) and (max-width:1280px)"
                 sizes="1280"
               />
               <img
                 class="double-room-pic"
-                srcset="./images/hotel-images/triple-room/mobile/tr-slide3-room-mob-2x.jpg 2x"
+                srcset="
+                  ./images/hotel-images/triple-room/mobile/tr-slide3-room-mob-2x.jpg 2x
+                "
                 src="./images/hotel-images/triple-room/mobile/tr-slide3-room-mob-1x.jpg"
                 alt="Двухмісний номер люкс"
                 width="414"
@@ -154,55 +160,5 @@
       </div>
     </div>
   </div>
-
-  <div class="backdrop-modal-price is-hidden" data-price-modal>
-    <div class="modal-price">
-      <button type="button" class="modal-prise-close" data-price-modal-close>
-        <svg class="modal-prise-close-icon" width="24" height="24">
-          <use href="./svg/icons.svg#icon-mobil-close"></use>
-        </svg>
-      </button>
-      <p class="modal-price-title">ЦІНИ НА НОМЕР</p>
-      <p class="modal-price-item">Двомісний люкс</p>
-      <p class="modal-price-type">Категорія номеру</p>
-      <form class="modal-price-form">
-        <div class="modal-price-wrap-tablet">
-          <div class="modal-price-wrap">
-            <div clas="icon-select-wrap">
-              <label class="modal-price-label check-arrow" for="rooms-calc">
-                <select
-                  id="rooms-calc"
-                  name="rooms-cal"
-                  class="modal-room-select"
-                >
-                  <option value="1" selected>1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-                <span class="label-span">Кількість ночей</span>
-              </label>
-            </div>
-          </div>
-          <div class="modal-price-wrap">
-            <input
-              type="number"
-              name="rooms-price"
-              class="modal-price-input"
-              required
-              id="rooms-price"
-              placeholder="1000"
-              title="грн"
-              min="1000"
-              step="500"
-            />
-            <label class="modal-price-label contacts-ml" for="rooms-price"
-              >грн</label
-            >
-          </div>
-        </div>
-        <button type="submit" class="modal-price-btn">ЗАБРОНЮВАТИ НОМЕР</button>
-      </form>
-    </div>
-  </div>
+  <include src="./partials/modal/price-modal.html"></include>
 </section>
