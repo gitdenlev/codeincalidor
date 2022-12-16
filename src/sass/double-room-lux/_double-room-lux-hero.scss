@@ -5,6 +5,8 @@
 
 .double-lux {
   box-sizing: border-box;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .double-lux-container {
@@ -67,7 +69,7 @@
 .double-lux-box {
   box-sizing: border-box;
   align-self: flex-start;
-  margin-bottom: 16px;
+    margin-bottom: 16px;
   width: auto;
   @include tablet {
     margin-bottom: 24px;
