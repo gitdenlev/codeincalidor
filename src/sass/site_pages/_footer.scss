@@ -194,15 +194,18 @@ footer {
 .footer__logo {
   display: block;
   font-family: $film-font;
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: calc(43px / 40px);
   text-decoration: none;
   letter-spacing: 0.3em;
-  color: $accent-color;
+  color: $brown-text-color;
   padding-right: 0;
   @include tablet {
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
 }
 
@@ -254,16 +257,23 @@ footer {
 }
 .footer__navigation-link {
   font-family: $montserrat-font;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: calc(24px / 20px);
   letter-spacing: 0.02em;
-  color: $accent-color;
+  color: $brown-text-color;
+  transition: background-color $main-transition-duration linear,
+    color $main-transition-duration linear;
+  transition-timing-function: $main-transtition-timing-function;
   &:not(:last-child) {
     margin-bottom: 16px;
   }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
+
 .footer__soc-list {
   display: flex;
   gap: 20px;
@@ -277,18 +287,27 @@ footer {
 }
 .footer__soc-item {
   @include tablet {
-    border: 0.5px solid $accent-color;
+    border: 0.5px solid $brown-text-color;
     border-radius: 2px;
     padding: 8px 12px;
     width: 144px;
     box-sizing: border-box;
+    transition: border $main-transition-duration linear,
+      color $main-transition-duration linear,
+      fill $main-transition-duration linear,
+      color $main-transition-duration linear;
+    transition-timing-function: $main-transtition-timing-function;
     &:not(:last-child) {
       margin-bottom: 12px;
     }
+    &:hover {
+      border: 0.5px solid $accent-color;
+    }
   }
 }
+
 .footer__soc-link {
-  color: $accent-color;
+  color: $brown-text-color;
   display: flex;
   @include tablet {
     justify-content: space-between;
@@ -296,24 +315,39 @@ footer {
   }
 }
 
+.footer__soc-item .footer__soc-link:hover,
+.footer__soc-item .footer__soc-link:focus {
+  color: $accent-color;
+}
+
 .footer__soc-name {
   display: none;
   @include tablet {
     display: block;
-    font-family: 'Montserrat';
-    font-style: normal;
+    font-family: $montserrat-font;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20px / 16px);
     letter-spacing: 0.02em;
-    color: $accent-color;
+    color: $brown-text-color;
     text-align: center;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      transition: background-color $main-transition-duration linear,
+        color $main-transition-duration linear;
+      transition-timing-function: $main-transtition-timing-function;
+    }
   }
 }
 
 .footer__icon {
-  fill: rgba(243, 198, 83, 0.7);
+  fill: $brown-text-color;
   @include tablet {
-    fill: rgba(243, 198, 83, 1);
+    fill: $brown-text-color;
   }
+}
+.footer__icon:hover,
+.footer__icon:focus {
+  fill: $accent-color;
 }
