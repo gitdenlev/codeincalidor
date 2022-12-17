@@ -123,8 +123,26 @@ body {
   color: $menu-text-color;
 }
 
+.room-lux-amenities-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // width: 434px;
+  margin-left: auto;
+  // margin-right: 113px;
+  @include tablet {
+    justify-content: flex-end;
+    width: 434px;
+  }
+  @include desktop {
+    justify-content: flex-start;
+    margin-left: 563px;
+  }
+}
+
 .lux-amenities-button {
-  min-width: 384px;
+  width: 384px;
   height: 64px;
   border: 1px solid $accent-color;
   border-radius: 25px;
@@ -144,16 +162,9 @@ body {
     color: $black;
   }
   @include tablet {
-    position: absolute;
-    right: 47px;
-    bottom: 96px;
-    min-width: 434px;
+    width: 434px;
     font-size: 24px;
     line-height: 1.21;
-  }
-  @include desktop {
-    right: 198px;
-    bottom: 104px;
   }
 }
 
@@ -166,10 +177,6 @@ body {
   @include tablet {
     margin-top: 32px;
     justify-content: flex-end;
-  }
-
-  @include desktop {
-    margin-right: 113px;
   }
 }
 
