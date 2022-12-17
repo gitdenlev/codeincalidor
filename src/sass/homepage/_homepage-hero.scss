@@ -255,6 +255,11 @@
   letter-spacing: 0.02em;
   color: #f3c653;
 
+  transition: background $main-transition-duration
+      $main-transtition-timing-function,
+    border $main-transition-duration $main-transtition-timing-function,
+    border-radius $main-transition-duration $main-transtition-timing-function;
+
   &:hover,
   &:focus {
     background: #ffffff;
@@ -291,6 +296,8 @@
 
 .hero__soc-icon {
   fill: #c79002;
+  transition: fill $main-transition-duration $main-transtition-timing-function;
+
   &:hover,
   &:focus {
     fill: #f3c653;

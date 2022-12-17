@@ -197,6 +197,8 @@
   letter-spacing: 0.02em;
   color: $accent-color;
   background: rgba(0, 0, 0, 0.4);
+  transition: background $main-transition-duration
+    $main-transtition-timing-function;
   &:hover,
   &:focus {
     background: $white;

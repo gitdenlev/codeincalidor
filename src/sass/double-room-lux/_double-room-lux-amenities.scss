@@ -128,9 +128,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // width: 434px;
   margin-left: auto;
-  // margin-right: 113px;
   @include tablet {
     justify-content: flex-end;
     width: 434px;
