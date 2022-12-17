@@ -5,11 +5,9 @@ $('.one-time').slick({
 
   slidesToShow: 2,
 
-
   slidesToShow: 3,
 
   slidesToShow: 2,
-
 
   adaptiveHeight: true,
 });
@@ -57,3 +55,27 @@ $('.one-time-slick').slick({
   adaptiveHeight: true,
 });
 
+$('.hotel-room-slider').slick({
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+});
+
+// $('.hotel-room-slider').slick({
+//   infinite: true,
+//   speed: 300,
+//   slidesToShow: 2,
+//   slidesToScroll: 1,
+//   adaptiveHeight: true,
+//   responsive: [
+//     {
+//       breakpoint: 1023,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//       },
+//     },
+//   ],
+// });
