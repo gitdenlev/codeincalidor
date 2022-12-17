@@ -1,7 +1,12 @@
 .homepage-meal {
     overflow: hidden;
+    position: relative;
     @include tablet {
         overflow: visible;
+        height: 1238px;
+    }
+    @include desktop {
+        height: 1275px;
     }
 }
 
@@ -99,9 +104,14 @@
     position: relative;
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
     @include tablet {
         padding-bottom: 133px;
         padding-top: 155px;
+        margin-bottom: 40px;
+    }
+    @include desktop {
+        margin-bottom: 40px;
     }
     
 }
@@ -151,20 +161,32 @@
     width: 548px;
     padding-left: 84px;
     margin-left: auto;
-    margin-bottom: 72px;
+    // margin-bottom: 72px;
     // position: relative;
     @include tablet {
         opacity: 1;
         padding-left: 0;
         width: 428px;
-        margin-bottom: 96px;
+        // margin-bottom: 96px;
     }
     @include desktop {
         width: 540px;
-        margin-bottom: 118px;
+        // margin-bottom: 118px;
     }
 }
-
+.slick-container.slick-hp-meal {
+    opacity: 1;
+    margin-bottom: 0px;
+    margin-bottom: 72px;
+    @include tablet {
+        opacity: 1;
+        margin-bottom: 96px;
+    }
+    @include desktop {
+        // width: 540px;
+        // margin-bottom: 118px;
+    }
+}
 
 .slick-photo {
     width: 245px;
