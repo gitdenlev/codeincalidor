@@ -1,0 +1,2 @@
+!function(){var e={openTableModalBtn:document.querySelector("[data-table-modal-open]"),closeTableModalBtn:document.querySelector("[data-table-modal-close]"),tableModal:document.querySelector("[data-table-modal]")};function a(){e.tableModal.classList.toggle("is-hidden")}e.openTableModalBtn.addEventListener("click",a),e.closeTableModalBtn.addEventListener("click",a)}();
+//# sourceMappingURL=hotel.9f1fb65b.js.map
