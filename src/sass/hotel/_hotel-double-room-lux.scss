@@ -168,6 +168,7 @@
   @include tablet {
     margin-top: -96px;
     margin-left: 42px;
+    margin-bottom: 48px;
     width: 400px;
   }
 
@@ -183,6 +184,7 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: space-between;
   }
   @include desktop {
     display: flex;
