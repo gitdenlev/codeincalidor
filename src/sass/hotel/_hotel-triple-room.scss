@@ -17,11 +17,7 @@
   }
 }
 
-.triple_revert {
-  @include tablet {
-    display: revert;
-  }
-}
+
 
 .triple_content {
   @include mobile {
@@ -104,13 +100,9 @@
   margin-top: 48px;
 }
 
-.triple_btn-container {
-  @include tablet {
-    margin-top: -120px;
-  }
-}
 
-.triple_room-btn {
+
+.triple .triple_room-btn {
   display: inline-block;
 
   font-family: 'Montserrat', sans-serif;
@@ -161,4 +153,116 @@
     display: block;
     margin-right: auto;
   }
+}
+// Налаштування блоку кнопок
+
+// .triple .triple_revert {
+//   display: revert;
+//   @include tablet {
+//     display: flex;
+//   }
+
+.triple .triple_lower-content{
+
+  @include tablet {
+    justify-content: end;
+
+    margin-bottom: 102px;
+    position: relative;
+
+
+}
+
+
+}
+
+.triple .hotel-hero_btn-container{
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 72px;
+  margin-bottom: 32px;
+
+  @include tablet {
+    position: absolute;
+    top: 0;
+    // !!!!! доналаштувати
+
+
+  }
+
+}
+
+.triple .triple_room-btn{
+  color: $accent-color;
+}
+
+
+
+// НАЛАШТУВАННЯ СЛАЙДЕРА
+
+// Налаштування блоку з слайдером
+
+
+
+.triple .hp-rest-slider{
+  display: block;
+
+  margin-top: 48px;
+  @include tablet {
+    margin-left: 502px;
+    margin-right: 0px;
+    margin-top: 48px;
+  }
+  @include desktop {
+    margin-left: 562px;
+    margin-right: 0px;
+    margin-top: 48px;
+  }
+
+
+}
+
+
+
+
+// Налаштування відступів між зображеннями
+.triple .hp-rest-slider .slick-track {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+  @include tablet {
+    gap: 40px;
+  }
+  @include desktop {
+    gap: 40px;
+  }
+}
+
+// Налаштування контейнера
+.triple .hp-rest-slider .slick-list {
+  width: 307px;
+  @include tablet {
+    width: 420px;
+  }
+  @include desktop {
+    width: 585px;
+  }
+}
+
+// Налаштування кнопок слайдера
+
+.triple .hp-rest-slider .slick-arrow.slick-prev  {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='31' height='18' viewBox='0 0 31 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30.0834 7.99993H4.00581L10.0055 2.00025L8.5913 0.58606L0.177368 8.99999L8.5913 17.4139L10.0055 15.9997L4.00568 9.99993H30.0834V7.99993Z' fill='%23808080'/%3E%3C/svg%3E");
+  &:hover, &:focus{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='17' viewBox='0 0 30 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 7.48971H3.84047L9.85902 1.42865L8.44038 0L0 8.5L8.44038 17L9.85902 15.5713L3.84035 9.51017H30V7.48971Z' fill='%23F3C653'/%3E%3C/svg%3E");
+  }
+}
+
+.triple .hp-rest-slider .slick-arrow.slick-next{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='18' viewBox='0 0 30 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.4921 0.58606L20.0779 2.00025L26.0777 8.00006H0V10.0001H26.0775L20.0779 15.9997L21.4921 17.4139L29.9061 8.99999L21.4921 0.58606Z' fill='%23808080'/%3E%3C/svg%3E");
+  &:hover, &:focus{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='17' viewBox='0 0 30 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.5595 0L20.1409 1.42865L26.1595 7.48984H0V9.51036H26.1594L20.1409 15.5713L21.5595 17L30 8.5L21.5595 0Z' fill='%23F3C653'/%3E%3C/svg%3E");
+  }
+
 }
