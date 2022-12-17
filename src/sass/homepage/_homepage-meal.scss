@@ -123,6 +123,7 @@
     @include tablet {
         padding-bottom: 133px;
         padding-top: 155px;
+        margin-bottom: 40px;
     }
     
 }
@@ -167,7 +168,7 @@
 }
 
 .slick-container.hpmeal-slick {
-    opacity: 0;
+    opacity: 1;
     display: block;
     width: 548px;
     // padding-left: 84px;
@@ -182,6 +183,7 @@
     }
     @include desktop {
         width: 540px;
+        opacity: 1;
         // margin-bottom: 118px;
     }
 }
@@ -203,7 +205,9 @@
     border-radius: 2px;
     // background-color: #DADADA;
 }
-
+// .onetimeslick-wrap {
+//     margin-bottom: 96px;
+// }
 .slick-prev {
     top: 275px;
     left: 215px;
