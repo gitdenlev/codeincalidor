@@ -30,48 +30,43 @@
   }
 }
 
+.hotel-double-room__container {
+  padding-bottom: 30px;
+}
+
 // SLIDER
+
+.hotel-double-room__slider-wrap {
+  width: 548px;
+}
 
 .double-room-slider {
   position: relative;
-  // width: 285;
-
-  // padding-left: 25px;
-  // @include tablet {
-  //   margin-bottom: 0;
-  //   width: 645px;
-  //   padding-left: 0;
-  // }
 }
 
 .double-room-slider .slick-track {
-  display: flex;
-  gap: 16px;
-  overflow: hidden;
-  // margin-left: 90px;
-  @include tablet {
-    // gap: 34px;
-  }
-  @include desktop {
-    // gap: 86px;
-  }
+  // display: flex;
+  // @include desktop {
+  //   gap: 40px;
+  // }
+}
+
+.double-room-slider .slider-img-hotel {
+  border-radius: 2px;
+}
+
+.hotel-room-slider__item {
+  // box-shadow: $picture-shadow;
 }
 
 .double-room-slider .slick-list {
-  overflow: hidden;
-  // width: 285;
-  @include tablet {
-    // width: 660px;
-  }
-  @include desktop {
-    // width: 876px;
-  }
 }
 
 // СТИЛІ ДО СТРІЛОК
 .double-room-slider .slick-arrow {
   position: absolute;
   top: 100%;
+  font-size: 0;
   width: 30px;
   height: 17px;
   z-index: 1;
