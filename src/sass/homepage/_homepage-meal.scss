@@ -1,9 +1,30 @@
 .homepage-meal {
     overflow: hidden;
+    position: relative;
     @include tablet {
         overflow: visible;
+        position: relative;
+        height: 1238;
+    }
+    @include desktop {
+        position: relative;
+        height: 1275;
     }
 }
+
+.container-hpmeal-tablet > li {
+    background-color: $background-light-lemon;
+    // position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    top: 0px;
+    width: 0;
+    height: 100%;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+  }
+
+  
 
 // Перший контейнер, заголовок, текст і фото
 .meal-first-hall {
@@ -145,11 +166,11 @@
     }
 }
 
-.slick-container {
+.slick-container.hpmeal-slick {
     opacity: 0;
     display: block;
     width: 548px;
-    padding-left: 84px;
+    // padding-left: 84px;
     margin-left: auto;
     margin-bottom: 72px;
     // position: relative;
@@ -157,11 +178,11 @@
         opacity: 1;
         padding-left: 0;
         width: 428px;
-        margin-bottom: 96px;
+        // margin-bottom: 96px;
     }
     @include desktop {
         width: 540px;
-        margin-bottom: 118px;
+        // margin-bottom: 118px;
     }
 }
 

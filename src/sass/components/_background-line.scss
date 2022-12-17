@@ -23,9 +23,11 @@
 
 .line1 {
   margin-left: 125px;
+  display: block;
 
   @media screen and (min-width: 1024px) {
-    margin-left: 231px;
+    margin-left: 278px;
+    display: block;
   }
 
   @media screen and (min-width: 1280px) {
@@ -35,13 +37,16 @@
 
 .line2 {
   margin-left: 259px;
+  display: block;
 
   @media screen and (min-width: 1024px) {
     margin-left: 465px;
+    display: block;
   }
 
   @media screen and (min-width: 1280px) {
     margin-left: 555px;
+    display: block;
   }
 }
 
@@ -59,12 +64,15 @@
 
 .line3 {
   margin-left: -100px;
+  display: block;
 
   @media screen and (min-width: 1024px) {
     margin-left: 699px;
+    display: block;
   }
 
   @media screen and (min-width: 1280px) {
     margin-left: 857px;
+    display: block;
   }
 }
