@@ -10,13 +10,13 @@
   }
 
   @include tablet {
-    padding-top: 62px;
-    padding-bottom: 47px;
+    padding-top: 64px;
+    padding-bottom: 104px;
   }
 
   @include desktop {
     padding-top: 72px;
-    padding-bottom: 47px;
+    padding-bottom: 112px;
   }
 }
 
@@ -30,36 +30,53 @@
   }
 }
 
-.hotel-double-room__container {
-  padding-bottom: 30px;
+// огортка для кнопок, перебиваю стилі, щоб ставити кнопки флексами
+
+.double .hotel-hero_btn-container {
+  @media screen and (max-width: 1023px) {
+    margin-top: 72px;
+  }
+  @include tablet {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  @include desktop {
+    margin-top: 0;
+  }
 }
 
 // SLIDER
 
 .hotel-double-room__slider-wrap {
-  width: 548px;
+  width: 275px;
+  @include tablet {
+    width: 428px;
+  }
+  @include desktop {
+    width: 548px;
+  }
 }
 
 .double-room-slider {
   position: relative;
+  // box-shadow: $picture-shadow;
 }
 
 .double-room-slider .slick-track {
-  // display: flex;
-  // @include desktop {
-  //   gap: 40px;
-  // }
+  display: flex;
+  gap: 16px;
+  margin-left: 90px;
+  @include tablet {
+    margin-left: 10;
+  }
+  @include desktop {
+    gap: 40px;
+  }
 }
 
 .double-room-slider .slider-img-hotel {
   border-radius: 2px;
-}
-
-.hotel-room-slider__item {
   // box-shadow: $picture-shadow;
-}
-
-.double-room-slider .slick-list {
 }
 
 // СТИЛІ ДО СТРІЛОК
@@ -70,22 +87,27 @@
   width: 30px;
   height: 17px;
   z-index: 1;
-  transform: translateY(24px);
+  transform: translateY(28px);
   @include tablet {
-    transform: translateY(32px);
+    transform: translateY(40px);
+  }
+  @include desktop {
+    transform: translateY(48px);
   }
 }
 
 // СТИЛІ ДЛЯ СТРІЛКИ ЛІВОРУЧ
 .double-room-slider .slick-arrow.slick-prev {
-  left: 25px;
+  left: 0;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='31' height='18' viewBox='0 0 31 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30.0834 7.99993H4.00581L10.0055 2.00025L8.5913 0.58606L0.177368 8.99999L8.5913 17.4139L10.0055 15.9997L4.00568 9.99993H30.0834V7.99993Z' fill='black'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-
   @include tablet {
-    left: 0;
+    left: 331;
+  }
+  @include desktop {
+    left: 451;
   }
   &:hover,
   &:focus {
@@ -98,14 +120,17 @@
 
 // СТИЛІ ДЛЯ СТРІЛКИ ПРАВОРУЧ
 .double-room-slider .slick-arrow.slick-next {
-  left: 90;
+  left: 65;
   cursor: pointer;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='18' viewBox='0 0 30 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.4921 0.58606L20.0779 2.00025L26.0777 8.00006H0V10.0001H26.0775L20.0779 15.9997L21.4921 17.4139L29.9061 8.99999L21.4921 0.58606Z' fill='black'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
   @include tablet {
-    left: 64px;
+    left: 395px;
+  }
+  @include desktop {
+    left: 515;
   }
   &:hover,
   &:focus {
@@ -115,20 +140,3 @@
 .double-room-slider .slick-arrow.slick-next::before {
   opacity: 0;
 }
-
-// .hotel-hero_slider {
-//   // padding-top: 21px;
-//   // padding-bottom: 72px;
-//   // justify-content: flex-end;
-//   // margin-right: 85px;
-//   display: flex;
-//   flex-wrap: nowrap;
-
-//   @include tablet {
-//     margin-top: 48px;
-//   }
-
-//   @include desktop {
-//     margin-top: 48px;
-//   }
-// }
