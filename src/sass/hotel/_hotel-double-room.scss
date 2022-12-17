@@ -29,3 +29,111 @@
     display: flex;
   }
 }
+
+// SLIDER
+
+.double-room-slider {
+  position: relative;
+  // width: 285;
+
+  // padding-left: 25px;
+  // @include tablet {
+  //   margin-bottom: 0;
+  //   width: 645px;
+  //   padding-left: 0;
+  // }
+}
+
+.double-room-slider .slick-track {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+  // margin-left: 90px;
+  @include tablet {
+    // gap: 34px;
+  }
+  @include desktop {
+    // gap: 86px;
+  }
+}
+
+.double-room-slider .slick-list {
+  overflow: hidden;
+  // width: 285;
+  @include tablet {
+    // width: 660px;
+  }
+  @include desktop {
+    // width: 876px;
+  }
+}
+
+// СТИЛІ ДО СТРІЛОК
+.double-room-slider .slick-arrow {
+  position: absolute;
+  top: 100%;
+  width: 30px;
+  height: 17px;
+  z-index: 1;
+  transform: translateY(24px);
+  @include tablet {
+    transform: translateY(32px);
+  }
+}
+
+// СТИЛІ ДЛЯ СТРІЛКИ ЛІВОРУЧ
+.double-room-slider .slick-arrow.slick-prev {
+  left: 25px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='31' height='18' viewBox='0 0 31 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30.0834 7.99993H4.00581L10.0055 2.00025L8.5913 0.58606L0.177368 8.99999L8.5913 17.4139L10.0055 15.9997L4.00568 9.99993H30.0834V7.99993Z' fill='black'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+
+  @include tablet {
+    left: 0;
+  }
+  &:hover,
+  &:focus {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='17' viewBox='0 0 30 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 7.48971H3.84047L9.85902 1.42865L8.44038 0L0 8.5L8.44038 17L9.85902 15.5713L3.84035 9.51017H30V7.48971Z' fill='%23F3C653'/%3E%3C/svg%3E");
+  }
+}
+.double-room-slider .slick-arrow.slick-prev::before {
+  opacity: 0;
+}
+
+// СТИЛІ ДЛЯ СТРІЛКИ ПРАВОРУЧ
+.double-room-slider .slick-arrow.slick-next {
+  left: 90;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='18' viewBox='0 0 30 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.4921 0.58606L20.0779 2.00025L26.0777 8.00006H0V10.0001H26.0775L20.0779 15.9997L21.4921 17.4139L29.9061 8.99999L21.4921 0.58606Z' fill='black'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  @include tablet {
+    left: 64px;
+  }
+  &:hover,
+  &:focus {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='17' viewBox='0 0 30 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.5595 0L20.1409 1.42865L26.1595 7.48984H0V9.51036H26.1594L20.1409 15.5713L21.5595 17L30 8.5L21.5595 0Z' fill='%23F3C653'/%3E%3C/svg%3E");
+  }
+}
+.double-room-slider .slick-arrow.slick-next::before {
+  opacity: 0;
+}
+
+// .hotel-hero_slider {
+//   // padding-top: 21px;
+//   // padding-bottom: 72px;
+//   // justify-content: flex-end;
+//   // margin-right: 85px;
+//   display: flex;
+//   flex-wrap: nowrap;
+
+//   @include tablet {
+//     margin-top: 48px;
+//   }
+
+//   @include desktop {
+//     margin-top: 48px;
+//   }
+// }
