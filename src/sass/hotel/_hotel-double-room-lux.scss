@@ -134,12 +134,12 @@
 
   @include tablet {
     padding-top: 62px;
-    padding-bottom: 47px;
+    padding-bottom: 104px;
   }
 
   @include desktop {
     padding-top: 72px;
-    padding-bottom: 47px;
+    padding-bottom: 112px;
   }
 }
 
@@ -280,5 +280,49 @@
   @include tablet {
     display: block;
     margin-left: auto;
+  }
+}
+
+// SLIDER
+
+.hotel-double-room-lux__slider-wrap {
+  width: 275px;
+  @include tablet {
+    width: 428px;
+  }
+  @include desktop {
+    width: 548px;
+  }
+}
+
+.double-room-lux-slider .slick-arrow {
+  transform: translateY(28px);
+  @include tablet {
+    transform: translateY(40px);
+  }
+  @include desktop {
+    transform: translateY(48px);
+  }
+}
+
+// СТИЛІ ДЛЯ СТРІЛКИ ЛІВОРУЧ
+.double-room-lux-slider .slick-arrow.slick-prev {
+  left: 0;
+  @include tablet {
+    left: 331;
+  }
+  @include desktop {
+    left: 451;
+  }
+}
+
+// СТИЛІ ДЛЯ СТРІЛКИ ПРАВОРУЧ
+.double-room-lux-slider .slick-arrow.slick-next {
+  left: 65;
+  @include tablet {
+    left: 395px;
+  }
+  @include desktop {
+    left: 515;
   }
 }
