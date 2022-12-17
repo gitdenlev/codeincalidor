@@ -14,6 +14,7 @@
   font-style: normal;
   @include font(40px, 700, 0.93, 0.3em);
   color: $white;
+  // color: red;
   text-transform: uppercase;
 
   margin-left: 125px;
@@ -80,9 +81,6 @@
 }
 
 .hp-restaurant__btn {
-  // display: flex;
-  //   justify-content: center;
-  // align-items: center;
   padding: 14px 24px;
   &:last-child {
     padding: 14px 32px;
@@ -209,39 +207,43 @@
 }
 
 // СТИЛІ ДЛЯ СТРІЛКИ ЛІВОРУЧ
-
 .hp-rest-slider .slick-arrow.slick-prev {
   left: 25px;
-  background: url(/src/svg/arrow-left-white.svg) 0 0 / 100% no-repeat;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='17' viewBox='0 0 30 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 7.48971H3.84047L9.85902 1.42865L8.44038 0L0 8.5L8.44038 17L9.85902 15.5713L3.84035 9.51017H30V7.48971Z' fill='white'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+
   @include tablet {
     left: 0;
   }
   &:hover,
   &:focus {
-    background: url(/src/svg/arrow-left-yellow-hp.svg) 0 0 / 100% no-repeat;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='38' height='22' fill='none'%3E%3Cpath fill='%23F3C653' d='M37.854 9.75H5.257l7.5-7.5L10.989.483.472 11l10.517 10.517 1.768-1.767-7.5-7.5h32.597v-2.5Z'/%3E%3C/svg%3E");
   }
 }
-
 .hp-rest-slider .slick-arrow.slick-prev::before {
-  color: transparent;
+  opacity: 0;
 }
 
 // СТИЛІ ДЛЯ СТРІЛКИ ПРАВОРУЧ
 .hp-rest-slider .slick-arrow.slick-next {
   left: 90;
   cursor: pointer;
-  background: url(/src/svg/arrow-right-white.svg) 0 0 / 100% no-repeat;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='17' viewBox='0 0 30 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.5595 0L20.1409 1.42865L26.1595 7.48984H0V9.51036H26.1594L20.1409 15.5713L21.5595 17L30 8.5L21.5595 0Z' fill='white'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
   @include tablet {
     left: 64px;
   }
   &:hover,
   &:focus {
-    background: url(/src/svg/arrow-right-yellow-hp.svg) 0 0 / 100% no-repeat;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='38' height='22' fill='none'%3E%3Cpath fill='%23F3C653' d='M27.115.483 25.347 2.25l7.5 7.5H.25v2.5h32.597l-7.5 7.5 1.768 1.767L37.633 11 27.115.483Z'/%3E%3C/svg%3E");
   }
 }
-
 .hp-rest-slider .slick-arrow.slick-next::before {
-  color: transparent;
+  opacity: 0;
 }
 
 // лінії для блоку з бекграунд імедж
