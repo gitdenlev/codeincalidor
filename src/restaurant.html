@@ -19,7 +19,7 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
     <!-- Add animation -->
-      <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
@@ -38,31 +38,42 @@
       <li><a href="./double-room.html">DOUBLE ROOM</a></li>
     </ul> -->
 
-
-    
     <include src="./partials/homepage/homepage-header.html"></include>
     <main>
-      <include src="./partials/restaurant/restaurant-hero.html"></include>        
-      <include src="./partials/restaurant/restaurant-about-kitchen.html"></include>
+      <include src="./partials/restaurant/restaurant-hero.html"></include>
+      <include
+        src="./partials/restaurant/restaurant-about-kitchen.html"
+      ></include>
       <include src="./partials/restaurant/restaurant-menu.html"></include>
+      <include src="./partials/modal/table-modal.html"></include>
     </main>
-      <include src="./partials/restaurant/restaurant-footer.html"></include>
+    <include src="./partials/restaurant/restaurant-footer.html"></include>
 
+    <!-- Slick Jquery -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
 
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
+    <!-- Base JS -->
+    <script type="module" src="./js/slick.js"></script>
 
-      <!-- Slick Jquery -->
-      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Animation on scroll script -->
 
-      <!-- Slick JS -->
-      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-      <!-- Base JS -->
-      <script type="module" src="./js/slick.js"></script>
-
-      <!-- Animation on scroll script -->
-        <script src="./js/wow.min.js"></script>
-        <script>new WOW().init();</script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="./js/table-modal.js"></script>
   </body>
 </html>
