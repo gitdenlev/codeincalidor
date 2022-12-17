@@ -15,7 +15,6 @@ p {
   padding-bottom: 32px;
   position: relative;
 
-  
   @include tablet {
     min-width: 1024px;
     padding-top: 56px;
@@ -119,7 +118,6 @@ p {
 
 .contacts-text {
   font-family: $montserrat-font;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -129,6 +127,10 @@ p {
 
   color: $brown-text-color;
   width: 102px;
+  &:hover,
+  &focus {
+    color: $accent-color;
+  }
 }
 
 .contacts-block-1 {
@@ -138,8 +140,18 @@ p {
   margin-left: 0px;
   display: flex;
   box-sizing: border-box;
-  border: 0.5px solid $accent-color;
+  border: 0.5px solid $brown-text-color;
   border-radius: 2px;
+  transition: border $main-transition-duration linear,
+    color $main-transition-duration linear,
+    fill $main-transition-duration linear,
+    color $main-transition-duration linear;
+  transition-timing-function: $main-transtition-timing-function;
+  &:hover,
+  &:focus {
+    background: $white;
+    border: 1.5px solid $accent-color;
+  }
 }
 
 .contacts-block-2 {
@@ -150,8 +162,18 @@ p {
   display: flex;
   gap: 12px;
   box-sizing: border-box;
-  border: 0.5px solid $accent-color;
+  border: 0.5px solid $brown-text-color;
   border-radius: 2px;
+  transition: border $main-transition-duration linear,
+    color $main-transition-duration linear,
+    fill $main-transition-duration linear,
+    color $main-transition-duration linear;
+  transition-timing-function: $main-transtition-timing-function;
+  &:hover,
+  &:focus {
+    background: $white;
+    border: 1.5px solid $accent-color;
+  }
   @include tablet {
     width: 264px;
   }
@@ -165,8 +187,18 @@ p {
   display: flex;
   gap: 12px;
   box-sizing: border-box;
-  border: 0.5px solid $accent-color;
+  border: 0.5px solid $brown-text-color;
   border-radius: 2px;
+  transition: border $main-transition-duration linear,
+    color $main-transition-duration linear,
+    fill $main-transition-duration linear,
+    color $main-transition-duration linear;
+  transition-timing-function: $main-transtition-timing-function;
+  &:hover,
+  &:focus {
+    background: $white;
+    border: 1.5px solid $accent-color;
+  }
   @include tablet {
     width: 285px;
     height: 56px;
@@ -175,7 +207,6 @@ p {
 
 .contacts-link {
   font-family: $montserrat-font;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;

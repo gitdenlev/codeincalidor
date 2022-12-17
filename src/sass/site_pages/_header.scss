@@ -1,9 +1,15 @@
+// секція базова хедера
 .header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
   z-index: 9999;
   position: absolute;
   top: 0;
@@ -26,44 +32,46 @@
   align-items: center;
 }
 
-.contact-number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  @media screen and(min-width: 1024px) {
-    border: 1px solid rgba(243, 198, 83, 0.7);
-    border-radius: 2px;
-  }
-}
-
+// бордер контактних номерів та його ховер-фокус
 .contact-numb_rest {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+  border: none;
   @media screen and (min-width: 1024px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    width: 144px;
-    height: 40px;
-    left: 134px;
-    top: 0px;
-    border: 1px solid rgba(243, 198, 83, 0.7);
+    border: 1px solid $brown-text-color;
     border-radius: 2px;
   }
 }
+.contact-numb_rest:hover,
+.contact-numb_rest:focus {
+  @media screen and (min-width: 1024px) {
+    border: 1px solid $accent-color;
+  }
+}
 
+// стилі для свг хедера
+.contact-list_icon {
+  width: 20px;
+  height: 20px;
+  fill: $brown-text-color;
+  content: '';
+  @media screen and (min-width: 1024px) {
+    padding: 8px;
+  }
+}
+// це ховер під свг мобілки
+.contact-list_icon:hover,
+.contact-list_icon:focus {
+  fill: $accent-color;
+}
+
+// логотип хедере
 .header-logo {
-  font-family: 'FilmP3', 'suns-serif';
+  font-family: $film-font;
   font-weight: 700;
   font-size: 36px;
   line-height: 1;
   text-decoration: none;
   letter-spacing: 0.3em;
-  color: #ffff;
+  color: $white;
   width: 114px;
   margin-right: 56px;
   @media screen and (min-width: 1024px) {
@@ -76,6 +84,7 @@
   }
 }
 
+// контейнер всих навігаційниї кнопок
 .contact-restoran {
   display: flex;
   align-items: center;
@@ -91,33 +100,35 @@
   }
 }
 
+// секція готеля з номером
 .contact-hotel {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
+// секція з лінками номерів
 .contact-list {
-  font-family: 'Montserrat', 'sens-serif';
+  font-family: $montserrat-font;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  color: #f3c653;
+  color: $brown-text-color;
   margin-right: 8px;
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   :focus {
-    color: rgb(250, 250, 248);
+    color: $accent-color;
   }
   @media screen and (min-width: 1024px) {
     font-size: 20px;
     line-height: 1.2;
   }
 }
-
+// костиль готеля під адаптивку
 .list-hotel {
   margin-left: 20px;
   margin-right: 8px;
@@ -131,36 +142,28 @@
   }
 }
 
-.number-hotel {
+// стилі номерів телефону
+.contact-link_number {
   display: flex;
+  align-items: center;
 }
 
-.contact-list_icon {
-  width: 20px;
-  height: 20px;
-  fill: #f3c653;
-  content: '';
-  @media screen and (min-width: 1024px) {
-    padding: 8px;
-  }
-}
-
-.contact-tell {
+.contact-list_number {
   display: none;
   @media screen and(min-width: 1024px) {
-    font-family: 'Montserrat', 'sens-serif';
-    font-style: normal;
+    font-family: $montserrat-font;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
     display: flex;
     align-items: center;
     letter-spacing: 0.02em;
-    color: white;
+    color: $white;
     padding: 11px 8px 12px 0px;
   }
 }
 
+// стилі секції з соц.мережою
 .header-svg {
   width: 24px;
   height: 24px;
@@ -177,13 +180,16 @@
   }
 }
 
+// ховер та фокус соц мереж
 .social-link {
   display: inline-flex;
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  color: rgba(243, 198, 83, 0.7);
+  transition: background-color $main-transition-duration linear,
+    color $main-transition-duration linear;
+  transition-timing-function: $main-transtition-timing-function;
+  color: $brown-text-color;
 }
 
 .social-link .header-svg:hover,
 .social-link .header-svg:focus {
-  color: rgba(157, 182, 184, 0.7);
+  color: $accent-color;
 }
