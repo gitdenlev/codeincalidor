@@ -291,3 +291,17 @@ p {
     display: contents;
   }
 }
+.google-map {
+  @media screen and(min-width:1280px){
+  width: 634px;
+  height: 412px
+  }
+  @media screen and(min-width:1024px){
+    width: 535px;
+    height: 412px;
+  }
+  @media screen and(max-width:414px) {
+    width: 384px;
+    height: 220px;
+  }
+}
