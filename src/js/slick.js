@@ -61,21 +61,5 @@ $('.hotel-room-slider').slick({
   slidesToShow: 2,
   slidesToScroll: 1,
   adaptiveHeight: true,
+  variableWidth: true,
 });
-
-// $('.hotel-room-slider').slick({
-//   infinite: true,
-//   speed: 300,
-//   slidesToShow: 2,
-//   slidesToScroll: 1,
-//   adaptiveHeight: true,
-//   responsive: [
-//     {
-//       breakpoint: 1023,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//       },
-//     },
-//   ],
-// });
