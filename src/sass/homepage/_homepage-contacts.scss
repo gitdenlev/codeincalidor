@@ -183,7 +183,11 @@ p {
   align-items: center;
   letter-spacing: 0.02em;
   color: $contact-text-color;
+  &:hover{
+    color: $background-dark-lemon;
+  }
 }
+
 
 .contacts-icon {
   margin-left: 8px;
@@ -289,5 +293,19 @@ p {
   display: none;
   @media screen and (min-width: 1024px) {
     display: contents;
+  }
+}
+.google-map {
+  @media screen and(min-width:1280px){
+  width: 634px;
+  height: 412px
+  }
+  @media screen and(min-width:1024px){
+    width: 535px;
+    height: 412px;
+  }
+  @media screen and(max-width:414px) {
+    width: 384px;
+    height: 220px;
   }
 }

@@ -1,4 +1,4 @@
-<div class="backdrop-modal-table is-hidden" data-table-modal>   
+<!-- <div class="backdrop-modal-table is-hidden" data-table-modal>   
     <div class="modal-table">
         <button type="button" class="modal-table-close" data-table-modal-close>
             <svg class="modal-table-close-icon" width="24" height="24">
@@ -58,4 +58,90 @@
             <button type="submit" class="modal-price-btn">ОФОРМИТИ БРОНЮВАННЯ</button>
         </form>
     </div>
+</div> -->
+
+<!-- NEW MODAL-TABLE -->
+<div class="modal-table__background is-hidden" data-table-modal>
+  <div class="modal-table__box-form">
+    <button type="button" class="modal-table__close" data-table-modal-close>
+      <svg class="modal-table__close-icon" width="24" height="24">
+        <use href="./svg/icons.svg#icon-mobil-close"></use>
+      </svg>
+    </button>
+    <p class="modal-table__title">ЗАБРОНЮВАТИ СТОЛИК</p>
+    <form class="modal-table__form">
+      <div class="modal-table__form-wrap">
+        <div class="modal-table__wrap-box">
+          <div class="modal-table__contacts-box">
+            <input
+              type="text"
+              name="rooms-contacts"
+              class="modal-table__input-contacts"
+              required
+              id="name"
+              placeholder="Ваше ім’я"
+              title="Ваше ім’я"
+            />
+            <label class="modal-table__label modal-table__label-span" for="name"
+              >На кого забронювати номер?</label
+            >
+          </div>
+          <div class="modal-table__contacts-box">
+            <input
+              type="tel"
+              name="table-contacts"
+              class="modal-table__input-contacts"
+              required
+              id="tel"
+              placeholder="+38 (___) ___-__-__"
+              title="+38 (___) ___-__-__"
+            />
+            <label class="modal-table__label modal-table__label-span" for="tel"
+              >Номер телефону</label
+            >
+          </div>
+        </div>
+        <div class="modal-table__wrap-box">
+          <label
+            class="modal-table__label modal-table__check-arrow"
+            for="person-num"
+          >
+            <select
+              id="person-num"
+              name="person-num"
+              class="modal-table__select"
+              autofocus
+            >
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <span class="modal-table__label-span"
+              >Столик на яку кількість осіб?</span
+            >
+          </label>
+
+          <label
+            class="modal-table__label modal-table__check-arrow"
+            for="person-date"
+          >
+            <select
+              id="person-date"
+              name="person-date"
+              class="modal-table__select"
+              autofocus
+            >
+              <option value="Сьогодні" selected>Сьогодні</option>
+              <option value="Завтра">Завтра</option>
+            </select>
+            <span class="modal-table__label-span">На яку дату бронювати?</span>
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="modal-table__price-btn">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
 </div>
