@@ -60,9 +60,11 @@
 }
 
 .line3 {
-  margin-left: -100px;
-  display: block;
-
+  @media screen and (min-width: 414px) {
+    margin-left: 942px;
+    display: block;
+  }
+  
   @media screen and (min-width: 1024px) {
     margin-left: 699px;
   }
