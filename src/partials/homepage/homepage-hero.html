@@ -31,7 +31,9 @@
           </button>
         </li>
         <li class="hero__button-item">
-          <button type="button" class="button">Забронювати номер</button>
+          <button type="button" class="button" data-room-modal-open>
+            Забронювати номер
+          </button>
         </li>
       </ul>
     </div>
@@ -62,4 +64,8 @@
       </li>
     </ul>
   </div>
+  <include src="./partials/modal/room-modal.html"></include>
+  <include src="./partials/modal/table-modal.html"></include>
+  <script src="./js/table-modal.js"></script>
+  <script src="./js/room-modal.js"></script>
 </section>
