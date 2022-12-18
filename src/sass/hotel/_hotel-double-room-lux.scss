@@ -244,10 +244,15 @@
   // min-width: 236px;
   // margin: 0 auto;
   margin-bottom: 16px;
+
+  transition: background-color $main-transition-duration linear,
+  color $main-transition-duration linear;
+  transition-timing-function: $main-transtition-timing-function;
+
   &:hover,
   &:focus {
-    background: $white;
-    border: 2px solid #ffffff;
+    background-color: $white;
+    border: 2px solid $white;
   }
 
   @include tablet {
@@ -269,10 +274,14 @@
   padding: 14px 37px;
   // min-width: 236px;
   // margin: 0 auto;
+  transition: background-color $main-transition-duration linear,
+  color $main-transition-duration linear;
+  transition-timing-function: $main-transtition-timing-function;
+
   &:hover,
   &:focus {
-    background: $white;
-    border: 2px solid #ffffff;
+    background-color: $white;
+    border: 2px solid $white;
   }
 
   @include tablet {
