@@ -32,26 +32,16 @@
   </head>
 
   <body>
-    <!-- Робочий блок -->
-    <!-- <ul>
-      <li><a href="./hotel.html">HOTEL</a></li>
-      <li><a href="./restaurant.html">RESTAURANT</a></li>
-      <li><a href="./double-room-lux.html">DOUBLE ROOM LUX</a></li>
-      <li><a href="./triple-room.html">TRIPLE ROOM</a></li>
-      <li><a href="./double-room.html">DOUBLE ROOM</a></li>
-    </ul> -->
-
     <include src="./partials/homepage/homepage-header.html"></include>
     <main>
       <include src="./partials/restaurant/restaurant-hero.html"></include>
-      <include
-        src="./partials/restaurant/restaurant-about-kitchen.html"
-      ></include>
+      <include src="./partials/restaurant/restaurant-about-kitchen.html"></include>
       <include src="./partials/restaurant/restaurant-menu.html"></include>
     </main>
-    <include src="./partials/restaurant/restaurant-footer.html"></include>
-    <include src="./partials/modal/room-modal.html"></include>
-    <include src="./partials/modal/table-modal.html"></include>
+      <include src="./partials/restaurant/restaurant-footer.html"></include>
+      <include src="./partials/modal/room-modal.html"></include>
+      <include src="./partials/modal/table-modal.html"></include>
+      <include src="./partials/modal/price-modal.html"></include>
 
     <!-- Slick Jquery -->
     <script
@@ -78,7 +68,10 @@
     <script>
       new WOW().init();
     </script>
+
+    
     <script src="./js/table-modal.js"></script>
     <script src="./js/room-modal.js"></script>
+    <script src="./js/price-modal.js"></script>
   </body>
 </html>

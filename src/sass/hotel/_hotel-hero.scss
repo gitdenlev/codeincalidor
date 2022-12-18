@@ -73,7 +73,6 @@
     font-size: 96px;
     line-height: 0.93;
     letter-spacing: 0.3em;
-  
     color: #ffffff;
   
     @media screen and (min-width: 1024px) {
@@ -127,7 +126,24 @@
       font-size: 36px;
       line-height: 1.13;
     }
-  }
+
+    
+      -webkit-animation: blink1 3s linear infinite;
+      animation: blink1 3s linear infinite;
+
+      @-webkit-keyframes hero__description {
+        0% { color: #ffffff; }
+        50% { color: rgba(34, 34, 34, 0); }
+        100% { color: #ffffff; }
+      }
+      @keyframes hero__description {
+        0% { color: #ffffff; }
+        50% { color: rgba(34, 34, 34, 0); }
+        100% { color: #ffffff; }
+      }
+  
+    }
+
   
   // Налаштування блоку адреси
   .hero__blok-info {
