@@ -285,9 +285,15 @@
   padding: 13px 22px;
   display: block;
   margin: 0 auto;
+
+  transition: background-color $main-transition-duration linear,
+  border $main-transition-duration linear;
+  transition-timing-function: $main-transtition-timing-function;
+
+
   &:hover,
   &:focus {
-    background: $white;
+    background-color: $white;
     border: 2px solid $white;
     border-radius: 25px;
   }
