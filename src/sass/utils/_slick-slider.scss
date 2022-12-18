@@ -18,8 +18,6 @@
   height: 100%;
 }
 
-
-
 .fade {
   width: 414px;
   height: 100%;
@@ -34,17 +32,14 @@
     width: 1280px;
   }
 
-
   // background-color: none;
 
-  > .slick-list{
+  > .slick-list {
     background-color: black;
     position: absolute;
     top: 0;
     left: 0;
   }
-
-
 
   .slick-prev,
   .slick-next {
@@ -98,13 +93,10 @@
     background-size: cover;
     background-position: 0px 0px;
   }
-
-
 }
 
-.fade__pict{
+.fade__pict {
   position: absolute;
-
 }
 
 .swiper__icon {
@@ -134,13 +126,10 @@
   color: #ffffff;
 }
 
-
 .fade .slick-arrow.slick-prev:hover,
 .fade .slick-arrow.slick-prev:focus {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='17' viewBox='0 0 30 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 7.48971H3.84047L9.85902 1.42865L8.44038 0L0 8.5L8.44038 17L9.85902 15.5713L3.84035 9.51017H30V7.48971Z' fill='white'/%3E%3C/svg%3E");
-
 }
-
 
 .fade .slick-arrow.slick-next {
   background: rgba(0, 0, 0, 0.65);
@@ -153,5 +142,67 @@
 
 .fade .slick-arrow.slick-next:hover,
 .fade .slick-arrow.slick-next:focus {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='17' viewBox='0 0 30 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.5595 0L20.1409 1.42865L26.1595 7.48984H0V9.51036H26.1594L20.1409 15.5713L21.5595 17L30 8.5L21.5595 0Z' fill='white'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='17' viewBox='0 0 30 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.5595 0L20.1409 1.42865L26.1595 7.48984H0V9.51036H26.1594L20.1409 15.5713L21.5595 17L30 8.5L21.5595 0Z' fill='white'/%3E%3C/svg%3E");
+}
+
+// HOTEL ROOMS SLIDERS COMMON STYLES
+
+.hotel-room-slider {
+  position: relative;
+}
+
+.hotel-room-slider .slick-track {
+  display: flex;
+  gap: 16px;
+  margin-left: 90px;
+  @include tablet {
+    margin-left: 10;
+  }
+  @include desktop {
+    gap: 40px;
+  }
+}
+
+.hotel-room-slider .slider-img-hotel {
+  border-radius: 2px;
+}
+
+// СТИЛІ ДО СТРІЛОК
+.hotel-room-slider .slick-arrow {
+  position: absolute;
+  top: 100%;
+  font-size: 0;
+  width: 30px;
+  height: 17px;
+  z-index: 1;
+}
+
+// СТИЛІ ДЛЯ СТРІЛКИ ЛІВОРУЧ
+.hotel-room-slider .slick-arrow.slick-prev {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='31' height='18' viewBox='0 0 31 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30.0834 7.99993H4.00581L10.0055 2.00025L8.5913 0.58606L0.177368 8.99999L8.5913 17.4139L10.0055 15.9997L4.00568 9.99993H30.0834V7.99993Z' fill='black'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  &:hover,
+  &:focus {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='17' viewBox='0 0 30 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 7.48971H3.84047L9.85902 1.42865L8.44038 0L0 8.5L8.44038 17L9.85902 15.5713L3.84035 9.51017H30V7.48971Z' fill='%23F3C653'/%3E%3C/svg%3E");
+  }
+}
+.hotel-room-slider .slick-arrow.slick-prev::before {
+  opacity: 0;
+}
+
+// СТИЛІ ДЛЯ СТРІЛКИ ПРАВОРУЧ
+.hotel-room-slider .slick-arrow.slick-next {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='18' viewBox='0 0 30 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.4921 0.58606L20.0779 2.00025L26.0777 8.00006H0V10.0001H26.0775L20.0779 15.9997L21.4921 17.4139L29.9061 8.99999L21.4921 0.58606Z' fill='black'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  &:hover,
+  &:focus {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='17' viewBox='0 0 30 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.5595 0L20.1409 1.42865L26.1595 7.48984H0V9.51036H26.1594L20.1409 15.5713L21.5595 17L30 8.5L21.5595 0Z' fill='%23F3C653'/%3E%3C/svg%3E");
+  }
+}
+.hotel-room-slider .slick-arrow.slick-next::before {
+  opacity: 0;
 }

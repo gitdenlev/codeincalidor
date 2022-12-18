@@ -25,7 +25,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 1.15;
-    color: #B4B4B4;
+    color: $homepage-text-color;
     display: block;
     margin-bottom: 12px;
     @include tablet {
@@ -50,7 +50,7 @@
         margin-bottom: 24px;
     }
     @include desktop {
-        color: #828282;
+        color: $homepage-title-color;
     }
 }
 
@@ -79,7 +79,7 @@
     margin-left: auto;
     box-shadow: $picture-shadow;
     border-radius: 2px;
-    background-color: #DADADA;
+    background-color: $photo-backgroun-color;
     @include tablet {
         position: absolute;
         width: 400px;
@@ -113,7 +113,7 @@
     width: 200px;
     box-shadow: $picture-shadow;
     border-radius: 2px;
-    background-color: #DADADA;
+    background-color: $photo-backgroun-color;
     @include tablet {
         position: absolute;
         width: 350px;
@@ -148,105 +148,107 @@
     }
 }
 
-.slick-container {
+
+
+
+// Налаштування блоку з слайдером
+
+.restaurant-about-kithen .hp-rest-slider{
     display: block;
-    width: 548px;
-    padding-left: 84px;
-    margin-left: auto;
+    margin-left: 50px;
+    margin-top: 32px;
     margin-bottom: 72px;
-    // position: relative;
     @include tablet {
-        padding-left: 0;
-        width: 428px;
-        margin-bottom: 96px;
+      margin-left: 489px;
+      margin-top: 35px;
+      margin-bottom: 96px;
     }
     @include desktop {
-        width: 540px;
-        margin-bottom: 118px;
+        margin-top: 15px;
+      margin-left: 580px;
+      margin-right: 0px;
+      margin-bottom: 104px;
     }
-}
 
-.slick-photo {
-    width: 245px;
+ //  Задаэмо тінь на блоки зображень слайдера
+ 
+  }
+
+
+
+  // Налаштування відступів між зображеннями
+  .restaurant-about-kithen .hp-rest-slider .slick-track {
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
+    
     @include tablet {
-        width: 194px;
+      gap: 40px;
     }
     @include desktop {
-        width: 254px;
+      gap: 40px;
     }
-}
+  }
+  
+  // Налаштування контейнера
+  .restaurant-about-kithen .hp-rest-slider .slick-list {
+    width: 330px;
+    @include tablet {
+      width: 428px;
+    }
+    @include desktop {
+      width: 548px;
+    }
+  }
 
-.one-time-slick {
-    // position: relative;
-    box-shadow: $picture-shadow;
+  .restaurant-about-kithen .slick-slide .slick-current .slick-activ{
+    
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
-    background-color: #DADADA;
-}
+    }   
 
-.slick-prev {
-    top: 275px;
-    left: 215px;
-    @include tablet {
-        top: 234px;
-        left: 337px;
-    }
-    @include desktop {
-        top: 300px;
-        left: 427px;
-    }
-}
 
-.slick-next {
-    top: 275px;
-    left: 275px;
-    @include tablet {
-        top: 234px;
-        left: 400px;
-    }
-    @include desktop {
-        top: 300px;
-        left: 490px;
-    }
-}
 
-.one-time-slick .slick-arrow.slick-prev{
-    background-image: url(/src/svg/arrow-left-black.svg);
+
+
+  // Налаштування кнопок слайдера
+
+  .restaurant-about-kithen .hp-rest-slider .slick-arrow.slick-prev  {
+    left:243px;
     width: 32px;
     height: 32px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 50%;
-    transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        background-image: url(/src/svg/arrow-left-yellow.svg);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='31' height='18' viewBox='0 0 31 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30.0834 7.99993H4.00581L10.0055 2.00025L8.5913 0.58606L0.177368 8.99999L8.5913 17.4139L10.0055 15.9997L4.00568 9.99993H30.0834V7.99993Z' fill='black'/%3E%3C/svg%3E");
+    
+    @include tablet {
+        left: 330px;
     }
+
+    @include desktop {
+        left: 444px;
+      }
+
+    &:hover, &:focus{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='17' viewBox='0 0 30 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 7.48971H3.84047L9.85902 1.42865L8.44038 0L0 8.5L8.44038 17L9.85902 15.5713L3.84035 9.51017H30V7.48971Z' fill='%23F3C653'/%3E%3C/svg%3E");
+  }
 }
 
-.one-time-slick .slick-arrow.slick-next{
-    background-image: url(/src/svg/arrow-right-black.svg);
-    width: 32px;
-    height: 32px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 50%;
-    transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        background-image: url(/src/svg/arrow-right-yellow.svg);
+.restaurant-about-kithen .hp-rest-slider .slick-arrow.slick-next{
+  left:307px;
+  width: 32px;
+  height: 32px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='18' viewBox='0 0 30 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.4921 0.58606L20.0779 2.00025L26.0777 8.00006H0V10.0001H26.0775L20.0779 15.9997L21.4921 17.4139L29.9061 8.99999L21.4921 0.58606Z' fill='black'/%3E%3C/svg%3E");
+  
+    @include tablet {
+        left:394px;
     }
+    
+    @include desktop {
+        left: 508px;
+    }
+  
+  
+    &:hover, &:focus{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='30' height='17' viewBox='0 0 30 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.5595 0L20.1409 1.42865L26.1595 7.48984H0V9.51036H26.1594L20.1409 15.5713L21.5595 17L30 8.5L21.5595 0Z' fill='%23F3C653'/%3E%3C/svg%3E");
+  }
+
 }
-
-.one-time-slick .slick-arrow {
-    font-size: 0;
-}
-
-.one-time-slick .slick-prev:before, 
-.one-time-slick .slick-next:before {
-    opacity: 0;
-}
-
-
-
-
-
