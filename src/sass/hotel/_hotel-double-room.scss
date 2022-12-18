@@ -1,4 +1,29 @@
+// Лінії на задньому фоні
+.double {
+  overflow: hidden;
+  position: relative;
+  @include tablet {
+      overflow: visible;
+      height: 672px;
+  }
+  @include desktop {
+      height: 772px;
+  }
+
+  > .container .line1, > .container .line2, > .container .line3{
+    opacity: 0;
+    @include tablet {
+      opacity: 1;
+    }
+  }
+}
+
+
+
 // ____________СЕКЦІЯ - ДАБЛ______________
+
+
+
 
 .double {
   padding-top: 32px;

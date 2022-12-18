@@ -1,3 +1,28 @@
+
+// Лінії на задньому фоні
+.restaurant-about-kithen {
+    overflow: hidden;
+    position: relative;
+    @include tablet {
+        overflow: visible;
+        height: 1238px;
+    }
+    @include desktop {
+        height: 1257px;
+    }
+  
+    > .container .line1, > .container .line2, > .container .line3{
+      opacity: 0;
+      @include tablet {
+        opacity: 1;
+      }
+    }
+  }
+
+
+
+
+
 .restaurant-about-kithen {
     overflow: hidden;
     @include tablet {
