@@ -1,364 +1,235 @@
-.backdrop-modal-room {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(96, 91, 91);
-  z-index: 9;
+.modal-room__background {
+  background-color: #605b5b;
   position: fixed;
   top: 0;
-  opacity: 1;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+}
+.modal-room__box-form {
+  max-height: 100%;
+  box-sizing: border-box;
+  width: 414px;
+  background-color: $background-light-lemon;
+  padding: 60px 15px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: scroll;
+  @include tablet {
+    padding: 60px;
+    width: 712px;
+  }
 }
-
-.backdrope-modal-room {
-  width: 100%;
-  height: 100%;
-  background-color: #fffdee;
-  position: fixed;
-  top: 0;
-}
-.backdrope-modal-room.is-hidden {
+.modal-room__background.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
-
-.modal-room {
-  box-sizing: border-box;
-  width: 414px;
-  min-height: 780px;
-  padding: 60px 15px 60px 15px;
+.modal-room__close {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  border: 1px solid red;
-  border-radius: 2px;
-  background-color: $background-light-lemon;
-  @include tablet {
-    border: 1px solid blue;
-    width: 712px;
-    min-height: 638px;
-    padding: 60px;
-  }
-  @include desktop {
-    border: 1px solid green;
+  top: 16px;
+  right: 16px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.modal-room__close-icon {
+  fill: $black;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  &:hover,
+  &:focus {
+    fill: $brown-text-color;
   }
 }
-// .modal-room-close {
-//   width: 35px;
-//   height: 35px;
-//   background-color: transparent;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   border-color: transparent;
-//   position: absolute;
-//   right: 16px;
-//   top: 16px;
-// }
-// .modal-room-close-icon {
-//   fill: rgba(128, 128, 128, 1);
-// }
-.modal-room-title {
-  font-family: $montserrat-font;
+.modal-room__title {
+  font-family: $times-font;
+  font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: calc(28 / 24);
+  line-height: calc(28px / 24px);
   letter-spacing: 0.05em;
   color: $black;
+  display: block;
   text-align: center;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  @include tablet {
+    font-size: 40px;
+    line-height: calc(46px / 40px);
+    letter-spacing: 0.05em;
+    color: $black;
+  }
+}
+.modal-room__contacts-box {
+  display: block;
+  position: relative;
+  @include tablet {
+    margin-bottom: 0px;
+  }
+}
+.modal-room__wrap {
+  @include tablet {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.modal-room__wrap-box {
+  @include tablet {
+    display: flex;
+    gap: 16px;
+  }
+}
+.modal-room__input-contacts {
+  position: relative;
   box-sizing: border-box;
-  width: 414px;
-  min-height: 780px;
-  padding: 60px 15px 60px 15px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 384px;
+  height: 54px;
   border: 1px solid $brown-text-color;
+  padding-left: 12px;
   background-color: $background-light-lemon;
-  @include tablet {
-    font-size: 40px;
-    line-height: calc(46 / 40);
-    margin-bottom: 36px;
-    border: 1px solid $brown-text-color;
-    width: 712px;
-    min-height: 638px;
-    padding: 60px;
-  }
-  @include desktop {
-    border: 1px solid $brown-text-color;
-  }
-}
-// .modal-room-close {
-//   width: 24px;
-//   height: 24px;
-//   background-color: transparent;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   border-color: transparent;
-//   position: absolute;
-//   right: 16px;
-//   top: 16px;
-// }
-// .modal-prise-close-icon {
-//   fill: rgba(128, 128, 128, 1);
-// }
-.modal-room-title {
-  font-family: $montserrat-font;
+  font-family: $times-font;
   font-weight: 700;
-  font-size: 24px;
-  line-height: calc(28 / 24);
+  font-size: 20px;
+  line-height: calc(23px / 20px);
   letter-spacing: 0.05em;
-  color: $black;
-  text-align: center;
-  margin-bottom: 40px;
+  color: #808080;
+  margin-bottom: 8px;
+  outline: transparent;
+  transition: border-color $main-transition-duration
+    $main-transtition-timing-function;
+  &:hover,
+  &:focus {
+    border-color: $brown-text-color;
+  }
+
+  &::placeholder {
+    font-family: $times-font;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23px / 20px);
+    letter-spacing: 0.05em;
+    color: #808080;
+  }
+  &:not(:focus):not(:placeholder-shown):valid {
+    border-color: $brown-text-color;
+  }
+  &:not(:focus):not(:placeholder-shown):invalid {
+    border-color: rgb(217, 14, 45);
+  }
   @include tablet {
-    font-size: 40px;
-    line-height: calc(48 / 40);
-    margin-bottom: 36px;
+    width: 288px;
+    height: 64px;
+    font-size: 24px;
+    line-height: calc(28px / 24px);
+    &::placeholder {
+      font-size: 24px;
+      line-height: calc(28px / 24px);
+      letter-spacing: 0.05em;
+    }
   }
 }
+.modal-room__label {
+  display: block;
+  font-family: $montserrat-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: $brown-text-color;
+  position: relative;
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+.modal-room__label-span {
+  margin-left: 12px;
+  display: block;
+  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  @include tablet {
+    margin-bottom: 28px;
+  }
+}
+.modal-room__select {
+  box-sizing: border-box;
+  width: 384px;
+  height: 54px;
+  border: 1px solid $brown-text-color;
+  padding-left: 15px;
+  background-color: $background-light-lemon;
+  font-family: $times-font;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23px / 20px);
+  letter-spacing: 0.05em;
+  color: #808080;
+  margin-bottom: 8px;
+  outline: transparent;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: border-color $main-transition-duration
+    $main-transtition-timing-function;
+  &:hover,
+  &:focus {
+    border-color: $brown-text-color;
+  }
 
-// Стилі фоорми
-
-// .modal-room-contacts {
-//   width: 384px;
-//   display: block;
-//   &:not(:last-child) {
-//     margin-bottom: 20px;
-//   }
-//   @include tablet {
-//     &:not(:last-child) {
-//       margin-bottom: 0px;
-//     }
-//   }
-// }
-// .modal-room-input {
-//   box-sizing: border-box;
-//   width: 100%;
-//   height: 54px;
-//   border: 1px solid $brown-text-color;
-//   padding-left: 12px;
-//   background-color: $background-light-lemon;
-//   font-family: $times-font;
-//   font-weight: 700;
-//   font-size: 24px;
-//   line-height: calc(28 / 24);
-//   letter-spacing: 0.05em;
-//   color: #808080;
-//   margin-bottom: 8px;
-//   outline: transparent;
-//   transition: border-color $main-transition-duration
-//     $main-transtition-timing-function;
-//   &:hover,
-//   &:focus {
-//     border-color: $brown-text-color;
-//   }
-
-//   &::placeholder {
-//     font-family: $times-font;
-//     font-weight: 700;
-//     font-size: 20px;
-//     line-height: calc(23 / 20);
-//     letter-spacing: 0.05em;
-//     color: #808080;
-//     @include tablet {
-//       font-size: 24px;
-//       line-height: calc(28 / 24);
-//     }
-//   }
-//   @include tablet {
-//     height: 64px;
-//   }
-// }
-
-// .modal-price-input:not(:focus):not(:placeholder-shown):valid {
-//   border-color: #c79002;
-// }
-// .modal-price-input:not(:focus):not(:placeholder-shown):invalid {
-//   border-color: rgb(217, 14, 45);
-// }
-
-// .modal-room-label {
-//   display: block;
-//   font-family: $montserrat-font;
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: calc(20 / 16);
-//   letter-spacing: 0.02em;
-//   color: $brown-text-color;
-//   margin-bottom: 20px;
-//   position: relative;
-// }
-
-// .contscts-ml {
-//   margin-left: 12px;
-// }
-// .check-arrow::after {
-//   background-image: url('/src/svg/arrow-down-bold.svg');
-//   content: '';
-//   position: absolute;
-//   width: 24px;
-//   height: 24px;
-//   top: 15px;
-//   right: 15px;
-//   z-index: 3;
-//   background-color: $white;
-//   pointer-events: none;
-// }
-// .label-span {
-//   margin-left: 12px;
-//   display: block;
-// }
-
-// .modal-room-select {
-//   box-sizing: border-box;
-//   width: 100%;
-//   height: 54px;
-//   border: 1px solid $brown-text-color;
-//   padding-left: 15px;
-//   background-color: $background-light-lemon;
-//   font-family: $times-font;
-//   font-weight: 700;
-//   font-size: 24px;
-//   line-height: calc(28 / 24);
-//   letter-spacing: 0.05em;
-//   color: #808080;
-//   margin-bottom: 8px;
-//   outline: transparent;
-
-//   -moz-appearance: none;
-//   -webkit-appearance: none;
-//   appearance: none;
-
-//   transition: border-color $main-transition-duration
-//     $main-transtition-timing-function;
-//   &:hover,
-//   &:focus {
-//     border-color: $brown-text-color;
-//   }
-//   @include tablet {
-//     height: 64px;
-//     width: 288px;
-//   }
-
-//   display: block;
-//   // margin-bottom: 20px;
-//   font-family: $montserrat-font;
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: calc(20 / 16);
-//   letter-spacing: 0.02em;
-//   color: #c79002;
-//   margin-left: 27px;
-//   margin-bottom: 20px;
-//   @include tablet {
-//     margin-left: 12px;
-//   }
-// }
-
-// .modal-room-select {
-//   box-sizing: border-box;
-//   width: 100%;
-//   height: 54px;
-//   border: 1px solid $brown-text-color;
-//   padding-left: 15px;
-//   background-color: $background-light-lemon;
-//   font-family: $times-font;
-//   font-weight: 700;
-//   font-size: 24px;
-//   line-height: calc(28 / 24);
-//   letter-spacing: 0.05em;
-//   color: #808080;
-//   margin-bottom: 8px;
-//   outline: transparent;
-//   // appearance: none;
-//   transition: border-color $main-transition-duration
-//     $main-transtition-timing-function;
-//   &:hover,
-//   &:focus {
-//     border-color: $brown-text-color;
-//   }
-//   @include tablet {
-//     height: 64px;
-//     width: 288px;
-//   }
-// }
-
-// // Стилізування tablet та desktop
-// .modal-room-wrap-tablet {
-//   @include tablet {
-//     display: flex;
-//     gap: 16px;
-//   }
-// }
-
-// .room-select {
-//   @include tablet {
-//     display: flex;
-//     justify-content: flex-end;
-//   }
-// }
-
-// .modal-room-btn {
-//   width: 100%;
-//   height: 64px;
-//   background-color: $black;
-//   border: 1px solid $accent-color;
-//   border-radius: 2px;
-//   font-family: $montserrat-font;
-//   color: $white;
-//   font-weight: 500;
-//   font-size: 20px;
-//   line-height: calc(24 / 20);
-//   margin-top: 40px;
-//   transition: background-color $main-transition-duration
-//       $main-transtition-timing-function,
-//     color $main-transition-duration $main-transtition-timing-function;
-//   &:hover,
-//   &:focus {
-//     background-color: $accent-color;
-//     color: $black;
-//   }
-//   @include tablet {
-//     margin-top: 40px;
-//     font-size: 24px;
-//     line-height: calc(29 / 24);
-//   }
-// }
-
-// .direction-right {
-//   @include tablet {
-//     display: flex;
-//     justify-content: flex-end;
-//   }
-// }
-
-// .modal-price-btn {
-//   width: 100%;
-//   height: 64px;
-//   background-color: $black;
-//   border: 1px solid $accent-color;
-//   border-radius: 2px;
-//   font-family: $montserrat-font;
-//   color: $white;
-//   font-weight: 500;
-//   font-size: 20px;
-//   line-height: calc(24 / 20);
-//   margin-top: 20px;
-//   transition: background-color $main-transition-duration
-//       $main-transtition-timing-function,
-//     color $main-transition-duration $main-transtition-timing-function;
-//   &:hover,
-//   &:focus {
-//     background-color: $accent-color;
-//     color: $black;
-//   }
-//   @include tablet {
-//     margin-top: 0;
-//   }
-// }
+  @include tablet {
+    height: 64px;
+    width: 288px;
+    font-size: 24px;
+    line-height: calc(28px / 24px);
+  }
+}
+.modal-room-bs {
+  height: 64px;
+}
+.modal-room__check-arrow::after {
+  background-image: url('/src/svg/arrow-down-bold.svg');
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 15px;
+  right: 15px;
+  fill: $brown-text-color;
+  background-color: $background-light-lemon;
+  pointer-events: none;
+  @include tablet {
+    top: 20px;
+  }
+}
+.modal-room__btn {
+  width: 384px;
+  height: 64px;
+  box-sizing: border-box;
+  background-color: $black;
+  border: 1px solid $accent-color;
+  border-radius: 2px;
+  font-family: $montserrat-font;
+  color: $white;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24px / 20px);
+  margin-top: 20px;
+  transition: background-color $main-transition-duration
+      $main-transtition-timing-function,
+    color $main-transition-duration $main-transtition-timing-function;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $black;
+  }
+  @include tablet {
+    font-size: 24px;
+    line-height: calc(29px / 24px);
+    width: 592px;
+    margin-bottom: 12px;
+  }
+}
