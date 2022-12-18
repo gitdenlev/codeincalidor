@@ -106,7 +106,7 @@
 
   transition: background-color $main-transition-duration linear,
   color $main-transition-duration linear;
-transition-timing-function: $main-transtition-timing-function;
+  transition-timing-function: $main-transtition-timing-function;
 
   &:hover,
   &:focus {

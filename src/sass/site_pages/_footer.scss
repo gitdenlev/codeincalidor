@@ -1,168 +1,3 @@
-// .footer {
-//   position: relative;
-//   z-index: 2;
-//   background-color: #0e0c07;
-//   margin-left: auto;
-//   margin-right: auto;
-//   min-width: 414px;
-//   width: 100%;
-//   padding-top: 40px;
-//   padding-bottom: 40px;
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-
-//   @media screen and (min-width: 1024px) {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     min-width: 1024px;
-//     width: 100%;
-//     padding-top: 80px;
-//     padding-bottom: 80px;
-//   }
-// }
-// .footer__line > li {
-//   position: absolute;
-//   z-index: -1;
-//   pointer-events: none;
-//   top: 0px;
-//   width: 0;
-//   height: 100%;
-//   border: 1px solid rgba(186, 186, 186, 0.4);
-//   filter: blur(0.5px);
-// }
-// .line-one {
-//   @media screen and (min-width: 1024px) {
-//     margin-left: 565px;
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     margin-left: 710px;
-//   }
-// }
-
-// .line-two {
-//   @media screen and (min-width: 1024px) {
-//     margin-left: 805px;
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     margin-left: 1020px;
-//   }
-// }
-
-// .footer--baseline {
-//   display: flex;
-//   align-items: center;
-// }
-
-// .footer__logo {
-//   font-family: $film-font;
-
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 40px;
-//   line-height: 1;
-//   text-decoration: none;
-//   letter-spacing: 0.3em;
-//   color: $accent-color;
-
-//   @media screen and (min-width: 1024px) {
-//     font-size: 64px;
-//     line-height: 1.1;
-//     letter-spacing: 0.3em;
-//   }
-
-//   @media screen and (min-width: 1024px) {
-//     font-weight: 700;
-//     font-size: 64px;
-//     line-height: 1.1;
-//     letter-spacing: 0.3em;
-//   }
-// }
-
-// .footer__position {
-//   display: flex;
-//   margin-left: auto;
-//   gap: 129px;
-
-//   @media screen and (max-width: 1023px) {
-//     margin-left: auto;
-//     flex-direction: column;
-//     gap: 32px;
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     margin-left: auto;
-//     gap: 199px;
-//   }
-// }
-
-// .footer__list {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 16px;
-//   padding: 0;
-//   text-align: center;
-// }
-
-// .footer__list-link {
-//   display: flex;
-//   gap: 20px;
-
-//   @media screen and(min-width:1024px) {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 12px;
-//   }
-// }
-
-// .footer__link {
-//   font-family: $montserrat-font;
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 20px;
-//   line-height: 24px;
-//   letter-spacing: 0.02em;
-//   padding: 5px 10px;
-//   color: $accent-color;
-//   text-decoration: none;
-//   margin: 0;
-// }
-
-// .footer__link--border {
-//   border: 0.5px solid $accent-color;
-//   border-radius: 2px;
-//   width: 100%;
-
-//   @media screen and (max-width: 1023px) {
-//     border: none;
-//   }
-// }
-
-// .footer__hidden {
-//   @media screen and (max-width: 1023px) {
-//     display: none;
-//   }
-// }
-
-// .footer__icon {
-//   width: 24px;
-//   height: 24px;
-//   fill: $accent-color;
-//   content: '';
-// }
-
-// .footer__item {
-//   display: flex;
-//   text-align: center;
-//   justify-content: flex-start;
-//   align-items: center;
-//   @media screen and (max-width: 1023px) {
-//     justify-content: center;
-//   }
-// }
 
 //  NEW FOOTER !!!!!
 footer {
@@ -203,6 +38,9 @@ footer {
   padding-right: 0;
   @include tablet {
   }
+  transition: color $main-transition-duration linear;
+  transition-timing-function: $main-transtition-timing-function;
+
   &:hover,
   &:focus {
     color: $accent-color;
@@ -268,6 +106,10 @@ footer {
   &:not(:last-child) {
     margin-bottom: 16px;
   }
+
+  transition: color $main-transition-duration linear;
+  transition-timing-function: $main-transtition-timing-function;
+
   &:hover,
   &:focus {
     color: $accent-color;
@@ -331,12 +173,13 @@ footer {
     letter-spacing: 0.02em;
     color: $brown-text-color;
     text-align: center;
+
+    transition: color $main-transition-duration linear;
+    transition-timing-function: $main-transtition-timing-function;
+
     &:hover,
     &:focus {
       color: $accent-color;
-      transition: background-color $main-transition-duration linear,
-        color $main-transition-duration linear;
-      transition-timing-function: $main-transtition-timing-function;
     }
   }
 }

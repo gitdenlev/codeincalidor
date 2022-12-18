@@ -127,7 +127,12 @@
     font-size: 36px;
     line-height: 1.13;
   }
+
 }
+
+
+
+
 
 // Налаштування блоку адреси
 .hero__blok-info {
@@ -246,6 +251,8 @@
   border: 2px solid #ffffff;
   border-radius: 25px;
 
+  .hero-restaurant__link{
+  
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -254,6 +261,9 @@
 
   letter-spacing: 0.02em;
   color: #f3c653;
+  }
+
+
 
   &:hover,
   &:focus {
