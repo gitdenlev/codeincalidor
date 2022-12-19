@@ -1,30 +1,15 @@
-// Лінії на задньому фоні
-.triple {
-  overflow: hidden;
-  position: relative;
-  @include tablet {
-    overflow: visible;
-    height: 672px;
-  }
-  @include desktop {
-    height: 772px;
-  }
-
-  > .container .line1,
-  > .container .line2,
-  > .container .line3 {
-    opacity: 0;
-    @include tablet {
-      opacity: 1;
-    }
-  }
-}
-
 // ____________СЕКЦІЯ - ТРІПЛ______________
 
-.triple {
+
+.container__tripl-line{
   background-color: $background-dark-lemon;
-  z-index: -5;
+  z-index: -1;
+}
+
+
+.triple {
+
+  // z-index: -5;
 
   @include mobile {
     padding-top: 32px;
@@ -39,6 +24,30 @@
     padding-bottom: 112px;
   }
 }
+
+
+// Лінії на задньому фоні
+.triple {
+  background-color: $background-dark-lemon;
+  // overflow: hidden;
+  position: relative;
+  @include tablet {
+      // overflow: visible;
+      height: 672px;
+  }
+  @include desktop {
+      height: 828px;
+  }
+
+  > .container .line1, > .container .line2, > .container .line3{
+    z-index: 1;
+    opacity: 0;
+    @include tablet {
+      opacity: 1;
+    }
+  }
+}
+
 
 .triple_content {
   @include mobile {
