@@ -1,0 +1,2 @@
+!function(){var o={openRoomModalHotelBtn:document.querySelector("[data-room-modal-hotel-open]"),closeRoomModalBtn:document.querySelector("[data-room-modal-close]"),roomModal:document.querySelector("[data-room-modal]")};function e(){o.roomModal.classList.toggle("is-hidden")}o.openRoomModalHotelBtn.addEventListener("click",e),o.closeRoomModalBtn.addEventListener("click",e)}();
+//# sourceMappingURL=triple-room.c06d4bbf.js.map

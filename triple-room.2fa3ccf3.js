@@ -1,0 +1,2 @@
+!function(){var e={openPriceModalBtn:document.querySelector("[data-price-modal-open]"),closePriceModalBtn:document.querySelector("[data-price-modal-close]"),priceModal:document.querySelector("[data-price-modal]")};function c(){e.priceModal.classList.toggle("is-hidden")}e.openPriceModalBtn.addEventListener("click",c),e.closePriceModalBtn.addEventListener("click",c)}();
+//# sourceMappingURL=triple-room.2fa3ccf3.js.map
