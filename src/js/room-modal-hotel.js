@@ -1,13 +1,11 @@
 (() => {
   const refs = {
-    openRoomModalBtn: document.querySelector('[data-room-modal-open]'),
-    openRoomHpModalBtn: document.querySelector('[data-room-hp-modal-open]'),
+    openRoomModalHotelBtn: document.querySelector('[data-room-modal-hotel-open]'),
     closeRoomModalBtn: document.querySelector('[data-room-modal-close]'),
     roomModal: document.querySelector('[data-room-modal]'),
   };
 
-  refs.openRoomModalBtn.addEventListener('click', toggleRoomModal);
-  refs.openRoomHpModalBtn.addEventListener('click', toggleRoomModal);
+  refs.openRoomModalHotelBtn.addEventListener('click', toggleRoomModal);
   refs.closeRoomModalBtn.addEventListener('click', toggleRoomModal);
 
 
